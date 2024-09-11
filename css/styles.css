@@ -7,20 +7,52 @@
     --background-color-secondary: #d5e6eb;  
     --text-color: #676666; 
     --font-family: "Poppins", sans-serif;
+    --font-family-secondary:'Nunito', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Tipografía base */
-html {
+ 
+ 
+body {
+    width: 100%;   
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; 
     font-family: var(--font-family);
-    background-color: var(--background-color-secondary);
+    background-color: var(--background-color-secondary) ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-secondary);
+    color: var(--secondary-color);
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: inherit;
+}
+
+/* title */
+/* dentro del titulo si tiene span se cambiara de color  */
+.title span{
+    color: var(--primary-color); 
+}
+/* le agregamos la imagen de pata al final con after */
+.title::after {
+    content: "";
+    background-image: url("../assets/images/slider/patita.png");
+    display: inline-block;
+    position: relative; 
+    width: 1rem; 
+    height: 1rem;
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    top: -10px; 
 }
 
 
@@ -30,6 +62,10 @@ html {
 
 /* Header Start */
 /* Creamos shape para poner las nubesdebajo */
+header{
+    background-color: var(--background-color);
+    box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3);
+}
 .header-shape{
     background-image: url("../assets/images/bg/header_shape.png");
     position: absolute;
@@ -53,7 +89,7 @@ html {
     font-weight: bold  ; 
 }
 
-/* ccuando el boton de nav-bar esta activo debe cambiar de forma */
+/* ccuando el boton de nav-bar esta activo tendra un background de fondo*/
 .active,
 .nav-link:hover{ 
      position: relative;
@@ -73,3 +109,66 @@ html {
 }
 
 /* Header End css */
+
+
+
+
+/* Se reemplazara por bootstrap */
+/* Contenedores Start*/
+.contenedor{
+    padding:4rem 0 ;
+    max-width: 80%;
+    margin: auto auto; 
+}
+.contenedor img{
+    max-width: 50%; 
+    margin: auto 0; 
+}
+.center   {
+    text-align: center;
+}
+
+/* Contenedores End*/
+
+/*Card cifras Start*/
+/* Estilos de card de cifras */
+.card-cifras{
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    padding:1rem ;
+    margin: 1rem 0;
+}
+
+.card-cifras .cifras-number{
+    font-weight:700 ;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    transition:  0.4s ease-out;  
+}
+
+/* Agregamos al final la imagen de pata y lo ponemos opacity 0 para que no se vea */
+.card-cifras .cifras-number::after {
+    content: "";
+    background-image: url("../assets/images/slider/patita.png");
+    display: inline-block;
+    position: relative; 
+    width: 1rem; 
+    height: 1rem;
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    top: -10px; 
+    transition:  0.4s ease-out;  
+    opacity: 0;
+}
+
+/* cambiamos de color al pasar el cursor */
+.card-cifras .cifras-number:hover{
+    color: var(--primary-color);
+}
+
+/* Aparecemos la pata al pasar el cursor */
+.card-cifras .cifras-number:hover::after {
+    top: -10px;  
+    opacity: 1;
+}
+/* Card cifras End */

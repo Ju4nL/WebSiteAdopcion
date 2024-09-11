@@ -116,7 +116,7 @@ header{
 /* Se reemplazara por bootstrap */
 /* Contenedores Start*/
 .contenedor{
-    padding:4rem 0 ;
+    padding:2rem 0 ;
     max-width: 80%;
     margin: auto auto; 
 }

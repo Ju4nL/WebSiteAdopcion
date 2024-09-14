@@ -1,95 +1,109 @@
 <!DOCTYPE html>
-                <html lang="es">
-                <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Preguntas Frecuentes</title>
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        background-color: #f0f0f5;
-                        color: #333;
-                    }
-                    .faq-section {
-                        max-width: 800px;
-                        margin: 50px auto;
-                        padding: 20px;
-                        background-color: #002b55;
-                        color: white;
-                        border-radius: 8px;
-                    }
-                    .faq-title {
-                        text-align: center;
-                        margin-bottom: 20px;
-                        font-size: 2em;
-                        font-weight: bold;
-                    }
-                    .faq-question {
-                        cursor: pointer;
-                        padding: 15px;
-                        margin: 5px 0;
-                        background-color: #014b9d;
-                        border-radius: 4px;
-                        font-size: 1.2em;
-                    }
-                    .faq-answer {
-                        display: none;
-                        padding: 15px;
-                        margin-top: -10px;
-                        background-color: #ffffff;
-                        color: #333;
-                        border-radius: 4px;
-                    }
-                </style>
-            </head>
-            <body>
+<html lang="es">
 
-                <div class="faq-section">
-                    <div class="faq-title">Preguntas Frecuentes</div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">¿Qué es WUF?</div>
-                        <div class="faq-answer">
-                            adopcion de gatos es una organización sin fines de lucro que promueve la adopción responsable de perros.
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">¿Cómo se sostiene económicamente WUF?</div>
-                        <div class="faq-answer">
-                            adopcion de gatos se sostiene a través de donaciones y colaboraciones con diversas empresas.
-                        </div>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
 
-                    <div class="faq-item">
-                        <div class="faq-question">¿Qué es un ?</div>
-                        <div class="faq-answer">
-                            es un término que utilizan para referirse a los perros que están bajo su cuidado.
-                        </div>
-                    </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question">¿Cómo puedo realizar una donación?</div>
-                        <div class="faq-answer">
-                            Puedes realizar una donación a través de su página web, en la sección de "Donaciones".
-                        </div>
-                    </div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+        }
 
-                </div>
+        .faq-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #002b55;
+            color: white;
+            border-radius: 8px;
+        }
 
-                <script>
-                    const faqItems = document.querySelectorAll('.faq-question');
-                    
-                    faqItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            const answer = item.nextElementSibling;
-                            if (answer.style.display === "none" || answer.style.display === "") {
-                                answer.style.display = "block";
-                            } else {
-                                answer.style.display = "none";
-                            }
-                        });
-                    });
-                </script>
+        .faq-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 15px;
+            margin: 5px 0;
+            background-color: #014b9d;
+            border-radius: 4px;
+            font-size: 1.2em;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            margin-top: -10px;
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="faq-section">
+        <div class="faq-title">Preguntas Frecuentes</div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Qué es WUF?</div>
+            <div class="faq-answer">
+                adopcion de gatos es una organización sin fines de lucro que promueve la adopción responsable de perros.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo se sostiene económicamente WUF?</div>
+            <div class="faq-answer">
+                adopcion de gatos se sostiene a través de donaciones y colaboraciones con diversas empresas.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Qué es un ?</div>
+            <div class="faq-answer">
+                es un término que utilizan para referirse a los perros que están bajo su cuidado.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo realizar una donación?</div>
+            <div class="faq-answer">
+                Puedes realizar una donación a través de su página web, en la sección de "Donaciones".
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-question');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                if (answer.style.display === "none" || answer.style.display === "") {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

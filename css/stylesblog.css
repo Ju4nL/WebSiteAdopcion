@@ -1,0 +1,88 @@
+:root{
+    --primary-color: #e73a2d;       
+    --secondary-color: #0a303a;     
+    --color3: #fff;
+    --color4: #d5e6eb;  
+    --text-color: #676666; 
+    --font-family: "Poppins", sans-serif;
+    --font-family-secondary:'Nunito', sans-serif;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--color4);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--color4);
+    padding: 10px;
+    text-align: center;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    background-color: var(--primary-color);
+    color: var(--color3);
+    text-align: center;
+    padding: 15px;
+}
+
+.menu a {
+    color: var(--color3);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu .right {
+    float: right;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--color4);
+}
+
+.card {
+    background-color: var(--color3);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    color:var(--primary-color);
+    font-size: 1.2em;
+}
+
+.card p {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.card small {
+    color: var(--text-color);
+}

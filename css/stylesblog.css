@@ -15,46 +15,7 @@ body{
     padding: 0;
 }
 
-.header {
-    background-color: var(--color4);
-    padding: 10px;
-    text-align: center;
-}
-
-.header img {
-    width: 100px;
-    height: auto;
-}
-
-.menu {
-    background-color: var(--primary-color);
-    color: var(--color3);
-    text-align: center;
-    padding: 15px;
-}
-
-.menu a {
-    color: var(--color3);
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
-.menu .right {
-    float: right;
-    margin-right: 50px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: var(--color4);
-}
+ 
 
 .card {
     background-color: var(--color3);

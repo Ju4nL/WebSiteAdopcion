@@ -179,6 +179,18 @@ img {
     padding-right: 15px;
 }
 
+.col-m {
+    /* Permite que las cajas hijo tengan el mismo ancho */
+    flex-basis: 0;
+    flex-grow: 1;
+
+    /* Espacio entre columnas */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2rem;
+}
+
+
 .col-20 {
     flex-basis: 20%;
     max-width: 20%; 

@@ -39,16 +39,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-secondary);
-    color: var(--secondary-color);
+    color: var(--secondary-color2);
     margin-top: 0px;
     font-style: normal;
     font-weight: 900;
     text-transform: inherit;
+    line-height: 1;
 }
 
 
- 
-
+ p{
+    color: var(--text-color);
+ }
 
 
 /* Elimina el espacio que aparece debajo del objeto */
@@ -119,20 +121,53 @@ img {
 
 /* Se reemplazara por bootstrap */
 /* Contenedores Start*/
+.center   {
+    text-align: center;
+}
 
-.contenedor-fluid {
+.imgfluid {
+    width: 100%;
+}
+
+.font-size-xl{
+    font-size: 3rem;
+}
+
+.font-size-l{
+    font-size: 2.5rem;
+}
+ 
+
+ 
+
+.padding-y{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contenedor {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contenedor {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+.padding-y2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
+/* Activar flexbox */
+.row {
+    display: flex;
+    flex-direction: row; /* Coloca las cajas hijo en fila */
+    flex-wrap: wrap; /* Habilita la caja flexbox multifila */
+}
 
+.del-padded {
+    /* Anular el padding-left y padding-right, de la primera y última columna, respectivamente */
+    margin-left: -15px;
+    margin-right: -15px;
+}
 
 .col {
     /* Permite que las cajas hijo tengan el mismo ancho */
@@ -144,13 +179,31 @@ img {
     padding-right: 15px;
 }
 
-.center   {
-    text-align: center;
+.col-20 {
+    flex-basis: 20%;
+    max-width: 20%; 
 }
 
-.imgfluid {
-    width: 100%;
+.col-25 {
+    flex-basis: 25%;
+    max-width: 25%; 
 }
+
+.col-33 {
+   flex-basis: 33.33%;
+   max-width: 33.33%; 
+}
+
+.col-50 {
+    flex-basis: 50%;
+    max-width: 50%; 
+}
+
+.col-66 {
+    flex-basis: 66.66%;
+    max-width: 66.66%; 
+}
+
 
 /* Contenedores End*/
 
@@ -168,6 +221,13 @@ img {
     padding: 16px 0; 
     position: sticky;
 }
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 
 .header-shape{
     background-image: url("../assets/images/bg/header_shape.png");
@@ -242,17 +302,24 @@ img {
 
 /*Card cifras Start*/
 /* Estilos de card de cifras */
+#cifras{
+    background-image: url('../assets/images/bg/counter_bg.jpg');
+}
 .card-cifras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--background-color);
     border-radius: var(--border-radius-secondary);
     padding:1rem ;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
 }
 
 .card-cifras .cifras-number{
     font-weight:700 ;
-    font-size: 2rem;
-    color: var(--secondary-color);
+    font-size: 3rem;
+    color: var(--secondary-color2);
     transition:  0.4s ease-out;  
 }
 
@@ -282,3 +349,10 @@ img {
     opacity: 1;
 }
 /* Card cifras End */
+
+
+
+/* Adopta */
+#adopta{
+    background-color: var(--background-color);
+}

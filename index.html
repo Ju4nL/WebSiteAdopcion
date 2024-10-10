@@ -13,8 +13,8 @@
 
 <body>
 
-    <header id="cabecera">
-        <div class="contenedor-fluid">
+    <header id="cabecera" class="sticky-top">
+        <div class="contenedor">
             <!-- Barra de navegación -->
             <nav class="nav-bar">
                 <!-- Logo de la empresa -->
@@ -54,11 +54,11 @@
                     </li>
                 </ul> <!-- fin de nav-menu -->
                 <div class="nav-button">
-                    <a class=" button-primary center" href="#">Dona Aquí  </a>
+                    <a class=" button-primary center" href="#">Dona Aquí </a>
                 </div>
-                    
-                
-            </nav> <!-- fin de nav-bar -->          
+
+
+            </nav> <!-- fin de nav-bar -->
         </div>
         <div class="header-shape"></div>
     </header>
@@ -69,49 +69,59 @@
         </div>
     </section>
 
-    <section id="cifras">
+    <section id="cifras" class="padding-y2">
         <div class="contenedor">
             <h2 class="title center">Cambiando vidas de <span>Miwuf</span></h2>
+            <div class="row del-padded">
+                <div class="col card-cifras">
+                    <p class="cifras-number">400</p>
+                    <p>Miwuf adoptados</p>
+                </div>
+                <div class="col card-cifras">
+                    <p class="cifras-number">400</p>
+                    <p>Miwuf esterelizados</p>
+                </div>
+                <div class="col card-cifras">
+                    <p class="cifras-number">S/ 400</p>
+                    <p>Recaudación para Miwuf</p>
+                </div>
+            </div>
 
-            <div class="card-cifras">
-                <p class="cifras-number">400</p>
-                <p>Miwuf adoptados</p>
-            </div>
-            <div class="card-cifras">
-                <p class="cifras-number">400</p>
-                <p>Miwuf esterelizados</p>
-            </div>
-            <div class="card-cifras">
-                <p class="cifras-number">S/ 400</p>
-                <p>Recaudación para Miwuf</p>
-            </div>
         </div>
     </section>
 
-    <section id="nosotros">
+    <section id="nosotros" class="padding-y2">
         <div class="contenedor">
-            <h2 class="title">Quiénes somos y <span>por qué existimos</span></h2>
-            <div>
-                <img src="assets/images/img/cat1.webp" alt="dog" width="200px">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, maiores qui asperiores neque
-                    error odit quia ipsum explicabo at magni ut nemo! Numquam maxime temporibus deleniti vel iusto,
-                    neque saepe.</p>
-            </div>
+            <h2 class="title font-size-xl center">Quiénes somos y <span>por qué existimos</span></h2>
+
+            <p class="center padding-y ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, maiores qui
+                asperiores neque
+                error odit quia ipsum explicabo at magni ut nemo! Numquam maxime temporibus deleniti vel iusto,
+                neque saepe.</p>
         </div>
     </section>
 
 
-    <section id="adopta">
+    <section id="adopta" class="padding-y2">
         <div class="contenedor">
-            <h2 class="title">Un Compañero Espera <span>por Ti</span></h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit rem pariatur, quis ipsum
-                    neque laboriosam asperiores doloribus aliquid dolore, qui dolor autem repellat delectus totam
-                    cumque.
-                    Autem, impedit voluptatum!
-                </p>
-                <img src="assets/images/img/dog1.webp" alt="dog">
+            <div class="row del-padded">
+
+                <div class="col padding-y2">
+                    <h2 class="title font-size-xl">Un Compañero Espera <span>por Ti</span></h2>
+                    <p class="padding-y">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit
+                        rem pariatur, quis ipsum
+                        neque laboriosam asperiores doloribus aliquid dolore, qui dolor autem repellat delectus totam
+                        cumque.
+                        Autem, impedit voluptatum!
+                    </p>
+
+                </div>
+                <div class="col">
+                    <img src="assets/images/img/dog1.webp" alt="dog" class="imgfluid">
+                </div>
+
             </div>
+
         </div>
     </section>
 
@@ -187,11 +197,12 @@
             </div>
         </div>
     </section>
-    
+
     <section id="voluntariado">
         <div class="contenedor">
             <h2 class="title">Únete como <span>Voluntario</span></h2>
-            <p>¿Te gustaría ayudarnos a cuidar de nuestras mascotas en espera? Llena el formulario para ser parte del equipo.</p>
+            <p>¿Te gustaría ayudarnos a cuidar de nuestras mascotas en espera? Llena el formulario para ser parte del
+                equipo.</p>
             <form action="#" method="POST">
                 <input type="text" name="nombre" placeholder="Tu nombre">
                 <input type="email" name="email" placeholder="Tu correo electrónico">
@@ -200,7 +211,7 @@
             </form>
         </div>
     </section>
-    
+
     <section id="newsletter">
         <div class="contenedor">
             <h2>Suscríbete a nuestro <span>Boletín</span></h2>
@@ -214,10 +225,11 @@
     <section id="mapa">
         <div class="contenedor">
             <h2>Encuentra un <span>Refugio</span></h2>
-            <iframe src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
-    
+
 
 
 </body>

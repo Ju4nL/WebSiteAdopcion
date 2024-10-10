@@ -2,20 +2,29 @@
 
 :root{
     --primary-color: #e73a2d;       
-    --secondary-color: #0a303a;     
+    --secondary-color: #1e4b57;    
+    --secondary-color2: #0a303a; 
     --background-color: #fff;
     --background-color-secondary: #d5e6eb;  
     --text-color: #676666; 
     --font-family: "Poppins", sans-serif;
     --font-family-secondary:'Nunito', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --border-radius:0.3rem;
+    --border-radius-secondary:1rem;
     
 }
+
+/* Afectará a todos los elementos de la página HTML (selector universal) */
+* {
+    /* Elimina los márgenes y espaciados predeterminados */
+    margin: 0;
+    padding: 0;
+    
+
+    /* Evita que el tamaño de la caja se vea afectado por el padding y el border */
+    box-sizing: border-box;
+}
+
 
 /* Tipografía base */
  
@@ -24,7 +33,7 @@ body {
     width: 100%;   
     font-size: 16px;
     line-height: 1.5; 
-    font-family: var(--font-family);
+    font-family: var(--font-family) ;
     background-color: var(--background-color-secondary) ;
 }
 
@@ -36,6 +45,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     text-transform: inherit;
 }
+
+
+ 
+
+
+
+/* Elimina el espacio que aparece debajo del objeto */
+img {
+    display: block;
+}
+
+
 
 /* title */
 /* dentro del titulo si tiene span se cambiara de color  */
@@ -57,41 +78,147 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Botones css Start */
+.button-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--background-color);
+    padding: .7rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.4s ease, transform 0.4s ease
+}
 
+
+.button-primary:hover{
+    background-color: var(--secondary-color2); 
+}
+
+.button-primary::after{
+    content: "";
+    background-image: url("../assets/images/slider/patita-white.png");
+    display: inline-block;
+    position: relative; 
+    width: 2rem; 
+    height: 2rem;
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    top: 0; 
+    margin-left: .4rem;
+}
 /* Botones css End */
 
-/* Header Start */
-/* Creamos shape para poner las nubesdebajo */
-header{
+ 
+
+
+
+
+/* Se reemplazara por bootstrap */
+/* Contenedores Start*/
+
+.contenedor-fluid {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.col {
+    /* Permite que las cajas hijo tengan el mismo ancho */
+    flex-basis: 0;
+    flex-grow: 1;
+
+    /* Espacio entre columnas */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.center   {
+    text-align: center;
+}
+
+.imgfluid {
+    width: 100%;
+}
+
+/* Contenedores End*/
+
+
+
+
+/* ------------------------------------------------------ */
+/* ESTILOS PARA FORMATEAR LA BARRA DE NAVEGACIÓN */
+/* ------------------------------------------------------ */
+
+
+#cabecera{
     background-color: var(--background-color);
     box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3);
+    padding: 16px 0; 
+    position: sticky;
 }
+
 .header-shape{
     background-image: url("../assets/images/bg/header_shape.png");
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     width: 100%;
     height: 58px;
     z-index: -1;
     background-repeat: repeat;
-    background-position: center;
+    background-position: center; 
 }
-/* agregamos espaciado */
-.navbar-nav{
+
+
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+    position: relative;
+}
+
+/* Ajusta el tamaño del logo */
+.nav-logo {
+    width: 140px;
+}
+
+/* Barra de menú */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Quita el marcador de viñetas */
     gap: 1rem;
-}
- /* Modificamos nav-link */
-.nav-link{
+
+} 
+
+/* Enlaces individuales del menú */
+.nav-menu-link {
+    text-decoration: none; /* Quita el subrayado */ 
+    font-family: var(--font-family) !important;
     padding: 5px 10px !important;
     display: inline-block !important;
     font-family: var(--font-family) !important;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold  ; 
+    color: var(--secondary-color);
 }
 
-/* ccuando el boton de nav-bar esta activo tendra un background de fondo*/
+
 .active,
-.nav-link:hover{ 
+.nav-menu-link:hover{ 
      position: relative;
     display: inline-block; 
     color: var(--background-color) !important;  
@@ -106,35 +233,18 @@ header{
     max-width: 100%;
     transition: opacity 0.3s linear, transform 0.3s linear;  
     z-index: 1;
+} 
+
+.nav-button{
+    padding-left: 2rem;
+    border-left: 2px solid #d5d2d2;
 }
-
-/* Header End css */
-
-
-
-
-/* Se reemplazara por bootstrap */
-/* Contenedores Start*/
-.contenedor{
-    padding:2rem 0 ;
-    max-width: 80%;
-    margin: auto auto; 
-}
-.contenedor img{
-    max-width: 50%; 
-    margin: auto 0; 
-}
-.center   {
-    text-align: center;
-}
-
-/* Contenedores End*/
 
 /*Card cifras Start*/
 /* Estilos de card de cifras */
 .card-cifras{
     background-color: var(--background-color);
-    border-radius: 1rem;
+    border-radius: var(--border-radius-secondary);
     padding:1rem ;
     margin: 1rem 0;
 }

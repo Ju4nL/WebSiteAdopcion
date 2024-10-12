@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miwuf en casa</title>
+    <link rel="stylesheet" href="../css/stylesblog.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Estilo para la galería de 4 columnas */
+        #galeria-miwuf .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .gallery-item {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            /* Mantiene las proporciones originales de la imagen */
+            max-width: 350px;
+            /* Hace que las imágenes se vean más grandes pero no se deformen */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+            /* Efecto de aumento al pasar el ratón */
+        }
+
+        .info-miwuf {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Efecto de desvanecimiento al cargar */
+        .gallery-item {
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo para el texto */
+        .gallery-item p strong {
+            color: #4CAF50;
+            font-size: 16px;
+        }
+
+        /* Estilo para el contenedor de galería */
+        #galeria-miwuf {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="cabecera" class="sticky-top">
+        <div class="contenedor">
+            <!-- Barra de navegación -->
+            <nav class="nav-bar">
+                <!-- Logo de la empresa -->
+                <div class="nav-logo">
+                    <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
+                </div> <!-- fin de nav-logo -->
+
+                <!-- Barra de menú -->
+                <ul class="nav-menu">
+                    <!-- Elementos del menú -->
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link active" href="#">Miwuf en casa</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="../pages/donaciones.html">Donaciones</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="../pages/blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link " href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="../pages/preguntas-frecuentes.html">Consultas</a>
+                    </li>
+                </ul> <!-- fin de nav-menu -->
+                <div class="nav-button">
+                    <a class=" button-primary center" href="../pages/donaciones.html">Dona Aquí </a>
+                </div>
+
+
+            </nav> <!-- fin de nav-bar -->
+        </div>
+        <div class="header-shape"></div>
+    </header>
+
+
+
+    <!-- Banner -->
+    <section id="banner" class="padding-y">
+        <div class="contenedor">
+            <h1 class="title">Miwuf en Casa</h1>
+            <p class="subtitle">Conoce a nuestros Miwufs que ya disfrutan de un hogar</p>
+        </div>
+    </section>
+
+    <!-- Galería de mascotas adoptadas -->
+    <section id="galeria-miwuf">
+        <div class="contenedor">
+            <h2 class="title">Historias de Adopción</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf1.jpg" alt="Miwuf Adoptado 1">
+                    <p><strong>Max</strong></p>
+                    <p class="info-miwuf">Edad: 3 años | Peso: 8kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia García</p>
+                    <p class="info-miwuf">Distrito: Miraflores</p>
+                    <p>"Max es un perro muy cariñoso y activo, siempre lleno de energía."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf2.png" alt="Miwuf Adoptado 2">
+                    <p><strong>Luna</strong></p>
+                    <p class="info-miwuf">Edad: 2 años | Peso: 6kg</p>
+                    <p class="info-miwuf">Adoptada por: Pareja López</p>
+                    <p class="info-miwuf">Distrito: San Isidro</p>
+                    <p>"Luna es una perrita tranquila que disfruta de los mimos."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf3.png" alt="Miwuf Adoptado 3">
+                    <p><strong>Rocky</strong></p>
+                    <p class="info-miwuf">Edad: 4 años | Peso: 12kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia Torres</p>
+                    <p class="info-miwuf">Distrito: Barranco</p>
+                    <p>"Rocky es un compañero fiel que disfruta de largos paseos."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf4.png" alt="Miwuf Adoptado 4">
+                    <p><strong>Molly</strong></p>
+                    <p class="info-miwuf">Edad: 5 años | Peso: 10kg</p>
+                    <p class="info-miwuf">Adoptada por: Familia Ríos</p>
+                    <p class="info-miwuf">Distrito: Surco</p>
+                    <p>"Molly es una gata muy leal, ideal para un hogar con niños."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf5.png" alt="Miwuf Adoptado 5">
+                    <p><strong>Charlie</strong></p>
+                    <p class="info-miwuf">Edad: 3 años | Peso: 7kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia Vega</p>
+                    <p class="info-miwuf">Distrito: San Borja</p>
+                    <p>"Charlie es un gatito juguetón que adora la compañía de su familia."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf6.png" alt="Miwuf Adoptado 6">
+                    <p><strong>Daisy</strong></p>
+                    <p class="info-miwuf">Edad: 2 años | Peso: 5kg</p>
+                    <p class="info-miwuf">Adoptada por: Familia Gómez</p>
+                    <p class="info-miwuf">Distrito: Callao</p>
+                    <p>"Daisy es una perra amorosa que disfruta de largos paseos por el parque."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf7.png" alt="Miwuf Adoptado 7">
+                    <p><strong>Cooper</strong></p>
+                    <p class="info-miwuf">Edad: 3 años | Peso: 9kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia Mendoza</p>
+                    <p class="info-miwuf">Distrito: Los Olivos</p>
+                    <p>"Cooper es un perrito amigable que adora jugar con otros perros."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf8.png" alt="Miwuf Adoptado 8">
+                    <p><strong>Rex</strong></p>
+                    <p class="info-miwuf">Edad: 4 años | Peso: 13kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia Herrera</p>
+                    <p class="info-miwuf">Distrito: Lince</p>
+                    <p>"Rex es un perro obediente que disfruta de su tiempo en familia."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf9.png" alt="Miwuf Adoptado 9">
+                    <p><strong>Chester</strong></p>
+                    <p class="info-miwuf">Edad: 1 año | Peso: 4kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia Ruiz</p>
+                    <p class="info-miwuf">Distrito: Pueblo Libre</p>
+                    <p>"Chester es un perrito activo y lleno de energía, ideal para un hogar con niños."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf10.png" alt="Miwuf Adoptado 10">
+                    <p><strong>Jack</strong></p>
+                    <p class="info-miwuf">Edad: 2 años | Peso: 6.5kg</p>
+                    <p class="info-miwuf">Adoptado por: Familia Salazar</p>
+                    <p class="info-miwuf">Distrito: Magdalena</p>
+                    <p>"Jack es un perrito cariñoso y siempre está buscando compañía."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf11.png" alt="Miwuf Adoptado 11">
+                    <p><strong>Fiona</strong></p>
+                    <p class="info-miwuf">Edad: 5 años | Peso: 11kg</p>
+                    <p class="info-miwuf">Adoptada por: Familia Rodríguez</p>
+                    <p class="info-miwuf">Distrito: Chorrillos</p>
+                    <p>"Fiona es una perra muy tranquila que adora los mimos."</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/img/MiWufPhotos/miwuf12.png" alt="Miwuf Adoptado 12">
+                    <p><strong>Lucy</strong></p>
+                    <p class="info-miwuf">Edad: 6 años | Peso: 7.5kg</p>
+                    <p class="info-miwuf">Adoptada por: Familia Pérez</p>
+                    <p class="info-miwuf">Distrito: Surquillo</p>
+                    <p>"Lucy es una perrita tranquila y muy dulce, siempre en busca de amor."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contenedor">
+            <p>© 2024 Miwuf | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

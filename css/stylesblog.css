@@ -1,49 +1,235 @@
-:root{
-    --primary-color: #e73a2d;       
-    --secondary-color: #0a303a;     
-    --color3: #fff;
-    --color4: #d5e6eb;  
-    --text-color: #676666; 
-    --font-family: "Poppins", sans-serif;
-    --font-family-secondary:'Nunito', sans-serif;
+.cont {
+    max-width: 1200px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade relleno alrededor del contenido dentro del contenedor */
+    display: flex; /* Habilita Flexbox */
+    justify-content: space-between; /* Separa los elementos horizontalmente */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    background-color: var(--color4);
-    margin: 0;
-    padding: 0;
+.full-width-image {
+    width: 100%; /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen no tenga espacio extra debajo */
+    margin-bottom: 20px; /* Espacio debajo de la imagen antes del texto */
 }
 
- 
 
-.card {
-    background-color: var(--color3);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    padding: 15px;
+/* Estilos para la sección de la entrada del blog */
+.blog-entry {
+    background-color: #fff;
+    padding: 20px; 
+    margin-top: 20px; /* Añade margen superior para separar de elementos anteriores */
 }
 
-.card img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
+/* Estilo para el título de la entrada del blog */
+.titulo {
+    font-size: 24px; 
+    color: var(--secondary-color2);
 }
 
-.card-content {
-    padding: 15px;
+/* Estilos para la sección de fecha y autor */
+.fecha {
+    font-size: 16px;
+    color: var(--text-color2); 
+    margin-bottom: 10px; /* Añade margen inferior */
 }
 
-.card h3 {
-    color:var(--primary-color);
-    font-size: 1.2em;
+/* Estilo para destacar al autor con negrita */
+.author {
+    font-weight: bold;
 }
 
-.card p {
-    color: var(--secondary-color);
-    font-size: 0.9em;
-}
-
-.card small {
+/* Estilo para el resumen de la entrada */
+.text {
+    margin-bottom: 20px; /* Añade margen inferior antes del botón */
     color: var(--text-color);
+}
+
+/* Estilos para el botón de 'Leer más' */
+.boton-leer {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff; /* Establece el color del texto a blanco */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    border-radius: var(--border-radius); /* Aplica un borde para esquinas redondeadas */
+}
+
+/* Cambia el color de fondo al pasar el ratón */
+.boton-leer:hover {
+    background-color: var(--secondary-color);
+}
+
+/*--------------- Estilos para el buscador y categorias ------------*/
+
+/* Estilos generales para el contenedor principal y la barra lateral */
+
+.contenido-principal {
+    flex: 0 0 70%; /* Ocupa el 70% del espacio disponible */
+    padding-right: 20px; /* Espacio entre el contenido principal y la barra lateral */
+}
+
+.barra-lateral {
+    flex: 0 0 25%; /* Ocupa el 25% del espacio disponible */
+    background-color: var(--background-color-secondary); /* Color de fondo secundario */
+    padding: 20px;
+}
+
+.widget {
+    background: var(--background-color); /* Fondo blanco */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-secondary);
+    font-family: var(--font-family-secondary);
+}
+
+.widget h3 {
+    margin-bottom: 20px; /* Aumenta el margen inferior para separar del contenido subsiguiente */
+    padding-bottom: 5px; /* Añade un poco de padding para más espacio visual */
+    border-bottom: 1px solid #f4f1EA; /*Añade una línea para definir visualmente el área del título */
+    font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+.search-widget input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+}
+
+.search-widget button {
+    background-color: var(--primary-color);
+    color: #f4f1EA;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.search-widget form {
+    display: flex; /* Ajusta el formulario para usar flexbox */
+    align-items: center; /* Alinea verticalmente los elementos del formulario */
+}
+
+.categories-widget ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories-widget li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-family: var(--font-family-secondary);
+}
+
+.categories-widget li a:hover {
+    color: var(--primary-color);
+}
+
+.quote-box {
+    display: flex; /* Habilita el uso de Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    margin: 20px 0; /* Margen superior e inferior para separar de otros elementos */
+    padding: 20px; /* Relleno interno para espacio alrededor del texto */
+    background-color: #f4f1EA; /* Color de fondo de la caja */
+    border-left: 5px solid var(--primary-color); /* Borde decorativo a la izquierda */
+    border-radius: var(--border-radius-secondary); /* Redondea las esquinas de la caja */
+}
+
+.quote-text {
+    font-family: var(--font-family-secondary); /* Fuente secundaria para el texto de la cita */
+    font-size: 16px; /* Tamaño de la fuente para el texto */
+    color: var(--text-color); /* Color del texto */
+    text-align: center; /* Alineación central del texto */
+    margin-bottom: 10px; /* Espacio antes del nombre del autor */
+}
+
+.quote-author {
+    font-family: var(--font-family); /* Fuente principal para el autor */
+    font-size: 14px; /* Tamaño de la fuente del autor */
+    color: var(--secondary-color2); /* Color del texto del autor */
+    text-align: center; /* Alineación central del nombre del autor */
+    font-style: italic; /* Estilo en cursiva para diferenciar al autor */
+}
+
+/*--------------- Estilos para el pie de pagina ------------*/
+
+
+.footer {
+    background: #f4f1EA; /* Color de fondo predeterminado para el pie de página */
+    color: var(--background-color); /* Color del texto */
+    padding: 20px 0; /* Relleno vertical */
+    font-family: var(--font-family); /* Fuente del pie de página */
+    position: relative; /* Importante para el posicionamiento absoluto de los hijos */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Ancho máximo para el contenido del pie de página */
+    margin: 0 auto; /* Centrado horizontal */
+    position: relative; /* Para el z-index del contenido sobre la onda */
+    z-index: 1; /* Asegura que el contenido esté sobre la onda */
+}
+
+/* Ajustes existentes continúan aquí... */
+
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 160px;
+}
+
+.footer-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
 }

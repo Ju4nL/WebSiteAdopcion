@@ -7,6 +7,9 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/stylesblog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                 <ul class="nav-menu">
                     <!-- Elementos del menú -->
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link active" href="#">Inicio</a>
+                        <a class="nav-menu-link" href="../index.html">Inicio</a>
                     </li>
 
                     <li class="nav-menu-item">
@@ -36,7 +39,7 @@
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../pages/blog.html">Blog</a>
+                        <a class="nav-menu-link active" href="../pages/blog.html">Blog</a>
                     </li>
 
                     <li class="nav-menu-item">
@@ -69,13 +72,27 @@
 
     <main class="cont">
         <div class="contenido-principal">
-            <img src="../assets/images/blog/perito2.jpg" alt="Dogs playing" class="full-width-image">
-            <section class="blog-entry">
-                <h2 class="titulo">Todo lo que tu mascota necesita</h2>
-                <p class="fecha">Set 13, 2024 | <span class="author">Admin</span></p>
-                <p class="text">El perro doméstico es un descendiente domesticado del lobo. El perro derivó de un lobo antiguo y extinto, y el lobo gris moderno es el pariente vivo más cercano del perro. El perro fue la primera especie domesticada por cazadores-recolectores.</p>
-                <a href="#" class="boton-leer">Leer más</a>
-            </section>
+            <div class="card-noticias">
+                <img src="../assets/images/blog/perito2.jpg" alt="noticia" class="imgfluid rounded">
+                <section class="blog-entry">
+                    <div class="breadcrumbs">
+                        <ol>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                <a href="">Admin</a>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <i class="fa-regular fa-bell"></i>
+                                <a href="">13 de Setiembre de 2022</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <h2 class="titulo">Todo lo que tu mascota necesita</h2>
+                    <p class="text">El perro doméstico es un descendiente domesticado del lobo. El perro derivó de un lobo antiguo y extinto, y el lobo gris moderno es el pariente vivo más cercano del perro. El perro fue la primera especie domesticada por cazadores-recolectores.</p>
+                    <a class="button-secondary">leer más</a>
+                </section>
+            </div>
             <div class="quote-box">
                 <p class="quote-text">"Vacunamos los perros para que comiencen desarrollar inmunidad. Hasta que un cachorro haya recibido toda su serie de vacunas, o hasta que un perro adulto esté al día con sus vacunas, su exposición al parvovirus"</p>
                 <p class="quote-author">— Jefferson I. Castillo</p>

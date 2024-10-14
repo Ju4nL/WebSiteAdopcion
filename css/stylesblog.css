@@ -165,14 +165,19 @@
 
 
 .footer {
-    background: #f4f1EA; /* Color de fondo predeterminado para el pie de página */
-    color: var(--background-color); /* Color del texto */
+    background: #f4f1EA; 
+    color: var(--background-color); 
     padding: 20px 0; /* Relleno vertical */
     font-family: var(--font-family); /* Fuente del pie de página */
     position: relative; /* Importante para el posicionamiento absoluto de los hijos */
     overflow: hidden; /* Oculta cualquier contenido que desborde */
 }
 
+.footer-section .llamar {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -182,9 +187,6 @@
     position: relative; /* Para el z-index del contenido sobre la onda */
     z-index: 1; /* Asegura que el contenido esté sobre la onda */
 }
-
-/* Ajustes existentes continúan aquí... */
-
 
 .footer-section {
     flex: 1;
@@ -232,4 +234,14 @@
     height: auto;
     display: block;
     border-radius: var(--border-radius);
+}
+
+/* Cambia el color de los íconos de redes sociales */
+.social-links a {
+    color: var(--secondary-color); 
+    transition: color 0.3s ease; 
+}
+
+.social-links a:hover {
+    color: var(--primary-color); 
 }

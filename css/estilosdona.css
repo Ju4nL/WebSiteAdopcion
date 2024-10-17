@@ -50,3 +50,28 @@ body ´{
     font-size: 22px;
     color: #e73a2d;
 }
+
+#caja{
+    background-color: white;
+    width: 200px;
+    text-align: center;
+}
+
+#cuadrado{
+    top: -10px;
+    opacity: 1;
+}
+
+.padding-a {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+
+}
+
+.col-63 {
+    flex-basis: 63.33%;
+    max-width: 63.33%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

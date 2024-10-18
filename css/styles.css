@@ -489,11 +489,21 @@ div {
     background-attachment: fixed;  /* Fija la imagen en la caja */
 }
 
+#donaciones .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 #donaciones .title,
 #donaciones p{
     color: var(--background-color-secondary);
 }
 
+#donaciones button{
+    border: none; 
+    margin-top: 1rem;
+}
 /* nuestro-equipo veterinarios */
 
 .veterinario {

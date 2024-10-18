@@ -15,16 +15,16 @@
    
     <header id="cabecera" class="sticky-top">
         <div class="contenedor">
-            <!-- Barra de navegación -->
-            <nav class="nav-bar">
-                <!-- Logo de la empresa -->
-                <div class="nav-logo">
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="barra">
+                <!-- LOGO -->
+                <div class="logo">
                     <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
-                </div> <!-- fin de nav-logo -->
+                </div>
 
-                <!-- Barra de menú -->
-                <ul class="nav-menu">
-                    <!-- Elementos del menú -->
+                <!-- BARRA DE MENÚ -->
+                <ul class="menu">
+                    <!-- OPCIONES DEL MENÚ -->
                     <li class="nav-menu-item">
                         <a class="nav-menu-link" href="../index.html">Inicio</a>
                     </li>
@@ -50,67 +50,57 @@
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link active" href="../pages/preguntas-frecuentes.html">Consultas</a>
+                        <a class="nav-menu-link active" href="../pages/preguntas-frecuentes.html">consultas</a>
                     </li>
-                </ul> <!-- fin de nav-menu -->
+                </ul> 
                 <div class="nav-button">
                     <a class=" button-primary center" href="../pages/donaciones.html">Dona Aquí </a>
                 </div>
+            
+            </nav>
 
-
-            </nav> <!-- fin de nav-bar -->
         </div>
+
         <div class="header-shape"></div>
+
     </header>
+  
+    <!-- PREGUNTAS -->
 
+    <div class="seccion-pf">
+        <div class="titulo-pf">Preguntas Frecuentes</div>
 
-    <div class="faq-section">
-        <div class="faq-title">Preguntas Frecuentes</div>
-
-        <div class="faq-item">
-            <div class="faq-question">¿Qué es WUF?</div>
-            <div class="faq-answer">
+        <div class="articulo">
+            <div class="cuestionario">¿Qué es WUF?</div>
+            <div class="respuesta">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est labore quo repudiandae eos blanditiis modi quos ducimus laboriosam, debitis fugit architecto tempora culpa placeat. Atque suscipit asperiores nobis reiciendis.
             </div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">¿Cómo se sostiene económicamente WUF?</div>
-            <div class="faq-answer">
+        <div class="articulo">
+            <div class="cuestionario">¿Cómo se sostiene económicamente WUF?</div>
+            <div class="respuesta">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse eius. Hic minima illum sint eligendi vero veniam dolor facere quidem tenetur, officiis est. Molestiae amet recusandae animi magnam ut?
             </div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">¿Con que productos puedo ayudar a WUF</div>
-            <div class="faq-answer">
+        <div class="articulo">
+            <div class="cuestionario">¿Con que productos puedo ayudar a WUF</div>
+            <div class="respuesta">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit, nulla nemo, repudiandae modi unde, praesentium minus sit nihil magni assumenda aliquam sint sapiente officia? Minus architecto officiis excepturi perspiciatis!
             </div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">¿Cómo puedo realizar una donación?</div>
-            <div class="faq-answer">
+        <div class="articulo">
+            <div class="cuestionario">¿Cómo puedo realizar una donación?</div>
+            <div class="respuesta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id sint quas repellendus quo deserunt, nemo, unde laudantium eos dolorem nam dicta odio eveniet adipisci voluptas quod officia omnis accusamus!
             </div>
         </div>
 
     </div>
-    <!-- borrarlo no va para este avance -->
-    <script>
-        const faqItems = document.querySelectorAll('.faq-question');
 
-        faqItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const answer = item.nextElementSibling;
-                if (answer.style.display === "none" || answer.style.display === "") {
-                    answer.style.display = "block";
-                } else {
-                    answer.style.display = "none";
-                }
-            });
-        });
-    </script>
+    <!-- PIE DE PAGINA  -->
         <footer class="footer">
             <div class="footer-content cont">
                 <div class="footer-section">

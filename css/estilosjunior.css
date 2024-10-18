@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #e73a2d;       
+    --secondary-color: #1e4b57;    
+    --secondary-color2: #0a303a; 
+    --background-color: #fff;
+    --background-color-secondary: #d5e6eb;  
+    --text-color: #676666; 
+    --text-color2:#838181;
+    --font-family: "Poppins", sans-serif;
+    --font-family-secondary:'Nunito', sans-serif;
+    --border-radius:0.3rem;
+    --border-radius-secondary:1rem;
+    
+}
+
+#cabecera{
+    background-color: var(--background-color);
+    box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3);
+    padding: 16px 0; 
+    position: sticky;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/* Barra de navegaciónn */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+    position: relative;
+}
+
+/* Ajusta el tamaño del logo */
+.nav-logo {
+    width: 140px;
+}
+/* Barra de menú */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Quita el marcador de viñetas */
+    gap: 1rem;
+
+} 
+
+.header-shape {
+    background-image: url("../assets/images/bg/header_shape.png");
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    height: 58px;
+    z-index: -1;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+.nav-button{
+    padding-left: 2rem;
+    border-left: 2px solid #d5d2d2;
+}
+.active,
+.nav-menu-link:hover{ 
+     position: relative;
+    display: inline-block; 
+    color: var(--background-color) !important;  
+    font-weight: bold;   
+    background-color: transparent; 
+    background-image: url('../assets/images/slider/arrow_bg.png');  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    border: none; 
+    text-align: center;
+    max-width: 100%;
+    transition: opacity 0.3s linear, transform 0.3s linear;  
+    z-index: 1;
+} 
+.grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.miembros {
+    background-color: white;
+    color: #002b55;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+.miembros img {
+    width: 100%;
+    border-radius: 50%;
+}
+.miembros h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+}
+.miembros p {
+    font-size: 0.9em;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.team-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #e73a2d;
+    color: white;
+}
+.team-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h1{
+    color:var(--background-color);
+}
+
+.footer {
+    background: #f4f1EA; 
+    color: var(--background-color); 
+    padding: 20px 0; /* Relleno vertical */
+    font-family: var(--font-family); /* Fuente del pie de página */
+    position: relative; /* Importante para el posicionamiento absoluto de los hijos */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+    max-width: 1200px; /* Ancho máximo para el footer */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.footer-section .llamar {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Ancho máximo para el contenido del pie de página */
+    margin: 0 auto; /* Centrado horizontal */
+    position: relative; /* Para el z-index del contenido sobre la onda */
+    z-index: 1; /* Asegura que el contenido esté sobre la onda */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 160px;
+}
+
+.footer-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+/* Cambia el color de los íconos de redes sociales */
+.social-links a {
+    color: var(--secondary-color); 
+    transition: color 0.3s ease; 
+}
+
+.social-links a:hover {
+    color: var(--primary-color); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+        .faq-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: var(#ffffff);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .faq-title {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 15px;
+            margin: 5px 0;
+            background-color: #e73a2d;
+            border-radius: 4px;
+            font-size: 1.2em;
+            
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            margin-top: -10px;
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 4px;
+        }

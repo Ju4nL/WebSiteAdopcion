@@ -17,255 +17,259 @@
 
 /* BARRA DE NAVEGACIÓN */
 
-#cabecera{
+#cabecera {
     background-color: var(--background-color);
-    box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3);
-    padding: 16px 0; 
-    position: sticky;
+    box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3); /* Añade una sombra al encabezado */
+    padding: 16px 0; /* Añade un relleno superior e inferior de 16px */
+    position: sticky; /* Hace que el encabezado se mantenga fijo al hacer scroll */
 }
 
 .sticky-top {
     position: sticky;
-    top: 0;
-    z-index: 1020;
+    top: 0; /* Fija el elemento en la parte superior */
+    z-index: 1020; /* Asegura que el encabezado esté por encima de otros elementos */
 }
-
 
 .barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    flex-direction: row; /* Alinea los elementos en una fila */
+    justify-content: space-between; /* Espacia los elementos de manera uniforme */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    position: relative; /* Posiciona el elemento de manera relativa para los hijos */
 }
 
-
 .logo {
-    width: 140px;
+    width: 140px; /* Establece el ancho del logo */
 }
 
 .menu {
-    display: flex;
+    display: flex; /* Utiliza flexbox para el menú */
     flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-
-} 
+    list-style: none; /* Quita los marcadores de viñetas de la lista */
+    gap: 1rem; /* Añade un espaciado de 1rem (16px) entre los elementos del menú */
+}
 
 .header-shape {
-    background-image: url("../assets/images/bg/header_shape.png");
-    position: absolute;
-    top: 3rem;
-    width: 100%;
-    height: 58px;
-    z-index: -1;
-    background-repeat: repeat;
-    background-position: center;
+    background-image: url("../assets/images/bg/header_shape.png"); /* Establece una imagen de fondo */
+    position: absolute; /* Posiciona el elemento de manera absoluta */
+    top: 3rem; /* Coloca el elemento a 3rem (48px) desde la parte superior */
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    height: 58px; /* Establece la altura del elemento */
+    z-index: -1; /* Coloca el elemento detrás de otros elementos */
+    background-repeat: repeat; /* Repite la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */
 }
 
-
-.nav-button{
-    padding-left: 2rem;
-    border-left: 2px solid #d5d2d2;
+.nav-button {
+    padding-left: 2rem; /* Añade un relleno a la izquierda de 2rem (32px)*/
+    border-left: 2px solid #d5d2d2; /* Añade un borde a la izquierda */
 }
-.active,
-.nav-menu-link:hover{ 
-     position: relative;
-    display: inline-block; 
-    color: var(--background-color) !important;  
-    font-weight: bold;   
-    background-color: transparent; 
-    background-image: url('../assets/images/slider/arrow_bg.png');  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;  
-    border: none; 
-    text-align: center;
-    max-width: 100%;
-    transition: opacity 0.3s linear, transform 0.3s linear;  
-    z-index: 1;
-} 
+
+.active, .nav-menu-link:hover {
+    position: relative; /* Posiciona el elemento de manera relativa */
+    display: inline-block; /* Hace que el elemento se comporte como un bloque en línea */
+    color: var(--background-color) !important; 
+    font-weight: bold; /* Establece el texto en negrita */
+    background-color: transparent; /* Establece un fondo transparente */
+    background-image: url('../assets/images/slider/arrow_bg.png'); /* Establece una imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-size: 100% 100%; /* Ajusta la imagen de fondo para que ocupe todo el espacio */
+    border: none; /* Quita el borde del elemento */
+    text-align: center; /* Centra el texto dentro del elemento */
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+    transition: opacity 0.3s linear, transform 0.3s linear; /* Añade una transición suave para opacidad y transformación */
+    z-index: 1; /* Asegura que el elemento esté por encima de otros elementos */
+}
+
 .grupo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.miembros {
-    background-color: white;
-    color: #002b55;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 15px;
-    width: 200px;
-    text-align: center;
-}
-.miembros img {
-    width: 100%;
-    border-radius: 50%;
-}
-.miembros h3 {
-    font-size: 1.2em;
-    margin: 10px 0 5px 0;
-}
-.miembros p {
-    font-size: 0.9em;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-.team-section {
-    text-align: center;
-    padding: 50px;
-    background-color: #e73a2d;
-    color: white;
-}
-.team-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
-h1{
-    color:var(--background-color);
+.miembros {
+    background-color: white; 
+    color: #002b55; /* Establece el color del texto */
+    border-radius: 10px; /* Añade bordes redondeados */
+    margin: 10px; /* Añade un margen de 10px alrededor del elemento */
+    padding: 15px; /* Añade un relleno interno de 15px */
+    width: 200px; /* Establece un ancho fijo de 200px */
+    text-align: center; /* Centra el texto dentro del elemento */
+}
+
+.miembros img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+.miembros h3 {
+    font-size: 1.2em; /* Establece el tamaño de fuente del nombre del miembro */
+    margin: 10px 0 5px 0; /* Añade márgenes superior e inferior */
+}
+
+.miembros p {
+    font-size: 0.9em; /* Establece el tamaño de fuente de la descripción del miembro */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
+    background-color: #f9f9f9; /* Establece el color de fondo del cuerpo */
+    margin: 0; /* Elimina el margen del cuerpo */
+    padding: 0; /* Elimina el relleno del cuerpo */
+}
+
+.team-section {
+    text-align: center; /* Centra el texto dentro de la sección del equipo */
+    padding: 50px; /* Añade un relleno de 50px alrededor de la sección */
+    background-color: #e73a2d; /* Establece el color de fondo de la sección del equipo */
+    color: white; /* Establece el color del texto en blanco */
+}
+
+.team-section h1 {
+    font-size: 2.5em; /* Establece el tamaño de fuente del título */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+}
+
+h1 {
+    color: var(--background-color); /* Establece el color del título usando una variable CSS */
 }
 
 /* PIE DE PAGINA */
 
 .footer {
-    background: #f4f1EA; 
-    color: var(--background-color); 
-    padding: 20px 0;
-    font-family: var(--font-family);
-    position: relative;
-    overflow: hidden;
-    max-width: 1200px;
-    margin: 0 auto;
+    background: #f4f1EA; /* Establece el color de fondo del pie de página */
+    color: var(--background-color); /* Establece el color del texto usando una variable CSS */
+    padding: 20px 0; /* Añade un relleno vertical de 20px */
+    font-family: var(--font-family); /* Establece la fuente del pie de página usando una variable CSS */
+    position: relative; /* Posiciona el pie de página de manera relativa */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+    max-width: 1200px; /* Establece un ancho máximo para el pie de página */
+    margin: 0 auto; /* Centra el pie de página horizontalmente */
 }
 
 .footer-section .llamar {
-    color: var(--primary-color);
-    font-size: 18px;
-    margin-bottom: 10px;
+    color: var(--primary-color); /* Establece el color del texto usando una variable CSS */
+    font-size: 18px; /* Establece el tamaño de fuente */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
+
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    justify-content: space-between; /* Espacia los elementos de manera uniforme */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    max-width: 1200px; /* Establece un ancho máximo para el contenido del pie de página */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    position: relative; /* Posiciona el contenido de manera relativa */
+    z-index: 1; /* Asegura que el contenido esté por encima de otros elementos */
 }
 
 .footer-section {
-    flex: 1;
-    padding: 0 20px;
-    min-width: 160px;
+    flex: 1; /* Permite que la sección del pie de página crezca para ocupar el espacio disponible */
+    padding: 0 20px; /* Añade un relleno lateral de 20px */
+    min-width: 160px; /* Establece un ancho mínimo para la sección */
 }
 
 .footer-section h3 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    font-size: 18px;
+    color: var(--secondary-color); /* Establece el color del texto usando una variable CSS */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+    font-size: 18px; /* Establece el tamaño de fuente */
 }
 
 .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Quita los marcadores de viñetas de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
 }
 
 .footer-section ul li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 2;
-    display: block;
+    color: var(--text-color); /* Establece el color del texto del enlace usando una variable CSS */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 14px; /* Establece el tamaño de fuente del enlace */
+    line-height: 2; /* Establece la altura de línea para el enlace */
+    display: block; /* Hace que el enlace ocupe todo el espacio */
 }
 
 .footer-section ul li a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Cambia el color del enlace al pasar el ratón usando una variable CSS */
 }
 
 .social-links a {
-    font-size: 1.5em;
-    margin-right: 10px;
+    font-size: 1.5em; /* Establece el tamaño de fuente de los enlaces de redes sociales */
+    margin-right: 10px; /* Añade un margen a la derecha de 10px */
 }
 
 .instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    display: grid; /* Utiliza grid para la disposición de los elementos */
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    gap: 10px; /* Añade un espacio de 10px entre los elementos de la cuadrícula */
 }
 
 .instagram-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    border-radius: var(--border-radius); /* Aplica un borde redondeado usando una variable CSS */
 }
 
-
+/* Cambia el color de los íconos de redes sociales */
 .social-links a {
-    color: var(--secondary-color); 
-    transition: color 0.3s ease; 
+    color: var(--secondary-color); /* Establece el color del texto usando una variable CSS */
+    transition: color 0.3s ease; /* Añade una transición suave al color */
 }
 
 .social-links a:hover {
-    color: var(--primary-color); 
+    color: var(--primary-color); /* Cambia el color al pasar el ratón usando una variable CSS */
 }
 
 /* PREGUNTAS FRECUENTES */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f5;
-    color: #333;
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
+    background-color: #f0f0f5; /* Establece el color de fondo del cuerpo */
+    color: #333; /* Establece el color del texto del cuerpo */
 }
 
 .seccion-pf {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 800px; /* Establece un ancho máximo de 800px */
+    margin: 50px auto; /* Centra la sección con márgenes superior e inferior de 50px */
+    padding: 20px; /* Añade un relleno de 20px */
     background-color: var(#ffffff);
-    color: white;
-    border-radius: 8px;        
+    color: white; /* Establece el color del texto en blanco */
+    border-radius: 8px; /* Añade bordes redondeados */
 }        
 
 .titulo-pf {
-    color: var(--secondary-color);
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
-    font-weight: bold;
+    color: var(--secondary-color); 
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+    font-size: 2em; /* Establece el tamaño de fuente del título */
+    font-weight: bold; /* Establece el texto en negrita */
 }
 
 .articulo {
-    margin-bottom: 15px; 
-    border: 1px solid #e0e0e0; 
-    border-radius: 5px; 
-    overflow: hidden; 
-    transition: background 0.3s; 
-    background: #f1f1f1; 
+    margin-bottom: 15px; /* Añade un margen inferior de 15px entre los artículos */
+    border: 1px solid #e0e0e0; /* Establece un borde gris claro alrededor del artículo */
+    border-radius: 5px; /* Añade bordes redondeados al artículo */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    transition: background 0.3s; /* Añade una transición suave al fondo */
+    background: #f1f1f1; /* Establece un fondo claro para el artículo */
 }
 
 .cuestionario {
-            
-    cursor: pointer;
-    padding: 15px;
-    margin: 5px 0;
-    background-color: #e73a2d;
-    border-radius: 4px;
-    font-size: 1.2em;
+    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el elemento */
+    padding: 15px; /* Añade un relleno de 15px */
+    margin: 5px 0; /* Añade márgenes superior e inferior de 5px */
+    background-color: #e73a2d; /* Establece el color de fondo del cuestionario */
+    border-radius: 4px; /* Añade bordes redondeados al cuestionario */
+    font-size: 19.2px; 
 }
 
 .respuesta {
-    display: none;
-    padding: 15px;
-    margin-top: -10px;
-    background-color: #ffffff;
-    color: #333;
-    border-radius: 4px;
+    display: none; /* Oculta la respuesta por defecto */
+    padding: 15px; /* Añade un relleno de 15px */
+    margin-top: -10px; /* Añade un margen negativo superior de 10px */
+    background-color: #ffffff; /* Establece el color de fondo de la respuesta en blanco */
+    color: #333; /* Establece el color del texto en la respuesta */
+    border-radius: 4px; /* Añade bordes redondeados a la respuesta */
 }

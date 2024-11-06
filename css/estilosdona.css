@@ -67,7 +67,7 @@ body {
     padding-bottom: 0rem;
 
 }
-
+/*Permite que las cajas hijo esten alineados*/
 .col-63 {
     flex-basis: 63.33%;
     max-width: 63.33%;

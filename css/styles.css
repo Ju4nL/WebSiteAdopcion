@@ -90,6 +90,7 @@ img {
     top: -10px;
 }
 
+ 
 
 /* Botones css Start */
 .button-primary {
@@ -104,6 +105,7 @@ img {
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
     transition: background-color 0.4s ease, transform 0.4s ease
 }
 
@@ -461,23 +463,51 @@ div {
 }
 
 /* Adopta mascota */
+#adoptar-mascota{
+    background-image: url(../assets/images/bg/counter_bg.jpg);
+}
 #adoptar-mascota .caracteristicas li { 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; 
+}
+#adoptar-mascota   .subtitle{
+    width: 60%;
+}
+#adoptar-mascota  .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     justify-content: center;
-    align-items: end;
-    margin: 2rem 0.5rem;
+    gap: 2rem;
+}
+#adoptar-mascota .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#adoptar-mascota .caracteristicas p {
+    height: 1.5rem;
+}
+
+#adoptar-mascota .item-caracteristica{
+    background-color: var(--background-color);
+    font-size: 3rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: var(--border-radius-secondary);
+    color: var(--primary-color); 
+    box-shadow: 0px 8px 50px -6px rgba(0, 0, 0, 0.1); 
+    transition:  all 0.3s ease;  ;
+}
+
+ 
+#adoptar-mascota .item-caracteristica:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
  
-
-#adoptar-mascota .caracteristicas img {
-    width: 10rem; 
-}
-
-#adoptar-mascota .caracteristicas p {
-    height: 1rem;
-}
-
 /* Donaciones */
 
 #donaciones {
@@ -485,8 +515,7 @@ div {
     background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url('../assets/images/banner/banner.avif');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right center;
-    background-attachment: fixed;  /* Fija la imagen en la caja */
+    background-position: right center; 
 }
 
 #donaciones .contenedor{

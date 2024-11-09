@@ -72,8 +72,7 @@ img {
 
 /* title */
 /* dentro del titulo si tiene span se cambiara de color  */
-.title span,
-.title-span {
+.title span {
     color: var(--primary-color);
 }
 
@@ -216,18 +215,8 @@ img {
     padding-bottom: 2rem;
 }
 
-.padding-1t{
-    padding-top: 1rem;
-}
-
 .contenedor {
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contenedor-short {
-    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -391,7 +380,7 @@ div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: none;
+    border: none; 
     text-align: center;
     max-width: 100%;
     transition: opacity 0.3s linear, transform 0.3s linear;
@@ -409,7 +398,7 @@ div {
     background-image: url('../assets/images/bg/counter_bg.jpg');
 }
 
-.card {
+.card-cifras {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -420,7 +409,7 @@ div {
     margin: 1rem 1rem;
 }
 
-.card .cifras-number {
+.card-cifras .cifras-number {
     font-weight: 700;
     font-size: 3rem;
     color: var(--secondary-color2);
@@ -428,7 +417,7 @@ div {
 }
 
 /* Agregamos al final la imagen de pata y lo ponemos opacity 0 para que no se vea */
-.card .cifras-number::after {
+.card-cifras .cifras-number::after {
     content: "";
     background-image: url("../assets/images/slider/patita.png");
     display: inline-block;
@@ -443,12 +432,12 @@ div {
 }
 
 /* cambiamos de color al pasar el cursor */
-.card .cifras-number:hover {
+.card-cifras .cifras-number:hover {
     color: var(--primary-color);
 }
 
 /* Aparecemos la pata al pasar el cursor */
-.card .cifras-number:hover::after {
+.card-cifras .cifras-number:hover::after {
     top: -10px;
     opacity: 1;
 }
@@ -508,6 +497,7 @@ div {
     color: var(--background-color);
 }
  
+<<<<<<< Updated upstream
 /* Donaciones */
 
 #donaciones {
@@ -517,72 +507,19 @@ div {
     background-size: cover;
     background-position: right center; 
 }
+=======
 
-#donaciones .contenedor{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-#donaciones .title,
-#donaciones p{
-    color: var(--background-color-secondary);
+#adoptar-mascota .caracteristicas img {
+    width: 10rem; 
 }
 
-#donaciones button{
-    border: none; 
-    margin-top: 1rem;
-}
-/* nuestro-equipo veterinarios */
-
-.veterinario {
-    position: relative;
+#adoptar-mascota .caracteristicas p {
+    height: 1rem;
 }
 
-.veterinario-descripcion {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 84%;
-    padding: 0 3rem;
-    background-color: rgba(255, 255, 255,0.5); /* Fondo oscuro semi-transparente */
-    z-index: 2; /* Asegura que esté encima de otros elementos */
-    color: #fff; /* Texto en color blanco para contraste */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: var(--border-radius-secondary);
-    opacity: 0; /* Oculta la descripción por defecto */
-    transition: opacity 0.5s ease; /* Transición suave */
-}
 
-.veterinario:hover .veterinario-descripcion {
-    opacity: 1; /* Muestra la descripción al hacer hover */
-}
+>>>>>>> Stashed changes
 
-.veterinario-nombres{
-    position: relative;
-    top: -30px;
-    margin: 0 1rem;
-    z-index: 3;
-}
-
-.veterinario-descripcion p{
-    
-    color: var(--secondary-color2) ;
-}
-.veterinario-descripcion a{ 
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.veterinario-descripcion .button-primary{
-    color: var(--background-color);
-}
- 
 /* Noticias */
 #noticias {
     background-color: var(--background-color);

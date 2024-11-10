@@ -497,7 +497,7 @@ div {
     color: var(--background-color);
 }
  
-<<<<<<< Updated upstream
+/* Updated upstream */
 /* Donaciones */
 
 #donaciones {
@@ -507,7 +507,6 @@ div {
     background-size: cover;
     background-position: right center; 
 }
-=======
 
 #adoptar-mascota .caracteristicas img {
     width: 10rem; 
@@ -517,8 +516,7 @@ div {
     height: 1rem;
 }
 
-
->>>>>>> Stashed changes
+/* Stashed changes */
 
 /* Noticias */
 #noticias {
@@ -558,6 +556,7 @@ div {
     line-height: 45px;
     font-size: 1em;
     border: 1px solid var(--color3);
+
     /* Posicionamiento del botón */
     position: fixed;
     bottom: 30px;

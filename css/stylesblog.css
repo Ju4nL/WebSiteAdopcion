@@ -245,3 +245,80 @@
 .social-links a:hover {
     color: var(--primary-color); 
 }
+/* Estilos para la sección de columnas y video */
+#info-section {
+    padding: 20px 20px;
+    background-color: var(--background-color);
+    display: flex; /* Habilita Flexbox */
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    border-radius: 50px;
+    max-width: 1200px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.info-container {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.info-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text h2 {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Poner el título en negrita */
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--secondary-color2); /* Ajuste de color */
+
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center; /* Alineación central de ícono y texto */
+}
+
+.info-item i {
+    font-size: 32px;
+    color: var(--primary-color);
+    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
+}
+
+.info-item h3, .info-item p {
+    display: block;
+    margin: 0;
+}
+
+.info-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.info-item p {
+    font-size: 15px;
+    color: var(--text-color2);
+    
+}
+
+
+.info-video {
+    flex: 1;
+}
+
+.info-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}

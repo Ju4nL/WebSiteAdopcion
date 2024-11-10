@@ -26,6 +26,13 @@
     box-sizing: border-box;
 }
 
+html {
+
+    /* Suavizar el desplamiento del scroll en la ventana */
+
+    scroll-behavior: smooth;
+
+}
 
 /* Tipografía base */
 

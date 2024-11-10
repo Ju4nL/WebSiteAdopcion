@@ -547,3 +547,20 @@ div {
     letter-spacing: 0.03rem;
     margin: 0.5rem 0;
 }
+
+.scroll-up {
+
+    width: 45px;
+    height: 45px;
+    background-color: var(--color1);
+    color: var(--color3);
+    text-align: center;
+    line-height: 45px;
+    font-size: 1em;
+    border: 1px solid var(--color3);
+    /* Posicionamiento del botón */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+}

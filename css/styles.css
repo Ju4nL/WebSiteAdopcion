@@ -79,7 +79,8 @@ img {
 
 /* title */
 /* dentro del titulo si tiene span se cambiara de color  */
-.title span {
+.title span,
+.title-span {
     color: var(--primary-color);
 }
 
@@ -231,6 +232,10 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 .contenedor {
     max-width: 90%;
     margin-left: auto;
@@ -461,6 +466,10 @@ div {
 
 /* Card cifras End */
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 /* Adopta */
 #adopta {
     background-color: var(--background-color);
@@ -511,16 +520,25 @@ div {
     background-color: var(--primary-color);
     color: var(--background-color);
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+ 
+/* Updated upstream */
+>>>>>>> 6096424929be42ff7afbcfe8bf840094e7a0ea84
+>>>>>>> Stashed changes
 /* Donaciones */
 
 #donaciones {
     /* background-image: url('../imagenes/graduacion.jpg'); */
     background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url('../assets/images/banner/banner.avif');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: right center; 
 }
 
+<<<<<<< Updated upstream
 #adoptar-mascota .caracteristicas img {
     width: 10rem; 
 }
@@ -539,6 +557,8 @@ div {
     background-position: right center; 
 }
 
+=======
+>>>>>>> Stashed changes
 #donaciones .contenedor{
     display: flex;
     flex-direction: column;
@@ -550,6 +570,10 @@ div {
     color: var(--background-color-secondary);
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 #donaciones button{
     border: none; 
     margin-top: 1rem;
@@ -605,6 +629,12 @@ div {
     color: var(--background-color);
 }
  
+<<<<<<< Updated upstream
+=======
+=======
+/* Stashed changes */
+>>>>>>> 6096424929be42ff7afbcfe8bf840094e7a0ea84
+>>>>>>> Stashed changes
 
 /* Noticias */
 #noticias {

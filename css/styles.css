@@ -71,7 +71,7 @@ li {
 
 
 /* Elimina el espacio que aparece debajo del objeto */
-img {
+img, iframe, video {
     display: block;
 }
 

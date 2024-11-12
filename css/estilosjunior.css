@@ -24,6 +24,33 @@
     position: sticky; /* Hace que el encabezado se mantenga fijo al hacer scroll */
 }
 
+#titulo-contactanos{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: var(--background-color);
+    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url(../assets/images/blog/dogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: right center; 
+
+}
+
+#titulo-contactanos a{
+    color: var(--background-color);
+    text-decoration: none;  
+}
+
+.contactanos{
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+.ajuste-mapa{
+    width: 100%;
+}
+
+
+
 .sticky-top {
     position: sticky;
     top: 0; /* Fija el elemento en la parte superior */
@@ -124,7 +151,8 @@ body {
     padding: 50px; /* Añade un relleno de 50px alrededor de la sección */
     background-color: #e73a2d; /* Establece el color de fondo de la sección del equipo */
     color: white; /* Establece el color del texto en blanco */
-}
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.16),  rgba(255, 255, 255,0.5)), url('../assets/images/Nosotros/fondo\ 1.webp');
+} 
 
 .team-section h1 {
     font-size: 2.5em; /* Establece el tamaño de fuente del título */
@@ -273,3 +301,4 @@ body {
     color: #333; /* Establece el color del texto en la respuesta */
     border-radius: 4px; /* Añade bordes redondeados a la respuesta */
 }
+

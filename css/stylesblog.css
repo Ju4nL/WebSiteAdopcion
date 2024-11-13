@@ -73,7 +73,7 @@
 
 .barra-lateral {
     flex: 0 0 25%; /* Ocupa el 25% del espacio disponible */
-    background-color: var(--background-color-secondary); /* Color de fondo secundario */
+    background-color: var(--background-color); /* Color de fondo secundario */
     padding: 20px;
 }
 
@@ -102,7 +102,7 @@
 
 .search-widget button {
     background-color: var(--primary-color);
-    color: #f4f1EA;
+    color: var(--background-color);
     padding: 10px;
     margin-left: 5px;
     border: none;
@@ -140,7 +140,7 @@
     justify-content: center; /* Centra los elementos verticalmente */
     margin: 20px 0; /* Margen superior e inferior para separar de otros elementos */
     padding: 20px; /* Relleno interno para espacio alrededor del texto */
-    background-color: #f4f1EA; /* Color de fondo de la caja */
+    background-color: var(--background-color); /* Color de fondo de la caja */
     border-left: 5px solid var(--primary-color); /* Borde decorativo a la izquierda */
     border-radius: var(--border-radius-secondary); /* Redondea las esquinas de la caja */
 }
@@ -261,25 +261,32 @@
 
 .info-container {
     display: flex;
+    justify-content: space-between;
     gap: 50px;
     max-width: 1000px;
-    margin: auto;
+    width: 100%;
 }
 
 .info-text {
     flex: 1;
+    width: 50%
+    padding 20%;
     display: flex;
     flex-direction: column;
 }
 
 .info-text h2 {
     font-size: 24px; /* Tamaño del título */
+    align-items: flex-start;
     font-weight: bold; /* Poner el título en negrita */
     margin-bottom: 30px;
     font-family: var(--font-family);
     text-align: center;
     color: var(--secondary-color2); /* Ajuste de color */
+}
 
+.el3 {
+    display: flex;
 }
 
 .info-item {
@@ -290,25 +297,30 @@
 }
 
 .info-item i {
-    font-size: 32px;
-    color: var(--primary-color);
-    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
+    font-size: 25px;
+    color: var(--background-color); 
+    background-color: var(--secondary-color); 
+    border-radius: 100%;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.info-item h3, .info-item p {
-    display: block;
-    margin: 0;
-}
+
 
 .info-item h3 {
     font-size: 20px;
     font-weight: bold;
-    color: var(--text-color);
+    margin: 0;
+    color: var(--primary-color);
 }
 
 .info-item p {
     font-size: 15px;
-    color: var(--text-color2);
+    margin: 5px 0 0;
+    color: var(--text-color);
     
 }
 

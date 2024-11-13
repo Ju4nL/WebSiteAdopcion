@@ -32,24 +32,18 @@
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: right center; 
+    
 
 }
 
-#titulo-contactanos a{
+#titulo-contactanos, a, h2{
     color: var(--background-color);
     text-decoration: none;  
-}
-
-.contactanos{
-    color: var(--background-color);
-    text-decoration: none;
 }
 
 .ajuste-mapa{
     width: 100%;
 }
-
-
 
 .sticky-top {
     position: sticky;
@@ -152,6 +146,7 @@ body {
     background-color: #e73a2d; /* Establece el color de fondo de la sección del equipo */
     color: white; /* Establece el color del texto en blanco */
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.16),  rgba(255, 255, 255,0.5)), url('../assets/images/Nosotros/fondo\ 1.webp');
+    width: 100%;
 } 
 
 .team-section h1 {
@@ -172,7 +167,7 @@ h1 {
     font-family: var(--font-family); /* Establece la fuente del pie de página usando una variable CSS */
     position: relative; /* Posiciona el pie de página de manera relativa */
     overflow: hidden; /* Oculta cualquier contenido que desborde */
-    max-width: 1200px; /* Establece un ancho máximo para el pie de página */
+    max-width: 100%; /* Establece un ancho máximo para el pie de página */
     margin: 0 auto; /* Centra el pie de página horizontalmente */
 }
 
@@ -260,7 +255,7 @@ body {
 
 .seccion-pf {
     max-width: 800px; /* Establece un ancho máximo de 800px */
-    margin: 50px auto; /* Centra la sección con márgenes superior e inferior de 50px */
+    margin: 80px auto; /* Centra la sección con márgenes superior e inferior de 50px */
     padding: 20px; /* Añade un relleno de 20px */
     background-color: var(#ffffff);
     color: white; /* Establece el color del texto en blanco */
@@ -271,7 +266,7 @@ body {
     color: var(--secondary-color); 
     text-align: center; /* Centra el texto del título */
     margin-bottom: 20px; /* Añade un margen inferior de 20px */
-    font-size: 2em; /* Establece el tamaño de fuente del título */
+    font-size: 70px; /* Establece el tamaño de fuente del título */
     font-weight: bold; /* Establece el texto en negrita */
 }
 
@@ -286,19 +281,26 @@ body {
 
 .cuestionario {
     cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el elemento */
-    padding: 15px; /* Añade un relleno de 15px */
-    margin: 5px 0; /* Añade márgenes superior e inferior de 5px */
-    background-color: #e73a2d; /* Establece el color de fondo del cuestionario */
-    border-radius: 4px; /* Añade bordes redondeados al cuestionario */
-    font-size: 19.2px; 
+    padding: 30px; /* Añade un relleno de 15px */
+    margin: 10px 0; /* Añade márgenes superior e inferior de 5px */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.16),  rgba(255, 255, 255,0.5)), url('../assets/images/Nosotros/fondo\ 1.webp');/* Establece el color de fondo del cuestionario */
+    border-radius: 10px; /* Añade bordes redondeados al cuestionario */
+    font-size: 35px; 
+    color:#002b55;
 }
 
 .respuesta {
-    display: none; /* Oculta la respuesta por defecto */
+    /* Oculta la respuesta por defecto */
     padding: 15px; /* Añade un relleno de 15px */
     margin-top: -10px; /* Añade un margen negativo superior de 10px */
     background-color: #ffffff; /* Establece el color de fondo de la respuesta en blanco */
     color: #333; /* Establece el color del texto en la respuesta */
     border-radius: 4px; /* Añade bordes redondeados a la respuesta */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
 }
 

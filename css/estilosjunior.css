@@ -277,9 +277,11 @@ body {
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
     transition: background 0.3s; /* Añade una transición suave al fondo */
     background: #f1f1f1; /* Establece un fondo claro para el artículo */
+    padding: 10px;
 }
 
 .cuestionario {
+    display: block;
     cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el elemento */
     padding: 30px; /* Añade un relleno de 15px */
     margin: 10px 0; /* Añade márgenes superior e inferior de 5px */
@@ -298,9 +300,5 @@ body {
     border-radius: 4px; /* Añade bordes redondeados a la respuesta */
     cursor: pointer;
     font-weight: bold;
-}
-
-.hidden {
-    display: none;
 }
 

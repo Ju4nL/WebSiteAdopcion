@@ -302,3 +302,122 @@ body {
     font-weight: bold;
 }
 
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 16px;
+}
+
+.contact-info {
+    width: 40%;
+    background-color: #ffb7002d;
+    color: #333;
+    padding: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info h3 i {
+    margin-right: 8px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: none;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.checkbox label {
+    margin-left: 5px;
+    color: #333;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;   
+    background-color: #ffb7002d;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b2372;
+}
+
+/* seccion cjas para redes sociales - contactanos */
+
+.social-media {
+    display: flex; /* Flexbox para colocar los elementos en una fila */
+    gap: 10px; /* Espaciado entre los íconos */
+    width: 100%; /* Asegúrate de que la sección ocupe el 100% del ancho */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permite que el icono crezca para ocupar el espacio disponible */
+    height: 100px;
+    background-color: #d47c005e; /* Color de fondo */
+    color: white; /* Color del ícono */
+    font-size: 2em; /* Tamaño del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+}

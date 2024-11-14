@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,7 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/stylesblog.css">
-    <link rel="stylesheet" href="../css/estilosjunior.css">
+    <link rel="stylesheet" href="../css/stylesblog.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +23,10 @@
             <nav class="nav-bar">
                 <!-- Logo de la empresa -->
                 <div class="nav-logo">
-                    <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
+                    <a href="../index.html">
+                        <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
+                    </a>
+
                 </div> <!-- fin de nav-logo -->
 
                 <!-- Barra de menú -->
@@ -34,31 +37,31 @@
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../pages/miwufencasa.html">Miwuf en casa</a>
+                        <a class="nav-menu-link" href="miwufencasa.html">Miwuf en casa</a>
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../pages/donaciones.html">Donaciones</a>
+                        <a class="nav-menu-link" href="donaciones.html">Donaciones</a>
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link active" href="../pages/blog.html">Blog</a>
+                        <a class="nav-menu-link active" href="blog.html">Blog</a>
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../pages/contacto.html">Contáctanos</a>
+                        <a class="nav-menu-link" href="contacto.html">Contáctanos</a>
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../pages/nosotros.html">Nosotros</a>
+                        <a class="nav-menu-link" href="nosotros.html">Nosotros</a>
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../pages/preguntas-frecuentes.html">Consultas</a>
+                        <a class="nav-menu-link" href="preguntas-frecuentes.html">Consultas</a>
                     </li>
                 </ul> <!-- fin de nav-menu -->
                 <div class="nav-button">
-                    <a class=" button-primary center" href="../pages/donaciones.html">Dona Aquí </a>
+                    <a class=" button-primary center" href="donaciones.html">Dona Aquí </a>
                 </div>
 
 
@@ -67,13 +70,14 @@
         <div class="header-shape"></div>
     </header>
 
+
     <section id="titulo-contactanos">
         <div class="contenedor">
             <h2 class="contactanos">Blog</h2>
             <span> <i class="fa-solid fa-location-dot"></i> <a href="../index.html">Inicio</a> / Blog</span>
         </div>
     </section>
-        
+
     <main class="cont">
         <div class="contenido-principal">
             <div class="card-noticias">
@@ -93,7 +97,9 @@
                         </ol>
                     </div>
                     <h2 class="titulo">Todo lo que tu mascota necesita</h2>
-                    <p class="text">El perro doméstico es un descendiente domesticado del lobo. El perro derivó de un lobo antiguo y extinto, y el lobo gris moderno es el pariente vivo más cercano del perro. El perro fue la primera especie domesticada por cazadores-recolectores.</p>
+                    <p class="text">El perro doméstico es un descendiente domesticado del lobo. El perro derivó de un
+                        lobo antiguo y extinto, y el lobo gris moderno es el pariente vivo más cercano del perro. El
+                        perro fue la primera especie domesticada por cazadores-recolectores.</p>
                     <a class="button-secondary">leer más</a>
                 </section>
             </div>
@@ -106,7 +112,7 @@
                     <button type="submit">🔍</button>
                 </form>
             </div>
-            
+
             <div class="widget categories-widget">
                 <h3>Razas</h3>
                 <ul>
@@ -120,35 +126,45 @@
     </main>
 
     <!-- Sección de columnas y video de YouTube -->
-<section id="info-section">
-    <div class="info-container">
-        <!-- Columna 1: Texto e íconos -->
-        <div class="info-text">
-            <h2 >VACUNA TU MASCOTA</h2>
-            <div class="info-item">
-                <i class="fas fa-user-md"></i> <!-- Ícono -->
-                <h3 class="el3">Alonso Fernandez</h3>
-                <p>Veterinario clinico especialista en pequeños animales.</p>
+    <section id="info-section">
+        <div class="info-container">
+            <!-- Columna 1: Texto e íconos -->
+            <div class="info-text">
+                <h2 class="title">VACUNA TU <span>MASCOTA</span></h2>
+                <div class="info-item">
+                    <i class="fas fa-user-md"></i> <!-- Ícono -->
+                    <div class="row">
+                        <h3 class="el3">Alonso Fernandez</h3>
+                        <p>Veterinario clinico especialista en pequeños animales.</p>
+                    </div>
+
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-stethoscope"></i> <!-- Ícono -->
+                    <div class="row"> 
+                        <h3 class="el3">Vacunación</h3>
+                        <p>Es un acto clínico muy importante por que nos ayuda a prevenir enfermedades.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-heartbeat"></i> <!-- Ícono -->
+                    <div class="row">
+                        <h3 class="el3">San José Veterinaria</h3>
+                        <p>Para realizar un diagnóstico o recibir cualquier tipo de atención veterinaria.</p> 
+                    </div>
+                </div>
+                <a class="button-secondary">leer más</a>
             </div>
-            <div class="info-item">
-                <i class="fas fa-stethoscope"></i> <!-- Ícono -->
-                <h3 class="el3">Vacunación</h3>
-                <p>Es un acto clínico muy importante por que nos ayuda a prevenir enfermedades.</p>
+            <!-- Columna 2: Video de YouTube -->
+            <div class="info-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kbymaeImtnA?si=0Z62aL8ZZ3OlpjES"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
-            <div class="info-item">
-                <i class="fas fa-heartbeat"></i> <!-- Ícono -->
-                <h3 class="el3">San José Veterinaria</h3>
-                <p>Para realizar un diagnóstico o recibir cualquier tipo de atención veterinaria.</p>
-            </div>
-            <a class="button-secondary">leer más</a>
         </div>
-        <!-- Columna 2: Video de YouTube -->
-        <div class="info-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kbymaeImtnA?si=0Z62aL8ZZ3OlpjES" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <main class="cont">
@@ -170,18 +186,24 @@
                         </ol>
                     </div>
                     <h2 class="titulo">La mascota necesita una buena alimentacion</h2>
-                    <p class="text">Los perros necesitan una dieta saludable para mantenerse fuertes y activos. Una buena nutrición apoya su sistema inmunológico, mantiene su pelaje saludable y ayuda a prevenir enfermedades. Al igual que los humanos, una dieta equilibrada les ayuda a vivir más tiempo y a evitar problemas de salud</p>
+                    <p class="text">Los perros necesitan una dieta saludable para mantenerse fuertes y activos. Una
+                        buena nutrición apoya su sistema inmunológico, mantiene su pelaje saludable y ayuda a prevenir
+                        enfermedades. Al igual que los humanos, una dieta equilibrada les ayuda a vivir más tiempo y a
+                        evitar problemas de salud</p>
                     <a class="button-secondary">leer más</a>
                 </section>
             </div>
             <div class="quote-box">
-                <p class="quote-text">"Vacunamos los perros para que comiencen desarrollar inmunidad. Hasta que un cachorro haya recibido toda su serie de vacunas, o hasta que un perro adulto esté al día con sus vacunas, su exposición al parvovirus"</p>
+                <p class="quote-text">"Vacunamos los perros para que comiencen desarrollar inmunidad. Hasta que un
+                    cachorro haya recibido toda su serie de vacunas, o hasta que un perro adulto esté al día con sus
+                    vacunas, su exposición al parvovirus"</p>
                 <p class="quote-author">— Jefferson I. Castillo</p>
             </div>
         </div>
     </main>
 
 </body>
+
 </html>
 
 <footer class="footer">
@@ -235,7 +257,7 @@
         </div>
     </div>
 </footer>
-<!-- Botón para realizar un scroll-up--> 
+<!-- Botón para realizar un scroll-up-->
 <a href="#" class="scroll-up">
     <i class="fa-solid fa-angle-up"></i>
 </a>

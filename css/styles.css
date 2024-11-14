@@ -12,6 +12,8 @@
     --font-family-secondary: 'Nunito', sans-serif;
     --border-radius: 0.3rem;
     --border-radius-secondary: 1rem;
+    --box-shadow: 0px 8px 50px -6px rgba(0, 0, 0, 0.3);
+    ;
 
 }
 
@@ -71,11 +73,16 @@ li {
 
 
 /* Elimina el espacio que aparece debajo del objeto */
-img, iframe, video {
+img,
+iframe,
+video {
     display: block;
 }
 
-
+/* Colo fuentes */
+.fc-blue {
+    color: #0a303a !important;
+}
 
 /* title */
 /* dentro del titulo si tiene span se cambiara de color  */
@@ -97,7 +104,7 @@ img, iframe, video {
     top: -10px;
 }
 
- 
+
 
 /* Botones css Start */
 .button-primary {
@@ -223,7 +230,7 @@ img, iframe, video {
     padding-bottom: 2rem;
 }
 
-.padding-1t{
+.padding-1t {
     padding-top: 1rem;
 }
 
@@ -231,7 +238,8 @@ img, iframe, video {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-} 
+}
+
 .contenedor {
     max-width: 90%;
     margin-left: auto;
@@ -397,7 +405,7 @@ div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: none; 
+    border: none;
     text-align: center;
     max-width: 100%;
     transition: opacity 0.3s linear, transform 0.3s linear;
@@ -409,7 +417,28 @@ div {
     border-left: 2px solid #d5d2d2;
 }
 
-/*Card cifras Start*/ 
+/* Titulo Paginas */
+#titulo-contactanos {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: var(--background-color);
+    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45, 0.6)), url(../assets/images/blog/dogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+
+
+}
+
+#titulo-contactanos,
+#titulo-contactanos a,
+#titulo-contactanos h2 {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+
+/*Card cifras Start*/
 /* Estilos de card de cifras */
 #cifras {
     background-image: url('../assets/images/bg/counter_bg.jpg');
@@ -425,6 +454,7 @@ div {
     padding: 1rem;
     margin: 1rem 1rem;
 }
+
 .card .cifras-number {
     font-weight: 700;
     font-size: 3rem;
@@ -467,64 +497,75 @@ div {
     background-color: var(--background-color);
 }
 
-/* Adopta mascota */
-#adoptar-mascota{
-    background-image: url(../assets/images/bg/counter_bg.jpg);
+#adopta .col {
+    padding: 0;
 }
-#adoptar-mascota .caracteristicas li { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-#adoptar-mascota   .subtitle{
+
+#adopta .adopta-contenido {
     width: 60%;
-}
-#adoptar-mascota  .contenedor{
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adopta mascota */
+#adoptar-mascota {
+    background-image: url(../assets/images/bg/counter_bg.jpg);
+}
+
+#adoptar-mascota .caracteristicas li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#adoptar-mascota .subtitle {
+    width: 60%;
+}
+
+#adoptar-mascota .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
 }
-#adoptar-mascota .col{
+
+#adoptar-mascota .col {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 #adoptar-mascota .caracteristicas p {
     height: 1.5rem;
 }
 
-#adoptar-mascota .item-caracteristica{
+#adoptar-mascota .item-caracteristica {
     background-color: var(--background-color);
     font-size: 3rem;
     padding: 2rem;
     margin: 1rem;
     border-radius: var(--border-radius-secondary);
-    color: var(--primary-color); 
-    box-shadow: 0px 8px 50px -6px rgba(0, 0, 0, 0.1); 
-    transition:  all 0.3s ease;  ;
+    color: var(--primary-color);
+    box-shadow: 0px 8px 50px -6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    ;
 }
 
- 
-#adoptar-mascota .item-caracteristica:hover{
+
+#adoptar-mascota .item-caracteristica:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
 }
 
-/* Donaciones */
-
-#donaciones {
-    /* background-image: url('../imagenes/graduacion.jpg'); */
-    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url('../assets/images/banner/banner.avif');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: right center; 
-}
 
 #adoptar-mascota .caracteristicas img {
-    width: 10rem; 
+    width: 10rem;
 }
 
 #adoptar-mascota .caracteristicas p {
@@ -535,26 +576,26 @@ div {
 
 #donaciones {
     /* background-image: url('../imagenes/graduacion.jpg'); */
-    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url('../assets/images/banner/banner.avif');
+    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45, 0.6)), url('../assets/images/banner/banner.avif');
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: right center; 
+    background-size: cover;
+    background-position: right center;
 }
 
-#donaciones .contenedor{
+#donaciones .contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 #donaciones .title,
-#donaciones p{
+#donaciones p {
     color: var(--background-color-secondary);
 }
 
 
-#donaciones button{
-    border: none; 
+#donaciones button {
+    border: none;
     margin-top: 1rem;
 }
 
@@ -565,50 +606,66 @@ div {
 }
 
 .veterinario-descripcion {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 84%;
     padding: 0 3rem;
-    background-color: rgba(255, 255, 255,0.5); /* Fondo oscuro semi-transparente */
-    z-index: 2; /* Asegura que esté encima de otros elementos */
-    color: #fff; /* Texto en color blanco para contraste */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo oscuro semi-transparente */
+    z-index: 2;
+    /* Asegura que esté encima de otros elementos */
+    color: #fff;
+    /* Texto en color blanco para contraste */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: var(--border-radius-secondary);
-    opacity: 0; /* Oculta la descripción por defecto */
-    transition: opacity 0.5s ease; /* Transición suave */
+    opacity: 0;
+    /* Oculta la descripción por defecto */
+    transition: opacity 0.5s ease;
+    /* Transición suave */
 }
 
 .veterinario:hover .veterinario-descripcion {
-    opacity: 1; /* Muestra la descripción al hacer hover */
+    opacity: 1;
+    /* Muestra la descripción al hacer hover */
 }
 
-.veterinario-nombres{
+.veterinario-nombres {
     position: relative;
     top: -30px;
     margin: 0 1rem;
     z-index: 3;
 }
 
-.veterinario-descripcion p{
-    
-    color: var(--secondary-color2) ;
+.veterinario-descripcion p {
+
+    color: var(--secondary-color2);
 }
-.veterinario-descripcion a{ 
+
+.veterinario-descripcion a {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-.veterinario-descripcion .button-primary{
+.veterinario-descripcion .button-primary {
     color: var(--background-color);
 }
- 
 
+/* testimonios */
+
+
+
+#testimonios .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Noticias */
 #noticias {
@@ -647,8 +704,9 @@ div {
     text-align: center;
     line-height: 45px;
     font-size: 1em;
-    border-radius: 50%;   /*colocara en circulito*/
-    background-color: var(--primary-color); 
+    border-radius: 50%;
+    /*colocara en circulito*/
+    background-color: var(--primary-color);
     box-shadow: 0 0 10px rgba(241, 227, 227, 0.25);
 
     /* Posicionamiento del botón */
@@ -656,4 +714,209 @@ div {
     bottom: 30px;
     right: 30px;
 
+}
+
+
+
+/*--------------- Estilos para el pie de pagina ------------*/
+
+
+.footer {
+
+    background: #f4f1EA;
+    color: var(--background-color);
+    padding: 20px 0;
+    /* Relleno vertical */
+    padding-top: 5rem;
+    font-family: var(--font-family);
+    /* Fuente del pie de página */
+    position: relative;
+    /* Importante para el posicionamiento absoluto de los hijos */
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde */
+}
+
+.footer::after {
+    content: '';
+    background-image: url('../assets/images/bg/footer_bg_shape01.png');
+    position: absolute;
+    width: 100%; 
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.footer-section .llamar {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    /* Ancho máximo para el contenido del pie de página */
+    margin: 0 auto;
+    /* Centrado horizontal */
+    position: relative;
+    /* Para el z-index del contenido sobre la onda */
+    z-index: 1;
+    /* Asegura que el contenido esté sobre la onda */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 160px;
+}
+
+.footer-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+/* Cambia el color de los íconos de redes sociales */
+.social-links a {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para la sección de columnas y video */
+#info-section {
+    padding: 20px 20px;
+    background-color: var(--background-color);
+    display: flex;
+    /* Habilita Flexbox */
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    border-radius: 50px;
+    max-width: 1200px;
+    /* Establece el ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    margin: 0 auto;
+    /* Centra el contenedor */
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.info-text {
+    flex: 1;
+    width: 50% padding 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text h2 {
+    font-size: 24px;
+    /* Tamaño del título */
+    align-items: flex-start;
+    font-weight: bold;
+    /* Poner el título en negrita */
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--secondary-color2);
+    /* Ajuste de color */
+}
+
+.el3 {
+    display: flex;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+    align-items: center;
+    /* Alineación central de ícono y texto */
+    justify-content: center;
+}
+
+.info-item i {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+    padding: 1rem;
+    min-width: 3rem;
+    height: 3rem;
+}
+
+
+
+.info-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.info-item p {
+    font-size: 15px;
+    margin: 5px 0 0;
+    color: var(--text-color);
+
+}
+
+
+.info-video {
+    flex: 1;
+}
+
+.info-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
 }

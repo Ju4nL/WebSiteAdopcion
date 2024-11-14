@@ -1,45 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-    --primary-color: #e73a2d;       
-    --secondary-color: #1e4b57;    
-    --secondary-color2: #0a303a; 
-    --background-color: #fff;
-    --background-color-secondary: #d5e6eb;  
-    --text-color: #676666; 
-    --text-color2:#838181;
-    --font-family: "Poppins", sans-serif;
-    --font-family-secondary:'Nunito', sans-serif;
-    --border-radius:0.3rem;
-    --border-radius-secondary:1rem;
-    
-}
-
-/* BARRA DE NAVEGACIÓN */
-
-#cabecera {
-    background-color: var(--background-color);
-    box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3); /* Añade una sombra al encabezado */
-    padding: 16px 0; /* Añade un relleno superior e inferior de 16px */
-    position: sticky; /* Hace que el encabezado se mantenga fijo al hacer scroll */
-}
-
-#titulo-contactanos{
-    padding-top: 45px;
-    padding-bottom: 45px;
-    color: var(--background-color);
-    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url(../assets/images/blog/dogo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: right center; 
-    
-
-}
-
-#titulo-contactanos, a, h2{
-    color: var(--background-color);
-    text-decoration: none;  
-}
+ 
 
 .ajuste-mapa{
     width: 100%;
@@ -132,13 +91,7 @@
 .miembros p {
     font-size: 0.9em; /* Establece el tamaño de fuente de la descripción del miembro */
 }
-
-body {
-    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
-    background-color: #f9f9f9; /* Establece el color de fondo del cuerpo */
-    margin: 0; /* Elimina el margen del cuerpo */
-    padding: 0; /* Elimina el relleno del cuerpo */
-}
+ 
 
 .team-section {
     text-align: center; /* Centra el texto dentro de la sección del equipo */
@@ -154,104 +107,10 @@ body {
     margin-bottom: 20px; /* Añade un margen inferior de 20px */
 }
 
-h1 {
-    color: var(--background-color); /* Establece el color del título usando una variable CSS */
-}
+ 
 
-/* PIE DE PAGINA */
-
-.footer {
-    background: #f4f1EA; /* Establece el color de fondo del pie de página */
-    color: var(--background-color); /* Establece el color del texto usando una variable CSS */
-    padding: 20px 0; /* Añade un relleno vertical de 20px */
-    font-family: var(--font-family); /* Establece la fuente del pie de página usando una variable CSS */
-    position: relative; /* Posiciona el pie de página de manera relativa */
-    overflow: hidden; /* Oculta cualquier contenido que desborde */
-    max-width: 100%; /* Establece un ancho máximo para el pie de página */
-    margin: 0 auto; /* Centra el pie de página horizontalmente */
-}
-
-.footer-section .llamar {
-    color: var(--primary-color); /* Establece el color del texto usando una variable CSS */
-    font-size: 18px; /* Establece el tamaño de fuente */
-    margin-bottom: 10px; /* Añade un margen inferior de 10px */
-}
-
-.footer-content {
-    display: flex; /* Utiliza flexbox para la disposición de los elementos */
-    justify-content: space-between; /* Espacia los elementos de manera uniforme */
-    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-    max-width: 1200px; /* Establece un ancho máximo para el contenido del pie de página */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    position: relative; /* Posiciona el contenido de manera relativa */
-    z-index: 1; /* Asegura que el contenido esté por encima de otros elementos */
-}
-
-.footer-section {
-    flex: 1; /* Permite que la sección del pie de página crezca para ocupar el espacio disponible */
-    padding: 0 20px; /* Añade un relleno lateral de 20px */
-    min-width: 160px; /* Establece un ancho mínimo para la sección */
-}
-
-.footer-section h3 {
-    color: var(--secondary-color); /* Establece el color del texto usando una variable CSS */
-    margin-bottom: 10px; /* Añade un margen inferior de 10px */
-    font-size: 18px; /* Establece el tamaño de fuente */
-}
-
-.footer-section ul {
-    list-style-type: none; /* Quita los marcadores de viñetas de la lista */
-    padding: 0; /* Elimina el relleno de la lista */
-    margin: 0; /* Elimina el margen de la lista */
-}
-
-.footer-section ul li a {
-    color: var(--text-color); /* Establece el color del texto del enlace usando una variable CSS */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    font-size: 14px; /* Establece el tamaño de fuente del enlace */
-    line-height: 2; /* Establece la altura de línea para el enlace */
-    display: block; /* Hace que el enlace ocupe todo el espacio */
-}
-
-.footer-section ul li a:hover {
-    color: var(--primary-color); /* Cambia el color del enlace al pasar el ratón usando una variable CSS */
-}
-
-.social-links a {
-    font-size: 1.5em; /* Establece el tamaño de fuente de los enlaces de redes sociales */
-    margin-right: 10px; /* Añade un margen a la derecha de 10px */
-}
-
-.instagram-grid {
-    display: grid; /* Utiliza grid para la disposición de los elementos */
-    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
-    gap: 10px; /* Añade un espacio de 10px entre los elementos de la cuadrícula */
-}
-
-.instagram-grid img {
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Hace que la imagen se comporte como un bloque */
-    border-radius: var(--border-radius); /* Aplica un borde redondeado usando una variable CSS */
-}
-
-/* Cambia el color de los íconos de redes sociales */
-.social-links a {
-    color: var(--secondary-color); /* Establece el color del texto usando una variable CSS */
-    transition: color 0.3s ease; /* Añade una transición suave al color */
-}
-
-.social-links a:hover {
-    color: var(--primary-color); /* Cambia el color al pasar el ratón usando una variable CSS */
-}
-
+ 
 /* PREGUNTAS FRECUENTES */
-
-body {
-    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
-    background-color: #f0f0f5; /* Establece el color de fondo del cuerpo */
-    color: #333; /* Establece el color del texto del cuerpo */
-}
 
 .seccion-pf {
     max-width: 800px; /* Establece un ancho máximo de 800px */
@@ -302,3 +161,188 @@ body {
     font-weight: bold;
 }
 
+.contact-container {
+    display: flex;
+    width: 80% ;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.contact-form {
+    width: 100%;
+    padding: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 40%;
+    background-image: url('../assets/images/bg/newsletter_bg.jpg    ');
+    color: var(--background-color);
+    padding: 4rem 2.5rem;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--background-color);
+    display: flex;
+    align-items: center;
+}
+
+.contact-info h3 i {
+    margin-right: 8px;
+}
+
+.contact-info p { 
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--background-color);
+}
+.contact-info strong { 
+    font-size: 0.9rem;
+    margin-right: 0.8rem;
+}
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ 
+
+.contact-form .button-primary {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;    
+    border: none; 
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+ 
+.contact-usuario{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+.contact-usuario div{
+    width: 100%;
+}
+
+.contact-form form{
+    padding-top: 1.5rem;
+}
+
+/* Contenedor para input y label */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Estilos de input y textarea */
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="email"]:focus,
+.input-container textarea:focus {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+
+/* Efecto flotante para el label */
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label,
+.input-container textarea:focus ~ label,
+.input-container textarea:not(:placeholder-shown) ~ label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+
+
+/* Estilo para labels flotantes */
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+
+/* Checkbox y botón de envío */
+.contact-form .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+.checkbox input{ 
+    margin-right: 1rem;
+}
+
+.checkbox label {
+    margin: 0; 
+    font-weight: 500;
+}  
+
+
+/* seccion cjas para redes sociales - contactanos */
+
+.social-media {
+    display: flex; /* Flexbox para colocar los elementos en una fila */
+    gap: 10px; /* Espaciado entre los íconos */
+    width: 100%; /* Asegúrate de que la sección ocupe el 100% del ancho */
+    justify-content: space-around;
+    margin: 0.5rem 0;
+}
+
+.social-media .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permite que el icono crezca para ocupar el espacio disponible */
+    height: 100px;
+    background-color:var(--secondary-color); 
+    border-radius: var(--border-radius);
+    
+    font-size: 2em; /* Tamaño del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.social-media .icon i{
+    color: var(--background-color);
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+    box-shadow: var(--box-shadow);
+}

@@ -643,7 +643,7 @@ div {
     width: 45px;
     height: 45px;
     background-color: var(--color1);
-    color: var(--color3);
+    color: var(--background-color);
     text-align: center;
     line-height: 45px;
     font-size: 1em;

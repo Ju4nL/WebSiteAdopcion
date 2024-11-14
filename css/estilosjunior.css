@@ -1,22 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-    --primary-color: #e73a2d;       
-    --secondary-color: #1e4b57;    
-    --secondary-color2: #0a303a; 
-    --background-color: #fff;
-    --background-color-secondary: #d5e6eb;  
-    --text-color: #676666; 
-    --text-color2:#838181;
-    --font-family: "Poppins", sans-serif;
-    --font-family-secondary:'Nunito', sans-serif;
-    --border-radius:0.3rem;
-    --border-radius-secondary:1rem;
-    
-}
-
-/* BARRA DE NAVEGACIÓN */
-
+ 
 
 .ajuste-mapa{
     width: 100%;
@@ -109,13 +91,7 @@
 .miembros p {
     font-size: 0.9em; /* Establece el tamaño de fuente de la descripción del miembro */
 }
-
-body {
-    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
-    background-color: #f9f9f9; /* Establece el color de fondo del cuerpo */
-    margin: 0; /* Elimina el margen del cuerpo */
-    padding: 0; /* Elimina el relleno del cuerpo */
-}
+ 
 
 .team-section {
     text-align: center; /* Centra el texto dentro de la sección del equipo */
@@ -131,18 +107,10 @@ body {
     margin-bottom: 20px; /* Añade un margen inferior de 20px */
 }
 
-h1 {
-    color: var(--background-color); /* Establece el color del título usando una variable CSS */
-}
+ 
 
  
 /* PREGUNTAS FRECUENTES */
-
-body {
-    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
-    background-color: #f0f0f5; /* Establece el color de fondo del cuerpo */
-    color: #333; /* Establece el color del texto del cuerpo */
-}
 
 .seccion-pf {
     max-width: 800px; /* Establece un ancho máximo de 800px */

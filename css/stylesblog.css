@@ -291,21 +291,19 @@
 
 .info-item {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     margin-bottom: 20px;
     align-items: center; /* Alineación central de ícono y texto */
+    justify-content: center;
 }
 
-.info-item i {
-    font-size: 25px;
+.info-item i { 
     color: var(--background-color); 
     background-color: var(--secondary-color); 
-    border-radius: 100%;
-    width: 80px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 100%;  
+    padding: 1rem;
+    min-width: 3rem;
+    height: 3rem;
 }
 
 

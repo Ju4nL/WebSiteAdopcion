@@ -17,29 +17,6 @@
 
 /* BARRA DE NAVEGACIÓN */
 
-#cabecera {
-    background-color: var(--background-color);
-    box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.3); /* Añade una sombra al encabezado */
-    padding: 16px 0; /* Añade un relleno superior e inferior de 16px */
-    position: sticky; /* Hace que el encabezado se mantenga fijo al hacer scroll */
-}
-
-#titulo-contactanos{
-    padding-top: 45px;
-    padding-bottom: 45px;
-    color: var(--background-color);
-    background: linear-gradient(90deg, rgba(10, 48, 58, 0.6), rgba(231, 58, 45,0.6)), url(../assets/images/blog/dogo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: right center; 
-    
-
-}
-
-#titulo-contactanos, a, h2{
-    color: var(--background-color);
-    text-decoration: none;  
-}
 
 .ajuste-mapa{
     width: 100%;

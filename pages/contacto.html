@@ -2,14 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto-Jefferson</title>
+    
+    <title>Contactanos</title>
 
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/styles.css">
+    
     <link rel="stylesheet" href="../css/stylesblog.css">
+
+    <link rel="stylesheet" href="../css/estilosjunior.css">
+
+    <link rel="stylesheet" href="../css/estilosdona.css ">
 </head>
 
 <body>
@@ -43,7 +50,7 @@
                     </li>
 
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link active" href="#">Contacto</a>
+                        <a class="nav-menu-link active" href="#">Contáctanos</a>
                     </li>
 
                     <li class="nav-menu-item">
@@ -62,8 +69,129 @@
             </nav> <!-- fin de nav-bar -->
         </div>
         <div class="header-shape"></div>
-    </footer>
-    
+
+        <section id="titulo-contactanos">
+            <div class="contenedor">
+                <h2 class="contactanos">contactanos</h2>
+                <span> <i class="fa-solid fa-location-dot"></i> <a href="../index.html">Inicio</a> / Contactanos</span>
+            </div>
+        </section>
+
+        <section id="contactanos-mapa">
+            
+            <iframe class="ajuste-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249901.4896597808!2d-77.17702330688765!3d-11.855507194131803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d79ede6d9455%3A0xfeec4ef74719fd6d!2sAdopta%20un%20cachorrito!5e0!3m2!1ses-419!2spe!4v1731446795469!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        <section>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Contacto</h2>
+                    <form action="submit_form.php" method="post">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+            
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+            
+                        <label for="captcha">3 + 4 = ?</label>
+                        <input type="text" id="captcha" name="captcha" required>
+            
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">Estoy de acuerdo con los Términos de Uso y la Política de Privacidad</label>
+                        </div>
+            
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            
+      
+                <div class="contact-info">
+                    <div class="contact-info-box">
+                        <h3><img src="../assets/icons/branch.png" class="icon"> Nuestras Sucursales</h3>
+                        <p><strong>Lima:</strong> Av Los Olivos Nº 2520</p>
+                        <p><strong>Cusco:</strong> Calle Real Nº 5720</p>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <h3><img src="../assets/icons/email.png"  class="icon"> Correo Electrónico</h3>
+                        <p>Lima: <a href="mailto:lima@medico.com">lima@medico.com</a></p>
+                        <p>Cusco: <a href="mailto:cusco@medico.com">cusco@medico.com</a></p>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <h3><img src="../assets/icons/call.png"  class="icon"> Centro de Llamadas</h3>
+                        <p>Lima: +51 01 000 0000</p>
+                        <p>Cusco: +51 21 000 0000</p>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <h3><img src="../assets/icons/clock.png"  class="icon"> Horario de Atención</h3>
+                        <p>Lun - Sáb: 08:00 - 20:00</p>
+                        <p>Domingos y feriados: Cerrado</p>
+                    </div>
+                </div>
+                
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content cont">
+                <div class="footer-section">
+                    <h3 class="nav-logo"><img src="../assets/images/logos/logo.png" alt="" class="imgfluid"></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorum..</p>
+                    <p><strong>985-202-253</strong></p>
+                    <p class="llamar">LLAMA AHORA</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Nuestras políticas</h3>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política editorial</a></li>
+                        <li><a href="#">Política de devoluciones</a></li>
+                        <li><a href="#">IP Politica</a></li>
+                        <li><a href="#">Política de reparación de quejas</a></li>
+                        <li><a href="#">Nuestras Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Nuestros Servicios</h3>
+                    <ul>
+                        <li><a href="#">Nuestro Criador</a></li>
+                        <li><a href="#">Nuestra adopción</a></li>
+                        <li><a href="#">Política editorial</a></li>
+                        <li><a href="#">Política de devoluciones</a></li>
+                        <li><a href="#">Política de quejas</a></li>
+                        <li><a href="#">Política de reparación</a></li>
+                        <li><a href="#">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Instagram</h3>
+                    <div class="instagram-grid">
+                        <img src="../assets/images/blog/insta_img01.png" alt="Instagram Image 1">
+                        <img src="../assets/images/blog/insta_img02.png" alt="Instagram Image 2">
+                        <img src="../assets/images/blog/insta_img03.png" alt="Instagram Image 3">
+                        <img src="../assets/images/blog/insta_img04.png" alt="Instagram Image 4">
+                        <img src="../assets/images/blog/insta_img05.png" alt="Instagram Image 5">
+                        <img src="../assets/images/blog/insta_img06.png" alt="Instagram Image 6">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     <!-- Botón para realizar un scroll-up--> 
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-angle-up"></i>

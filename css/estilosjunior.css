@@ -285,6 +285,6 @@ button[type="submit"]:hover {
 }
 
 .icon:hover {
-    transform: scale(1.08); /* Efecto de agrandamiento al pasar el cursor */
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
     box-shadow: var(--box-shadow);
 }

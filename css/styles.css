@@ -636,8 +636,16 @@ div {
     color: var(--background-color);
 }
  
+/* testimonios */
 
+ 
 
+#testimonios .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
 /* Noticias */
 #noticias {
     background-color: var(--background-color);

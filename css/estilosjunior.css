@@ -263,6 +263,7 @@ button[type="submit"]:hover {
     gap: 10px; /* Espaciado entre los íconos */
     width: 100%; /* Asegúrate de que la sección ocupe el 100% del ancho */
     justify-content: space-around;
+    margin: 0.5rem 0;
 }
 
 .social-media .icon {

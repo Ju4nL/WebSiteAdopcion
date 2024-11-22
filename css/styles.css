@@ -45,6 +45,8 @@ body {
     line-height: 1.5;
     font-family: var(--font-family);
     background-color: var(--background-color-secondary);
+    overflow-x: hidden;
+    /* Evita scroll horizontal */
 }
 
 h1,
@@ -228,6 +230,11 @@ video {
 .padding-y {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+/* para no mostrar */
+.d-none {
+    display: none
 }
 
 .padding-1t {
@@ -415,6 +422,28 @@ div {
 .nav-button {
     padding-left: 2rem;
     border-left: 2px solid #d5d2d2;
+}
+
+.nav-logo{
+    margin: .7rem 0; 
+}
+ 
+.button-burger {
+    cursor: pointer;
+    background-color: var(--background-color);
+    border: none;
+}
+
+.button-burger i {
+    
+    margin: .7rem 0; 
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.button-close{
+    cursor: pointer;
 }
 
 /* Titulo Paginas */
@@ -740,7 +769,7 @@ div {
     content: '';
     background-image: url('../assets/images/bg/footer_bg_shape01.png');
     position: absolute;
-    width: 100%; 
+    width: 100%;
     height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -920,3 +949,82 @@ div {
     aspect-ratio: 16 / 9;
     border-radius: 8px;
 }
+
+
+
+
+/* .nav-menu-phone{
+    display: none;
+} */
+/* Responsive para tables */
+@media (max-width: 1280px) {
+    .nav-button {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-burger {
+        display: block;
+    }
+
+    .nav-menu-gb {
+        background-color: rgba(213, 230, 235, 0.6);
+        top: 0;
+        right: -2000rem;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        justify-content: end;
+        overflow: hidden;
+    }
+    
+    .nav-menu {
+        width: 20rem;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background-color);
+        box-shadow: var(--box-shadow);
+        z-index: 1000;
+        gap: 0;
+        position: relative;
+        right: -20rem;
+        transition: right 0.5s ease; /* Solo transiciona el menú */
+    }
+    
+
+    .nav-menu-item {
+        padding: 0.8rem 1.5rem;
+        border-bottom: 1px solid var(--background-color-secondary);
+    }
+
+    .nav-menu-phone {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-menu-social {
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    body.menu-active {
+        overflow: hidden; /* Evita el scroll cuando se activa el menú */
+    }
+    body.menu-active .nav-menu-gb {
+        right: 0rem;
+     }
+    body.menu-active .nav-menu {
+       right: 0rem;
+    }
+}
+
+
+/* Responsive para celulare */

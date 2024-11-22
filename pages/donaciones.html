@@ -20,6 +20,7 @@
 
 <body>
 
+    
     <header id="cabecera" class="sticky-top">
         <div class="contenedor">
             <!-- Barra de navegación -->
@@ -29,42 +30,65 @@
                     <a href="../index.html">
                         <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
                     </a>
-
+                    
                 </div> <!-- fin de nav-logo -->
 
                 <!-- Barra de menú -->
-                <ul class="nav-menu">
-                    <!-- Elementos del menú -->
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="../index.html">Inicio</a>
-                    </li>
+                <div class="nav-menu-gb ">
+                    <ul class="nav-menu">
+                        <li class="nav-menu-item nav-menu-phone d-none">
+                            <a href="../index.html">
+                                <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
+                            </a>
+                            <a class="button-close"> 
+                                <i class="fa-solid fa-x"></i>
+                            </a>
+                        </li>
+                        <!-- Elementos del menú -->
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="../index.html">Inicio</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="miwufencasa.html">Miwuf en casa</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="miwufencasa.html">Miwuf en casa</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link active" href="donaciones.html">Donaciones</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link active" href="donaciones.html">Donaciones</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="blog.html">Blog</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="blog.html">Blog</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="contacto.html">Contáctanos</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="contacto.html">Contáctanos</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="nosotros.html">Nosotros</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="nosotros.html">Nosotros</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="preguntas-frecuentes.html">Consultas</a>
-                    </li>
-                </ul> <!-- fin de nav-menu -->
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="preguntas-frecuentes.html">Consultas</a>
+                        </li>
+
+                        <div class="nav-menu-item nav-menu-social social-links d-none">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </ul> <!-- fin de nav-menu -->
+                </div>
                 <div class="nav-button">
                     <a class=" button-primary center" href="donaciones.html">Dona Aquí </a>
+                </div>
+
+                <div class="nav-burger d-none">
+                    <button class="button-burger"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
 
 
@@ -239,7 +263,7 @@
          <a href="#" class="scroll-up">
             <i class="fa-solid fa-angle-up"></i>
         </a>
-     
+        <script src="../js/main.js"></script>
 </body>
 
 </html>

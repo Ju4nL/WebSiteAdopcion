@@ -9,7 +9,7 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/stylesblog.css"> 
+    <link rel="stylesheet" href="../css/stylesblog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,7 +26,7 @@
                     <a href="../index.html">
                         <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
                     </a>
-                    
+
                 </div> <!-- fin de nav-logo -->
 
                 <!-- Barra de menú -->
@@ -36,7 +36,7 @@
                             <a href="../index.html">
                                 <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
                             </a>
-                            <a class="button-close"> 
+                            <a class="button-close">
                                 <i class="fa-solid fa-x"></i>
                             </a>
                         </li>
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="nav-burger d-none">
-                    <button class="button-burger"> 
+                    <button class="button-burger">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -100,36 +100,12 @@
         </div>
     </section>
 
-    <main class="cont">
-        <div class="contenido-principal">
-            <div class="card-noticias line">
-                <section class="blog-entry">
-                    <img src="../assets/images/blog/perito2.jpg" alt="noticia" class="imgfluid rounded">
-                    <div class="breadcrumbs">
-                        <ol>
-                            <li>
-                                <i class="fa-regular fa-user"></i>
-                                <a href="">Admin</a>
-                            </li>
-                            <li>/</li>
-                            <li>
-                                <i class="fa-regular fa-bell"></i>
-                                <a href="">13 de Setiembre de 2022</a>
-                            </li>
-                        </ol>
-                    </div>
-                    <h2 class="titulo">Todo lo que tu mascota necesita</h2>
-                    <p class="text">El perro doméstico es un descendiente domesticado del lobo. El perro derivó de un
-                        lobo antiguo y extinto, y el lobo gris moderno es el pariente vivo más cercano del perro. El
-                        perro fue la primera especie domesticada por cazadores-recolectores.</p>
-                    <a class="button-secondary">leer más</a>
-                </section>
-            </div>
-
-            <div class="contenido-principal">
+    <main class="contenedor">
+        <div class="row">
+            <div class=" col-60">
                 <div class="card-noticias line">
                     <section class="blog-entry">
-                        <img src="../assets/images/blog/blog_thumb03.jpg" alt="noticia" class="imgfluid rounded">
+                        <img src="../assets/images/blog/perito2.jpg" alt="noticia" class="imgfluid rounded">
                         <div class="breadcrumbs">
                             <ol>
                                 <li>
@@ -139,167 +115,205 @@
                                 <li>/</li>
                                 <li>
                                     <i class="fa-regular fa-bell"></i>
-                                    <a href="">04 de Noviembre de 2023</a>
+                                    <a href="">13 de Setiembre de 2022</a>
                                 </li>
                             </ol>
                         </div>
-                        <h2 class="titulo">La mascota necesita una buena alimentacion</h2>
-                        <p class="text">Los perros necesitan una dieta saludable para mantenerse fuertes y activos. Una
-                            buena nutrición apoya su sistema inmunológico, mantiene su pelaje saludable y ayuda a prevenir
-                            enfermedades. Al igual que los humanos, una dieta equilibrada les ayuda a vivir más tiempo y a
-                            evitar problemas de salud</p>
+                        <h2 class="titulo">Todo lo que tu mascota necesita</h2>
+                        <p class="text">El perro doméstico es un descendiente domesticado del lobo. El perro derivó de
+                            un
+                            lobo antiguo y extinto, y el lobo gris moderno es el pariente vivo más cercano del perro. El
+                            perro fue la primera especie domesticada por cazadores-recolectores.</p>
                         <a class="button-secondary">leer más</a>
                     </section>
                 </div>
-                <div class="quote-box">
-                    <p class="quote-text">"Vacunamos los perros para que comiencen desarrollar inmunidad. Hasta que un
-                    cachorro haya recibido toda su serie de vacunas, o hasta que un perro adulto esté al día con sus
-                    vacunas, su exposición al parvovirus"</p>
-                    <p class="quote-author">— Jefferson I. Castillo</p>
+
+                <div class="">
+                    <div class="card-noticias line">
+                        <section class="blog-entry">
+                            <img src="../assets/images/blog/blog_thumb03.jpg" alt="noticia" class="imgfluid rounded">
+                            <div class="breadcrumbs">
+                                <ol>
+                                    <li>
+                                        <i class="fa-regular fa-user"></i>
+                                        <a href="">Admin</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <i class="fa-regular fa-bell"></i>
+                                        <a href="">04 de Noviembre de 2023</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <h2 class="titulo">La mascota necesita una buena alimentacion</h2>
+                            <p class="text">Los perros necesitan una dieta saludable para mantenerse fuertes y activos.
+                                Una
+                                buena nutrición apoya su sistema inmunológico, mantiene su pelaje saludable y ayuda a
+                                prevenir
+                                enfermedades. Al igual que los humanos, una dieta equilibrada les ayuda a vivir más
+                                tiempo y
+                                a
+                                evitar problemas de salud</p>
+                            <a class="button-secondary">leer más</a>
+                        </section>
+                    </div>
+                    <div class="quote-box">
+                        <p class="quote-text">"Vacunamos los perros para que comiencen desarrollar inmunidad. Hasta que
+                            un
+                            cachorro haya recibido toda su serie de vacunas, o hasta que un perro adulto esté al día con
+                            sus
+                            vacunas, su exposición al parvovirus"</p>
+                        <p class="quote-author">— Jefferson I. Castillo</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <aside class="barra-lateral">
-            <div class="widget search-widget bg-color1">
-                <h3>Buscar</h3>
-                <form action="#" method="GET">
-                    <input type="text" name="search" placeholder="Buscar...">
-                    <button type="submit">🔍</button>
-                </form>
-            </div>
+            <aside class="barra-lateral  col-40">
+                <div class="widget search-widget bg-color1">
+                    <h3>Buscar</h3>
+                    <form action="#" method="GET">
+                        <input type="text" name="search" placeholder="Buscar...">
+                        <button type="submit">🔍</button>
+                    </form>
+                </div>
 
-            <div class="widget categories-widget bg-color1">
-                <h3>Razas</h3>
-                <ul>
-                    <li><a href="#" class="button-secondary">Husky Siberiano</a></li>
-                    <li><a href="#" class="button-secondary">Pastor Alemán</a></li>
-                    <li><a href="#" class="button-secondary">Bulldog Frances</a></li>
-                    <li><a href="#" class="button-secondary">Golden Retriever</a></li>
-                </ul>
-            </div>
-            <div class="widget categories-widget bg-color1">
-                <h3>Historias de Adopción</h3>
-                <ul>
-                    <li>
-                        <a href="#">
-                        <img src="../assets/images/blog/dueño1.jpg">
-                        <p class="button-secondary">Copito, un cachorro huérfano, encontró su paraíso con la familia García, quienes lo amaron incondicionalmente.</p>
-                     </a>
-                    </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/images/blog/dueño2.jpg">
-                        <p class="button-secondary">Doki, un perrito abandonado, encontró amor y hogar con Sofía, quien lo adoptó y lo adoró.</p>
-                    </a>
-                </li>
-            </ul>
-            </div>
-        </aside>
+                <div class="widget categories-widget bg-color1">
+                    <h3>Razas</h3>
+                    <ul>
+                        <li><a href="#" class="button-secondary">Husky Siberiano</a></li>
+                        <li><a href="#" class="button-secondary">Pastor Alemán</a></li>
+                        <li><a href="#" class="button-secondary">Bulldog Frances</a></li>
+                        <li><a href="#" class="button-secondary">Golden Retriever</a></li>
+                    </ul>
+                </div>
+                <div class="widget categories-widget bg-color1">
+                    <h3>Historias de Adopción</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/blog/dueño1.jpg">
+                                <p class="button-secondary">Copito, un cachorro huérfano, encontró su paraíso con la
+                                    familia
+                                    García, quienes lo amaron incondicionalmente.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/blog/dueño2.jpg">
+                                <p class="button-secondary">Doki, un perrito abandonado, encontró amor y hogar con
+                                    Sofía,
+                                    quien lo adoptó y lo adoró.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
     </main>
 
-
-</body>
 
     <!-- Sección de columnas y video de YouTube -->
     <section id="info-section">
         <div class="info-container">
-        <!-- Columna 1: Texto e íconos -->
-            <div class="info-text">
-                <h2 class="title">VACUNA TU <span>MASCOTA</span></h2>
-            <div class="info-item">
-                <i class="fas fa-user-md"></i> <!-- Ícono -->
-                <div class="row">
-                    <h3 class="el3">Alonso Fernandez</h3>
-                    <p>Veterinario clinico especialista en pequeños animales.</p>
-                </div>
+            <div class="row">
+                <!-- Columna 1: Texto e íconos -->
+                <div class="info-text col">
+                    <h2 class="title">VACUNA TU <span>MASCOTA</span></h2>
+                    <div class="info-item">
+                        <i class="fas fa-user-md"></i> <!-- Ícono -->
+                        <div class="row">
+                            <h3 class="el3">Alonso Fernandez</h3>
+                            <p>Veterinario clinico especialista en pequeños animales.</p>
+                        </div>
 
-            </div>
-            <div class="info-item">
-                <i class="fas fa-stethoscope"></i> <!-- Ícono -->
-                <div class="row"> 
-                    <h3 class="el3">Vacunación</h3>
-                    <p>Es un acto clínico muy importante por que nos ayuda a prevenir enfermedades.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-stethoscope"></i> <!-- Ícono -->
+                        <div class="row">
+                            <h3 class="el3">Vacunación</h3>
+                            <p>Es un acto clínico muy importante por que nos ayuda a prevenir enfermedades.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heartbeat"></i> <!-- Ícono -->
+                        <div class="row">
+                            <h3 class="el3">San José Veterinaria</h3>
+                            <p>Para realizar un diagnóstico o recibir cualquier tipo de atención veterinaria.</p>
+                        </div>
+                    </div>
+                    <a class="button-secondary">leer más</a>
+                </div>
+                <!-- Columna 2: Video de YouTube -->
+                <div class="info-video col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kbymaeImtnA?si=0Z62aL8ZZ3OlpjES"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
-            <div class="info-item">
-                <i class="fas fa-heartbeat"></i> <!-- Ícono -->
-                <div class="row">
-                    <h3 class="el3">San José Veterinaria</h3>
-                    <p>Para realizar un diagnóstico o recibir cualquier tipo de atención veterinaria.</p> 
-                </div>
-            </div>
-            <a class="button-secondary">leer más</a>
-            </div>
-        <!-- Columna 2: Video de YouTube -->
-            <div class="info-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kbymaeImtnA?si=0Z62aL8ZZ3OlpjES"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-            </div>
+
         </div>
     </section>
-        
-</html>
 
-<footer class="footer">
-    <div class="footer-content cont">
-        <div class="footer-section">
-            <h3 class="nav-logo"><img src="../assets/images/logos/logo.png" alt="" class="imgfluid"></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorum..</p>
-            <p><strong>985-202-253</strong></p>
-            <p class="llamar">LLAMA AHORA</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+    <footer class="footer">
+        <div class="footer-content cont">
+            <div class="footer-section">
+                <h3 class="nav-logo"><img src="../assets/images/logos/logo.png" alt="" class="imgfluid"></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorum..</p>
+                <p><strong>985-202-253</strong></p>
+                <p class="llamar">LLAMA AHORA</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Nuestras políticas</h3>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política editorial</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                    <li><a href="#">IP Politica</a></li>
+                    <li><a href="#">Política de reparación de quejas</a></li>
+                    <li><a href="#">Nuestras Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Nuestros Servicios</h3>
+                <ul>
+                    <li><a href="#">Nuestro Criador</a></li>
+                    <li><a href="#">Nuestra adopción</a></li>
+                    <li><a href="#">Política editorial</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                    <li><a href="#">Política de quejas</a></li>
+                    <li><a href="#">Política de reparación</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Instagram</h3>
+                <div class="instagram-grid">
+                    <img src="../assets/images/blog/insta_img01.png" alt="Instagram Image 1">
+                    <img src="../assets/images/blog/insta_img02.png" alt="Instagram Image 2">
+                    <img src="../assets/images/blog/insta_img03.png" alt="Instagram Image 3">
+                    <img src="../assets/images/blog/insta_img04.png" alt="Instagram Image 4">
+                    <img src="../assets/images/blog/insta_img05.png" alt="Instagram Image 5">
+                    <img src="../assets/images/blog/insta_img06.png" alt="Instagram Image 6">
+                </div>
             </div>
         </div>
-        <div class="footer-section">
-            <h3>Nuestras políticas</h3>
-            <ul>
-                <li><a href="#">Política de privacidad</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
-                <li><a href="#">Política editorial</a></li>
-                <li><a href="#">Política de devoluciones</a></li>
-                <li><a href="#">IP Politica</a></li>
-                <li><a href="#">Política de reparación de quejas</a></li>
-                <li><a href="#">Nuestras Condiciones</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Nuestros Servicios</h3>
-            <ul>
-                <li><a href="#">Nuestro Criador</a></li>
-                <li><a href="#">Nuestra adopción</a></li>
-                <li><a href="#">Política editorial</a></li>
-                <li><a href="#">Política de devoluciones</a></li>
-                <li><a href="#">Política de quejas</a></li>
-                <li><a href="#">Política de reparación</a></li>
-                <li><a href="#">Contáctenos</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Instagram</h3>
-            <div class="instagram-grid">
-                <img src="../assets/images/blog/insta_img01.png" alt="Instagram Image 1">
-                <img src="../assets/images/blog/insta_img02.png" alt="Instagram Image 2">
-                <img src="../assets/images/blog/insta_img03.png" alt="Instagram Image 3">
-                <img src="../assets/images/blog/insta_img04.png" alt="Instagram Image 4">
-                <img src="../assets/images/blog/insta_img05.png" alt="Instagram Image 5">
-                <img src="../assets/images/blog/insta_img06.png" alt="Instagram Image 6">
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Botón para realizar un scroll-up-->
-<a href="#" class="scroll-up">
-    <i class="fa-solid fa-angle-up"></i>
-</a>
+    </footer>
+    <!-- Botón para realizar un scroll-up-->
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
 
-<script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -20,8 +20,7 @@
 /* Estilos para la sección de la entrada del blog */
 .blog-entry {
     background-color: #fff;
-    padding: 20px; 
-    margin-top: 20px; /* Añade margen superior para separar de elementos anteriores */
+    padding: 40px 0;  
 }
 
 /* Estilo para el título de la entrada del blog */
@@ -72,14 +71,15 @@
 }
 
 .barra-lateral {
-    flex: 0 0 25%; /* Ocupa el 25% del espacio disponible */
+    /* flex: 0 0 25%; Ocupa el 25% del espacio disponible */
+    /* margin: 1rem; */
     background-color: var(--background-color); /* Color de fondo secundario */
-    padding: 20px;
+    padding: 40px 0px 40px 50px;
 }
 
 .widget {
     background: var(--background-color); /* Fondo blanco */
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 20px;
     border-radius: var(--border-radius-secondary);
     font-family: var(--font-family-secondary);
@@ -98,6 +98,7 @@
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius);
     font-family: var(--font-family);
+    max-width: 80%;
 }
 
 .search-widget button {
@@ -109,6 +110,7 @@
     border-radius: var(--border-radius);
     cursor: pointer;
     font-family: var(--font-family);
+    
 }
 
 .search-widget form {
@@ -226,4 +228,18 @@ body
 .categories-widget a {
     text-decoration: none; /* Quita el subrayado del enlace */
     color: inherit; /* Hereda el color del texto del contenedor */
+}
+@media (max-width: 1024px) {
+    .barra-lateral{ 
+        padding: 40px 0px 40px 30px;
+    }
+    .widget {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .barra-lateral{
+        padding: 0;
+    }
 }

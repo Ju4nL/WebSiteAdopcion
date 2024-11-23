@@ -310,7 +310,14 @@ video {
     flex-basis: 33.33%;
     max-width: 33.33%;
 }
-
+.col-40 {
+    flex-basis: 40%;
+    max-width: 40%; 
+}
+.col-60 {
+    flex-basis: 60%;
+    max-width: 60%;
+}
 .col-50 {
     flex-basis: 50%;
     max-width: 50%;
@@ -632,37 +639,63 @@ div {
 
 .veterinario {
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;   
+    border-radius: 15px; 
+}
+
+.veterinario-imagen {
+    position: relative;
 }
 
 .veterinario-descripcion { 
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 85%; /* Ajusta a la altura del contenedor */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo oscuro semi-transparente */
-    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+    z-index: 5;
     text-align: center;
-    transition: all 1s ease-in-out; /* Suaviza el movimiento */
-    opacity: 1;
-    z-index: 2; 
-    border-radius: 1rem;
+
+}
+.veterinario-descripcion li{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
+.veterinario-descripcion .row{
+    flex-direction: row !important;
+}
+
+.veterinario-descripcion .col{
+    flex-basis: 25%;
+}
+
+.veterinario-descripcion .button-primary{
+    padding: 0.3rem;
+}
 .veterinario:hover .veterinario-descripcion {
     opacity: 1; /* Desliza hacia adentro cuando pasa el cursor */
 }
 
 .veterinario-nombres {
-    position: relative;
-    top: -30px;
-    margin: 0 1rem;
-    z-index: 3;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%; 
+    width: 80%;
+    transform: translateX(-50%); /* Ajusta la posición para centrarlo */
+    z-index: 2;
+    margin: 0; 
+    text-align: center;  
 }
 
 .veterinario-descripcion p {
@@ -675,21 +708,52 @@ div {
     color: var(--secondary-color);
 }
 
+.veterinario-descripcion h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .veterinario-descripcion .button-primary {
     color: var(--background-color);
 }
 
 /* testimonios */
 
-
+#testimonios {
+    background-image: url(../assets/images/bg/counter_bg.jpg);
+}
 
 #testimonios .col {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+    gap: 2rem;
+} 
 
+#testimonios .imgfluid { 
+    width: 50%;
+    border-radius: 1rem;
+} 
+#testimonios span{
+    color: var(--secondary-color2);
+    font-weight: 700;
+    text-align: center;
+}
+#testimonios .card{
+    position: relative;
+}
+#testimonios .testimonio-card-description::after {
+    content: '"';
+    position: absolute;
+    bottom: -3rem;
+    right: 1rem;
+    font-family: "Flaticon";
+    font-size: 8rem;
+    color: #f04336;
+    line-height: 1;
+    z-index: 2;
+}
 /* Noticias */
 #noticias {
     background-color: var(--background-color);
@@ -958,14 +1022,33 @@ div {
 }
 
 @media (max-width: 1024px) {
-    .col {
-        flex-basis: 50%; /* Cada columna ocupa el 50% del ancho */
+    
+     /* title */ 
+     .title{
+        font-size: 2.3rem ;
     }
+    .font-size-xl {
+        font-size: 2.3rem;
+    }
+
+    .font-size-l {
+        font-size: 1.8rem;
+    }
+    .padding-y2{
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .padding-y2{
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    } 
     
     .col-33 {
         flex-basis: 50%; /* Ocupa la mitad del contenedor */
         max-width: 50%;  
     }
+   
 
     .nav-burger {
         display: block;
@@ -1027,12 +1110,27 @@ div {
     body.menu-active .nav-menu {
        right: 0rem;
     }
+
+    #adopta .col{
+        display: flex;
+        align-items: center;
+    }
+
+    .veterinario-descripcion h2{
+        font-size: 1.2rem;
+    }
+
+    #testimonios .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    } 
+    
 }
 
 
-<<<<<<< HEAD
- 
-/* Responsivo para móviles (pantallas aún más pequeñas) */
 @media (max-width: 768px) {
     h1,
     h2,
@@ -1051,6 +1149,14 @@ div {
         flex-basis: 100%; /* Ocupa la mitad del contenedor */
         max-width: 100%;  
     }
+    .col-40 {
+        flex-basis: 100%;
+        max-width: 100%; 
+    }
+    .col-60 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
     /* title */ 
     .title{
         font-size: 2rem ;
@@ -1063,10 +1169,15 @@ div {
         font-size: 1.5rem;
     }
 
+    #adopta .adopta-contenido{
+        width: 80%; 
+    }
+
+    #adoptar-mascota .subtitle {
+        width: 90%;
+    }
 
 }
-=======
-/* Responsive para celulare */
 
 /* CONTENEDOR DE CAROUSEL */
 #carrusel {
@@ -1130,4 +1241,3 @@ div {
   .next {
     right: 10px;
   }
->>>>>>> cb5d5861806ef7dbe5af9b9536b3b9866aaa61e7

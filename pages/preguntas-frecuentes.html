@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/estilosjunior.css">
+    <link rel="stylesheet" href="../js/Junior.js">
+    <script src="../js/Junior.js"></script>
 
 </head>
 
@@ -67,57 +69,42 @@
         <div class="header-shape"></div>
     </header>
 
+    <!-- breadcrumb header -->
 
     <section id="titulo-contactanos">
         <div class="contenedor">
             <h2>Preguntas</h2>
-            <span> <i class="fa-solid fa-location-dot"></i> <a href="../index.html">Inicio</a> / `preguntas
+            <span> <i class="fa-solid fa-location-dot"></i> <a href="../index.html">Inicio</a> / preguntas
                 frecuentes</span>
         </div>
     </section>
 
     <!-- PREGUNTAS -->
-    <section class="seccion-pf">
 
-        <div class="titulo-pf">Preguntas Frecuentes</div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Qué es WUF?</div>
-            <div class="respuesta">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est labore quo repudiandae eos
-                blanditiis modi quos ducimus laboriosam, debitis fugit architecto tempora culpa placeat. Atque suscipit
-                asperiores nobis reiciendis.
-            </div>
+    <section class="P-section">
+    <div class="Preguntas">
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Qué es WUF?</h3>
+            <p class="Respuesta">WUF es una organización que se dedica a promover el bienestar de los animales, principalmente perros, en situación de vulnerabilidad.</p>
         </div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Cómo se sostiene económicamente WUF?</div>
-            <div class="respuesta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse eius. Hic minima illum sint
-                eligendi vero veniam dolor facere quidem tenetur, officiis est. Molestiae amet recusandae animi magnam
-                ut?
-            </div>
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Cómo se sostiene económicamente WUF?</h3>
+            <p class="Respuesta">WUF se financia mediante donaciones, venta de productos, y eventos de recaudación organizados con apoyo de voluntarios y empresas.</p>
         </div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Con que productos puedo ayudar a WUF</div>
-            <div class="respuesta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit, nulla nemo, repudiandae
-                modi unde, praesentium minus sit nihil magni assumenda aliquam sint sapiente officia? Minus architecto
-                officiis excepturi perspiciatis!
-            </div>
+    </div>
+    <div class="P-bottom">
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Con qué productos puedo ayudar a WUF?</h3>
+            <p class="Respuesta">Puedes colaborar adquiriendo productos solidarios como camisetas, accesorios para mascotas, o haciendo donaciones monetarias.</p>
         </div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Cómo puedo realizar una donación?</div>
-            <div class="respuesta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id sint quas repellendus quo deserunt,
-                nemo, unde laudantium eos dolorem nam dicta odio eveniet adipisci voluptas quod officia omnis accusamus!
-            </div>
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Dónde puedo encontrar más información sobre WUF?</h3>
+            <p class="Respuesta">Puedes visitar nuestra página web oficial o seguirnos en nuestras redes sociales para conocer más.</p>
         </div>
+    </div>
+</section>
 
-    </section>
-
+    
     <!-- PIE DE PAGINA  -->
     <footer class="footer">
         <div class="footer-content cont">

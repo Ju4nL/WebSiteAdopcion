@@ -32,38 +32,61 @@
                 </div> <!-- fin de nav-logo -->
 
                 <!-- Barra de menú -->
-                <ul class="nav-menu">
-                    <!-- Elementos del menú -->
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link active" href="#">Inicio</a>
-                    </li>
+                <div class="nav-menu-gb ">
+                    <ul class="nav-menu">
+                        <li class="nav-menu-item nav-menu-phone d-none">
+                            <a href="#">
+                                <img src="assets/images/logos/logo.png" alt="" class="imgfluid">
+                            </a>
+                            <a class="button-close"> 
+                                <i class="fa-solid fa-x"></i>
+                            </a>
+                        </li>
+                        <!-- Elementos del menú -->
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link active" href="#">Inicio</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="pages/miwufencasa.html">Miwuf en casa</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="pages/miwufencasa.html">Miwuf en casa</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="pages/donaciones.html">Donaciones</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="pages/donaciones.html">Donaciones</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="pages/blog.html">Blog</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="pages/blog.html">Blog</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="pages/contacto.html">Contáctanos</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="pages/contacto.html">Contáctanos</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="pages/nosotros.html">Nosotros</a>
-                    </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="pages/preguntas-frecuentes.html">Consultas</a>
-                    </li>
-                </ul> <!-- fin de nav-menu -->
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="pages/preguntas-frecuentes.html">Consultas</a>
+                        </li>
+
+                        <div class="nav-menu-item nav-menu-social social-links d-none">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </ul> <!-- fin de nav-menu -->
+                </div>
                 <div class="nav-button">
                     <a class=" button-primary center" href="pages/donaciones.html">Dona Aquí </a>
+                </div>
+
+                <div class="nav-burger d-none">
+                    <button class="button-burger"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
 
 
@@ -73,9 +96,21 @@
     </header>
 
     <section id="carrusel">
-        <div>
+        <!-- <div>
             <img src="assets/images/img/banner1.jpg" alt="banner" width="100%">
+        </div> -->
+
+        <div class="carousel">
+            <div class="carousel-images">
+              <img src="assets/images/blog/cat.jpg" alt="Perro feliz">
+              <img src="assets/images/blog/ia.jpg" alt="Gato jugando">
+              <img src="assets/images/blog/ia2.jpg" alt="Conejo adorable">
+              <img src="assets/images/blog/ia3.jpg" alt="Hámster activo">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
+
     </section>
 
     <section id="cifras" class="padding-y2">
@@ -188,178 +223,181 @@
 
     <section id="nuestro-equipo" class="padding-y2">
         <div class="contenedor-short">
-            <h2 class="title center font-size-l padding-y">Los Venterinarios detrás de <span>MiWuf</span></h2>
-            <div class="row del-padded">
-                <div class="col col-33">
-                    <div class="veterinario">
-                        <img src="assets/images/img/veterinario1.jpg" alt="veterinario" class="imgfluid rounded">
-                        <div class="center veterinario-nombres card">
-                            <h3><span class="title-span">Marlon Caseres</span></h2>
-                                <p>Veterinario</p>
+            <div class="contenedor">
+                <h2 class="title center font-size-l padding-y">Los Venterinarios detrás de <span>MiWuf</span></h2>
+                <div class="row del-padded">
+                    <div class="col col-33">
+                        <div class="veterinario">
+                            <img src="assets/images/img/veterinario1.jpg" alt="veterinario" class="imgfluid rounded">
+                            <div class="center veterinario-nombres card">
+                                <h3><span class="title-span">Marlon Caseres</span></h2>
+                                    <p>Veterinario</p>
+                            </div>
+                            <div class="veterinario-descripcion ">
+                                <h2>Apoyando a Miwuf desde el 2021</h2>
+    
+                                <ul>
+                                    <li class="padding-y">
+                                        <p>Contactar:</p>
+                                        <a href="https://wa.me/521921290212" class="button-primary"><i
+                                                class="fa-brands fa-whatsapp"> </i>921290212</a>
+                                    </li>
+                                    <li><a href="mailto:marlon@gmail.com"><i
+                                                class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
+                                </ul>
+                                <ul class="row">
+                                    <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="veterinario-descripcion ">
-                            <h2>Apoyando a Miwuf desde el 2021</h2>
-
-                            <ul>
-                                <li class="padding-y">
-                                    <p>Contactar:</p>
-                                    <a href="https://wa.me/521921290212" class="button-primary"><i
-                                            class="fa-brands fa-whatsapp"> </i>921290212</a>
-                                </li>
-                                <li><a href="mailto:marlon@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            </ul>
+                    </div>
+    
+                    <div class="col col-33">
+                        <div class="veterinario">
+                            <img src="assets/images/img/veterinario2.jpg" alt="veterinario" class="imgfluid rounded">
+                            <div class="center veterinario-nombres card">
+                                <h3><span class="title-span">Marlon Caseres</span></h2>
+                                    <p>Veterinario</p>
+                            </div>
+                            <div class="veterinario-descripcion ">
+                                <h2>Apoyando a Miwuf desde el 2021</h2>
+    
+                                <ul>
+                                    <li class="padding-y">
+                                        <p>Contactar:</p>
+                                        <a href="https://wa.me/521921290212" class="button-primary"><i
+                                                class="fa-brands fa-whatsapp"> </i>921290212</a>
+                                    </li>
+                                    <li><a href="mailto:marlon@gmail.com"><i
+                                                class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
+                                </ul>
+                                <ul class="row">
+                                    <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col col-33">
+                        <div class="veterinario">
+                            <img src="assets/images/img/veterinario3.jpg" alt="veterinario" class="imgfluid rounded">
+                            <div class="center veterinario-nombres card">
+                                <h3><span class="title-span">Marlon Caseres</span></h2>
+                                    <p>Veterinario</p>
+                            </div>
+                            <div class="veterinario-descripcion ">
+                                <h2>Apoyando a Miwuf desde el 2021</h2>
+    
+                                <ul>
+                                    <li class="padding-y">
+                                        <p>Contactar:</p>
+                                        <a href="https://wa.me/521921290212" class="button-primary"><i
+                                                class="fa-brands fa-whatsapp"> </i>921290212</a>
+                                    </li>
+                                    <li><a href="mailto:marlon@gmail.com"><i
+                                                class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
+                                </ul>
+                                <ul class="row">
+                                    <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col col-33">
+                        <div class="veterinario">
+                            <img src="assets/images/img/veterinario4.jpg" alt="veterinario" class="imgfluid rounded">
+                            <div class="center veterinario-nombres card">
+                                <h3><span class="title-span">Marlon Caseres</span></h2>
+                                    <p>Veterinario</p>
+                            </div>
+                            <div class="veterinario-descripcion ">
+                                <h2>Apoyando a Miwuf desde el 2021</h2>
+    
+                                <ul>
+                                    <li class="padding-y">
+                                        <p>Contactar:</p>
+                                        <a href="https://wa.me/521921290212" class="button-primary"><i
+                                                class="fa-brands fa-whatsapp"> </i>921290212</a>
+                                    </li>
+                                    <li><a href="mailto:marlon@gmail.com"><i
+                                                class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
+                                </ul>
+                                <ul class="row">
+                                    <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col col-33">
+                        <div class="veterinario">
+                            <img src="assets/images/img/veterinario5.jpg" alt="veterinario" class="imgfluid rounded">
+                            <div class="center veterinario-nombres card">
+                                <h3><span class="title-span">Marlon Caseres</span></h2>
+                                    <p>Veterinario</p>
+                            </div>
+                            <div class="veterinario-descripcion ">
+                                <h2>Apoyando a Miwuf desde el 2021</h2>
+    
+                                <ul>
+                                    <li class="padding-y">
+                                        <p>Contactar:</p>
+                                        <a href="https://wa.me/521921290212" class="button-primary"><i
+                                                class="fa-brands fa-whatsapp"> </i>921290212</a>
+                                    </li>
+                                    <li><a href="mailto:marlon@gmail.com"><i
+                                                class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
+                                </ul>
+                                <ul class="row">
+                                    <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col col-33">
+                        <div class="veterinario">
+                            <img src="assets/images/img/veterinario6.jpg" alt="veterinario" class="imgfluid rounded">
+                            <div class="center veterinario-nombres card">
+                                <h3><span class="title-span">Marlon Caseres</span></h2>
+                                    <p>Veterinario</p>
+                            </div>
+                            <div class="veterinario-descripcion ">
+                                <h2>Apoyando a Miwuf desde el 2021</h2>
+    
+                                <ul>
+                                    <li class="padding-y">
+                                        <p>Contactar:</p>
+                                        <a href="https://wa.me/521921290212" class="button-primary"><i
+                                                class="fa-brands fa-whatsapp"> </i>921290212</a>
+                                    </li>
+                                    <li><a href="mailto:marlon@gmail.com"><i
+                                                class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
+                                </ul>
+                                <ul class="row">
+                                    <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col col-33">
-                    <div class="veterinario">
-                        <img src="assets/images/img/veterinario2.jpg" alt="veterinario" class="imgfluid rounded">
-                        <div class="center veterinario-nombres card">
-                            <h3><span class="title-span">Marlon Caseres</span></h2>
-                                <p>Veterinario</p>
-                        </div>
-                        <div class="veterinario-descripcion ">
-                            <h2>Apoyando a Miwuf desde el 2021</h2>
-
-                            <ul>
-                                <li class="padding-y">
-                                    <p>Contactar:</p>
-                                    <a href="https://wa.me/521921290212" class="button-primary"><i
-                                            class="fa-brands fa-whatsapp"> </i>921290212</a>
-                                </li>
-                                <li><a href="mailto:marlon@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-33">
-                    <div class="veterinario">
-                        <img src="assets/images/img/veterinario3.jpg" alt="veterinario" class="imgfluid rounded">
-                        <div class="center veterinario-nombres card">
-                            <h3><span class="title-span">Marlon Caseres</span></h2>
-                                <p>Veterinario</p>
-                        </div>
-                        <div class="veterinario-descripcion ">
-                            <h2>Apoyando a Miwuf desde el 2021</h2>
-
-                            <ul>
-                                <li class="padding-y">
-                                    <p>Contactar:</p>
-                                    <a href="https://wa.me/521921290212" class="button-primary"><i
-                                            class="fa-brands fa-whatsapp"> </i>921290212</a>
-                                </li>
-                                <li><a href="mailto:marlon@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-33">
-                    <div class="veterinario">
-                        <img src="assets/images/img/veterinario4.jpg" alt="veterinario" class="imgfluid rounded">
-                        <div class="center veterinario-nombres card">
-                            <h3><span class="title-span">Marlon Caseres</span></h2>
-                                <p>Veterinario</p>
-                        </div>
-                        <div class="veterinario-descripcion ">
-                            <h2>Apoyando a Miwuf desde el 2021</h2>
-
-                            <ul>
-                                <li class="padding-y">
-                                    <p>Contactar:</p>
-                                    <a href="https://wa.me/521921290212" class="button-primary"><i
-                                            class="fa-brands fa-whatsapp"> </i>921290212</a>
-                                </li>
-                                <li><a href="mailto:marlon@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-33">
-                    <div class="veterinario">
-                        <img src="assets/images/img/veterinario5.jpg" alt="veterinario" class="imgfluid rounded">
-                        <div class="center veterinario-nombres card">
-                            <h3><span class="title-span">Marlon Caseres</span></h2>
-                                <p>Veterinario</p>
-                        </div>
-                        <div class="veterinario-descripcion ">
-                            <h2>Apoyando a Miwuf desde el 2021</h2>
-
-                            <ul>
-                                <li class="padding-y">
-                                    <p>Contactar:</p>
-                                    <a href="https://wa.me/521921290212" class="button-primary"><i
-                                            class="fa-brands fa-whatsapp"> </i>921290212</a>
-                                </li>
-                                <li><a href="mailto:marlon@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-33">
-                    <div class="veterinario">
-                        <img src="assets/images/img/veterinario6.jpg" alt="veterinario" class="imgfluid rounded">
-                        <div class="center veterinario-nombres card">
-                            <h3><span class="title-span">Marlon Caseres</span></h2>
-                                <p>Veterinario</p>
-                        </div>
-                        <div class="veterinario-descripcion ">
-                            <h2>Apoyando a Miwuf desde el 2021</h2>
-
-                            <ul>
-                                <li class="padding-y">
-                                    <p>Contactar:</p>
-                                    <a href="https://wa.me/521921290212" class="button-primary"><i
-                                            class="fa-brands fa-whatsapp"> </i>921290212</a>
-                                </li>
-                                <li><a href="mailto:marlon@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>marlon@gmail.com</a></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    
             </div>
-
         </div>
+        
     </section>
 
     <!-- <section id="patrocinadores" class="padding-y2">
@@ -475,37 +513,7 @@
         </div>
     </section>
 
-    <!-- <section id="voluntariado" class="padding-y2">
-        <div class="contenedor">
-            <h2 class="title">Únete como <span>Voluntario</span></h2>
-            <p>¿Te gustaría ayudarnos a cuidar de nuestras mascotas en espera? Llena el formulario para ser parte del
-                equipo.</p>
-            <form action="#" method="POST">
-                <input type="text" name="nombre" placeholder="Tu nombre">
-                <input type="email" name="email" placeholder="Tu correo electrónico">
-                <textarea name="mensaje" placeholder="¿Cómo te gustaría ayudar?"></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="newsletter" class="padding-y2">
-        <div class="contenedor">
-            <h2>Suscríbete a nuestro <span>Boletín</span></h2>
-            <form action="#" method="POST">
-                <input type="email" name="email" placeholder="Tu correo electrónico">
-                <button type="submit" class="btn">Suscribirme</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="mapa" class="padding-y2">
-        <div class="contenedor">
-            <h2>Encuentra un <span>Refugio</span></h2>
-            <iframe src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;"
-                allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section> -->
+ 
     <footer class="footer">
         <div class="footer-content cont">
             <div class="footer-section">
@@ -562,6 +570,49 @@
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+
+            const carouselImages = document.querySelector('.carousel-images');
+            const totalSlides = document.querySelectorAll('.carousel-images img').length;
+          
+            if (index >= totalSlides) {
+              currentIndex = 0; // Regresar al inicio
+            } else if (index < 0) {
+              currentIndex = totalSlides - 1; // Ir al final
+            } else {
+              currentIndex = index;
+            }
+          
+            const offset = -currentIndex * 100;
+            carouselImages.style.transform = `translateX(${offset}%)`;
+        }
+        
+        //--
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        //--
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+        
+        // Cambiar imagen automáticamente cada 3 segundos
+        setInterval(() => {
+            nextSlide();
+        }, 3000);
+        
+        // Mostrar la primera imagen al cargar la página
+        showSlide(currentIndex);
+
+    </script>
 </body>
 
 </html>

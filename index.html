@@ -96,9 +96,21 @@
     </header>
 
     <section id="carrusel">
-        <div>
+        <!-- <div>
             <img src="assets/images/img/banner1.jpg" alt="banner" width="100%">
+        </div> -->
+
+        <div class="carousel">
+            <div class="carousel-images">
+              <img src="assets/images/blog/cat.jpg" alt="Perro feliz">
+              <img src="assets/images/blog/ia.jpg" alt="Gato jugando">
+              <img src="assets/images/blog/ia2.jpg" alt="Conejo adorable">
+              <img src="assets/images/blog/ia3.jpg" alt="Hámster activo">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
+
     </section>
 
     <section id="cifras" class="padding-y2">
@@ -557,6 +569,47 @@
     </a>
 
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+
+            const carouselImages = document.querySelector('.carousel-images');
+            const totalSlides = document.querySelectorAll('.carousel-images img').length;
+          
+            if (index >= totalSlides) {
+              currentIndex = 0; // Regresar al inicio
+            } else if (index < 0) {
+              currentIndex = totalSlides - 1; // Ir al final
+            } else {
+              currentIndex = index;
+            }
+          
+            const offset = -currentIndex * 100;
+            carouselImages.style.transform = `translateX(${offset}%)`;
+        }
+        
+        //--
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        //--
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+        
+        // Cambiar imagen automáticamente cada 3 segundos
+        setInterval(() => {
+            nextSlide();
+        }, 3000);
+        
+        // Mostrar la primera imagen al cargar la página
+        showSlide(currentIndex);
+
+    </script>
 </body>
 
 </html>

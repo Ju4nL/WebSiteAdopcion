@@ -455,8 +455,9 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
-
-
+    width: 86em; /* Ancho fijo */
+    height: 20em; /* Alto fijo */
+ font-size: 30px;
 }
 
 #titulo-contactanos,
@@ -763,6 +764,7 @@ div {
     /* Importante para el posicionamiento absoluto de los hijos */
     overflow: hidden;
     /* Oculta cualquier contenido que desborde */
+    
 }
 
 .footer::after {
@@ -775,6 +777,7 @@ div {
     background-repeat: no-repeat;
     top: 0;
     left: 0;
+    
 }
 
 .footer-section .llamar {
@@ -795,30 +798,34 @@ div {
     /* Para el z-index del contenido sobre la onda */
     z-index: 1;
     /* Asegura que el contenido esté sobre la onda */
+    font-size: 20px;
 }
 
 .footer-section {
     flex: 1;
     padding: 0 20px;
     min-width: 160px;
+    font-size: 30px;
 }
 
 .footer-section h3 {
     color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 18px;
+    font-size:50px;
 }
 
 .footer-section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    font-size: 50px;
 }
 
 .footer-section ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 23px;
     line-height: 2;
     display: block;
 }

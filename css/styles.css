@@ -2,8 +2,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 /* Enlazar el CSS con fuentes externas de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -846,7 +844,7 @@ div {
 
 .footer-section .llamar {
     color: var(--primary-color);
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-bottom: 10px;
 }
 
@@ -869,27 +867,27 @@ div {
     flex: 1;
     padding: 0 20px;
     min-width: 160px;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .footer-section h3 {
     color: var(--secondary-color);
     margin-bottom: 15px;
     font-size: 18px;
-    font-size:50px;
+    /* font-size:50px; */
 }
 
 .footer-section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 50px;
+    /* font-size: 50px; */
 }
 
 .footer-section ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 2;
     display: block;
 }
@@ -899,7 +897,7 @@ div {
 }
 
 .social-links a {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-right: 10px;
 }
 

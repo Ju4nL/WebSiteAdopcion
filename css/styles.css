@@ -814,19 +814,13 @@ div {
 
 
 .footer {
-
     background: #f4f1EA;
     color: var(--background-color);
-    padding: 20px 0;
-    /* Relleno vertical */
+    padding: 20px 10px; /* Ajuste de relleno horizontal para pantallas pequeñas */
     padding-top: 5rem;
     font-family: var(--font-family);
-    /* Fuente del pie de página */
     position: relative;
-    /* Importante para el posicionamiento absoluto de los hijos */
     overflow: hidden;
-    /* Oculta cualquier contenido que desborde */
-    
 }
 
 .footer::after {
@@ -839,55 +833,42 @@ div {
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    
-}
-
-.footer-section .llamar {
-    color: var(--primary-color);
-    /* font-size: 18px; */
-    margin-bottom: 10px;
 }
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas pequeñas */
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
-    /* Ancho máximo para el contenido del pie de página */
     margin: 0 auto;
-    /* Centrado horizontal */
     position: relative;
-    /* Para el z-index del contenido sobre la onda */
     z-index: 1;
-    /* Asegura que el contenido esté sobre la onda */
-    font-size: 20px;
 }
 
 .footer-section {
     flex: 1;
-    padding: 0 20px;
-    min-width: 160px;
-    /* font-size: 30px; */
+    padding: 10px;
+    min-width: 200px; /* Asegura que cada sección tenga un tamaño mínimo razonable */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
 .footer-section h3 {
     color: var(--secondary-color);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 18px;
-    /* font-size:50px; */
 }
 
 .footer-section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    /* font-size: 50px; */
 }
 
 .footer-section ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 2;
     display: block;
 }
@@ -896,9 +877,20 @@ div {
     color: var(--primary-color);
 }
 
+.social-links {
+    display: flex;
+    gap: 10px; /* Espaciado uniforme entre los iconos */
+    flex-wrap: wrap;
+}
+
 .social-links a {
-    font-size: 1em;
-    margin-right: 10px;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
 }
 
 .instagram-grid {
@@ -914,14 +906,38 @@ div {
     border-radius: var(--border-radius);
 }
 
-/* Cambia el color de los íconos de redes sociales */
-.social-links a {
-    color: var(--secondary-color);
-    transition: color 0.3s ease;
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Las secciones se apilan verticalmente */
+        align-items: center; /* Centra las secciones en la columna */
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%; /* Cada sección ocupa el ancho completo */
+        text-align: center; /* Centra el texto */
+        padding: 15px 0;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr); /* Solo dos imágenes por fila */
+    }
 }
 
-.social-links a:hover {
-    color: var(--primary-color);
+/* Ajustes adicionales para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .footer-section h3 {
+        font-size: 16px; /* Reduce el tamaño del título */
+    }
+
+    .footer-section ul li a {
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+
+    .instagram-grid {
+        grid-template-columns: 1fr; /* Una imagen por fila */
+    }
 }
 
 /* Estilos para la sección de columnas y video */

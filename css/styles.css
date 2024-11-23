@@ -921,7 +921,7 @@ div {
     }
 
     .instagram-grid {
-        grid-template-columns: repeat(2, 1fr); /* Solo dos imágenes por fila */
+        grid-template-columns: repeat(3, 1fr); /* Solo dos imágenes por fila */
     }
 }
 
@@ -936,10 +936,49 @@ div {
     }
 
     .instagram-grid {
-        grid-template-columns: 1fr; /* Una imagen por fila */
+        grid-template-columns: 3fr; /* Una imagen por fila */
     }
 }
 
+/* Responsividad para pantallas de 375px de ancho */
+@media (max-width: 375px) {
+    .footer-content {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra el contenido */
+        padding: 10px; /* Reduce el relleno general */
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%; /* Cada sección ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+        padding: 10px 0; /* Reduce el relleno entre secciones */
+    }
+
+    .footer-section h3 {
+        font-size: 14px; /* Reduce el tamaño del encabezado */
+    }
+
+    .footer-section ul li a {
+        font-size: 11px; /* Ajusta el tamaño de los enlaces */
+        line-height: 1.5; /* Mejora la legibilidad */
+    }
+
+    .social-links {
+        justify-content: center; /* Centra los íconos de redes sociales */
+        gap: 8px; /* Reduce el espacio entre íconos */
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 5px; /* Espaciado más pequeño entre imágenes */
+    }
+
+    .instagram-grid img {
+        aspect-ratio: 1; /* Mantiene las imágenes cuadradas */
+        border-radius: 3px; /* Reduce los bordes redondeados */
+    }
+}
 /* Estilos para la sección de columnas y video */
 #info-section {
     padding: 20px 20px;

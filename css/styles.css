@@ -979,6 +979,51 @@ div {
         border-radius: 3px; /* Reduce los bordes redondeados */
     }
 }
+
+/* Responsividad para pantallas de 414px de ancho */
+@media (max-width: 414px) {
+    .footer-content {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra las secciones */
+        padding: 15px; /* Espaciado cómodo para pantallas grandes */
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%; /* Cada sección ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+        padding: 20px 0; /* Espaciado mayor entre las secciones */
+    }
+
+    .footer-section h3 {
+        font-size: 16px; /* Ajusta el tamaño del encabezado */
+    }
+
+    .footer-section ul li a {
+        font-size: 13px; /* Aumenta ligeramente el tamaño del texto para mejor legibilidad */
+        line-height: 1.8; /* Más espacio entre líneas */
+    }
+
+    .social-links {
+        justify-content: center; /* Centra los íconos de redes sociales */
+        gap: 10px; /* Espaciado mayor entre íconos */
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila */
+        gap: 8px; /* Espaciado más amplio entre imágenes */
+    }
+
+    .instagram-grid img {
+        aspect-ratio: 1; /* Mantiene las imágenes cuadradas */
+        border-radius: 5px; /* Bordes redondeados moderados */
+    }
+
+    .footer-section p {
+        font-size: 14px; /* Ajusta el tamaño del texto de los párrafos */
+        line-height: 1.6; /* Mejora la legibilidad */
+    }
+}
 /* Estilos para la sección de columnas y video */
 #info-section {
     padding: 20px 20px;

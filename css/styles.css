@@ -906,24 +906,37 @@ div {
     border-radius: var(--border-radius);
 }
 
-/* Responsividad para dispositivos pequeños */
+/* Responsividad para pantallas de hasta 768px */
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Las secciones se apilan verticalmente */
-        align-items: center; /* Centra las secciones en la columna */
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+        justify-content: center; /* Centra las secciones en la fila */
+        gap: 20px; /* Espaciado entre las secciones */
+        padding: 10px; /* Relleno del contenedor */
     }
 
-    .footer-section {
-        flex: none;
-        width: 100%; /* Cada sección ocupa el ancho completo */
-        text-align: center; /* Centra el texto */
-        padding: 15px 0;
+    /* Coloca "Nuestras Políticas" y "Nuestros Servicios" en una fila */
+    .footer-policies-services {
+        display: flex;
+        justify-content: space-between; /* Distribuye las secciones horizontalmente */
+        gap: 20px; /* Espaciado entre "Nuestras Políticas" y "Nuestros Servicios" */
+        width: 100%; /* Ocupa todo el ancho disponible */
     }
 
-    .instagram-grid {
-        grid-template-columns: repeat(3, 1fr); /* Solo dos imágenes por fila */
+    .footer-policies-services .footer-section {
+        flex: 1; /* Asegura que ambas secciones tengan el mismo ancho */
+        min-width: 150px; /* Previene que sean demasiado pequeñas */
+        text-align: center; /* Centra el contenido dentro de cada sección */
+    }
+
+    /* Asegura que el resto del diseño no se vea afectado */
+    .footer-section:not(.footer-policies-services .footer-section) {
+        width: 100%; /* Las demás secciones seguirán ocupando todo el ancho */
     }
 }
+
+
 
 /* Ajustes adicionales para dispositivos muy pequeños */
 @media (max-width: 480px) {
@@ -1024,6 +1037,7 @@ div {
         line-height: 1.6; /* Mejora la legibilidad */
     }
 }
+
 /* Estilos para la sección de columnas y video */
 #info-section {
     padding: 20px 20px;

@@ -112,54 +112,90 @@
  
 /* PREGUNTAS FRECUENTES */
 
-.seccion-pf {
-    max-width: 800px; /* Establece un ancho máximo de 800px */
-    margin: 80px auto; /* Centra la sección con márgenes superior e inferior de 50px */
-    padding: 20px; /* Añade un relleno de 20px */
-    background-color: var(#ffffff);
-    color: white; /* Establece el color del texto en blanco */
-    border-radius: 8px; /* Añade bordes redondeados */
-}        
-
-.titulo-pf {
-    color: var(--secondary-color); 
-    text-align: center; /* Centra el texto del título */
-    margin-bottom: 20px; /* Añade un margen inferior de 20px */
-    font-size: 70px; /* Establece el tamaño de fuente del título */
-    font-weight: bold; /* Establece el texto en negrita */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fc;
 }
 
-.articulo {
-    margin-bottom: 15px; /* Añade un margen inferior de 15px entre los artículos */
-    border: 1px solid #e0e0e0; /* Establece un borde gris claro alrededor del artículo */
-    border-radius: 5px; /* Añade bordes redondeados al artículo */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
-    transition: background 0.3s; /* Añade una transición suave al fondo */
-    background: #f1f1f1; /* Establece un fondo claro para el artículo */
-    padding: 10px;
+/* Estilo de la sección de preguntas frecuentes */
+.P-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.cuestionario {
-    display: block;
-    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el elemento */
-    padding: 30px; /* Añade un relleno de 15px */
-    margin: 10px 0; /* Añade márgenes superior e inferior de 5px */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.16),  rgba(255, 255, 255,0.5)), url('../assets/images/Nosotros/fondo\ 1.webp');/* Establece el color de fondo del cuestionario */
-    border-radius: 10px; /* Añade bordes redondeados al cuestionario */
-    font-size: 35px; 
-    color:#002b55;
+/* Contenedores de preguntas */
+.Preguntas,
+.P-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px;
+    margin-bottom: 30px; /* Espaciado entre secciones */
 }
 
-.respuesta {
-    /* Oculta la respuesta por defecto */
-    padding: 15px; /* Añade un relleno de 15px */
-    margin-top: -10px; /* Añade un margen negativo superior de 10px */
-    background-color: #ffffff; /* Establece el color de fondo de la respuesta en blanco */
-    color: #333; /* Establece el color del texto en la respuesta */
-    border-radius: 4px; /* Añade bordes redondeados a la respuesta */
+/* Estilo de cada pregunta */
+.Pregunta {
+    background: #ffffff;
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto */
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre una pregunta */
+.Pregunta:hover {
+    transform: scale(1.03); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos de preguntas */
+.Pregunta h3 {
+    margin: 0;
+    font-size: 24px; /* Tamaño de texto */
+    color: #333;
     font-weight: bold;
 }
+
+/* Respuestas (ocultas inicialmente) */
+.Respuesta {
+    display: none; /* Ocultas por defecto */
+    margin-top: 15px;
+    font-size: 18px; /* Tamaño de texto de la respuesta */
+    color: #555;
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Clase para mostrar respuestas */
+.Respuesta.visible {
+    display: block; /* Muestra la respuesta */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .Preguntas,
+    .P-bottom {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .Pregunta h3 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
+
+    .Respuesta {
+        font-size: 16px; /* Ajusta el tamaño del texto de la respuesta */
+    }
+}
+
+
+/* contactos */
+
+
 
 .contact-container {
     display: flex;

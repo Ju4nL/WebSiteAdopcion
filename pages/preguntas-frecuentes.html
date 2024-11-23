@@ -10,15 +10,12 @@
 
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/estilosjunior.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../js/Junior.js">
+    <script src="../js/Junior.js"></script>
 
 </head>
 
 <body>
-    
     <header id="cabecera" class="sticky-top">
         <div class="contenedor">
             <!-- Barra de navegación -->
@@ -28,65 +25,42 @@
                     <a href="../index.html">
                         <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
                     </a>
-                    
+
                 </div> <!-- fin de nav-logo -->
 
                 <!-- Barra de menú -->
-                <div class="nav-menu-gb ">
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item nav-menu-phone d-none">
-                            <a href="../index.html">
-                                <img src="../assets/images/logos/logo.png" alt="" class="imgfluid">
-                            </a>
-                            <a class="button-close"> 
-                                <i class="fa-solid fa-x"></i>
-                            </a>
-                        </li>
-                        <!-- Elementos del menú -->
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link" href="../index.html">Inicio</a>
-                        </li>
+                <ul class="nav-menu">
+                    <!-- Elementos del menú -->
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="../index.html">Inicio</a>
+                    </li>
 
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link" href="miwufencasa.html">Miwuf en casa</a>
-                        </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="miwufencasa.html">Miwuf en casa</a>
+                    </li>
 
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link" href="donaciones.html">Donaciones</a>
-                        </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="donaciones.html">Donaciones</a>
+                    </li>
 
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link " href="blog.html">Blog</a>
-                        </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="blog.html">Blog</a>
+                    </li>
 
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link" href="contacto.html">Contáctanos</a>
-                        </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="contacto.html">Contáctanos</a>
+                    </li>
 
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link" href="nosotros.html">Nosotros</a>
-                        </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="nosotros.html">Nosotros</a>
+                    </li>
 
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-link active" href="preguntas-frecuentes.html">Consultas</a>
-                        </li>
-
-                        <div class="nav-menu-item nav-menu-social social-links d-none">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </ul> <!-- fin de nav-menu -->
-                </div>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link active" href="preguntas-frecuentes.html">Consultas</a>
+                    </li>
+                </ul> <!-- fin de nav-menu -->
                 <div class="nav-button">
                     <a class=" button-primary center" href="donaciones.html">Dona Aquí </a>
-                </div>
-
-                <div class="nav-burger d-none">
-                    <button class="button-burger"> 
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
                 </div>
 
 
@@ -95,57 +69,42 @@
         <div class="header-shape"></div>
     </header>
 
+    <!-- breadcrumb header -->
 
     <section id="titulo-contactanos">
         <div class="contenedor">
             <h2>Preguntas</h2>
-            <span> <i class="fa-solid fa-location-dot"></i> <a href="../index.html">Inicio</a> / `preguntas
+            <span> <i class="fa-solid fa-location-dot"></i> <a href="../index.html">Inicio</a> / preguntas
                 frecuentes</span>
         </div>
     </section>
 
     <!-- PREGUNTAS -->
-    <section class="seccion-pf">
 
-        <div class="titulo-pf">Preguntas Frecuentes</div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Qué es WUF?</div>
-            <div class="respuesta">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est labore quo repudiandae eos
-                blanditiis modi quos ducimus laboriosam, debitis fugit architecto tempora culpa placeat. Atque suscipit
-                asperiores nobis reiciendis.
-            </div>
+    <section class="P-section">
+    <div class="Preguntas">
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Qué es WUF?</h3>
+            <p class="Respuesta">WUF es una organización que se dedica a promover el bienestar de los animales, principalmente perros, en situación de vulnerabilidad.</p>
         </div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Cómo se sostiene económicamente WUF?</div>
-            <div class="respuesta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse eius. Hic minima illum sint
-                eligendi vero veniam dolor facere quidem tenetur, officiis est. Molestiae amet recusandae animi magnam
-                ut?
-            </div>
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Cómo se sostiene económicamente WUF?</h3>
+            <p class="Respuesta">WUF se financia mediante donaciones, venta de productos, y eventos de recaudación organizados con apoyo de voluntarios y empresas.</p>
         </div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Con que productos puedo ayudar a WUF</div>
-            <div class="respuesta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit, nulla nemo, repudiandae
-                modi unde, praesentium minus sit nihil magni assumenda aliquam sint sapiente officia? Minus architecto
-                officiis excepturi perspiciatis!
-            </div>
+    </div>
+    <div class="P-bottom">
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Con qué productos puedo ayudar a WUF?</h3>
+            <p class="Respuesta">Puedes colaborar adquiriendo productos solidarios como camisetas, accesorios para mascotas, o haciendo donaciones monetarias.</p>
         </div>
-
-        <div class="articulo">
-            <div class="cuestionario">¿Cómo puedo realizar una donación?</div>
-            <div class="respuesta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id sint quas repellendus quo deserunt,
-                nemo, unde laudantium eos dolorem nam dicta odio eveniet adipisci voluptas quod officia omnis accusamus!
-            </div>
+        <div class="Pregunta" onclick="toggleAnswer(this)">
+            <h3>¿Dónde puedo encontrar más información sobre WUF?</h3>
+            <p class="Respuesta">Puedes visitar nuestra página web oficial o seguirnos en nuestras redes sociales para conocer más.</p>
         </div>
+    </div>
+</section>
 
-    </section>
-
+    
     <!-- PIE DE PAGINA  -->
     <footer class="footer">
         <div class="footer-content cont">
@@ -203,7 +162,6 @@
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-angle-up"></i>
     </a>
-    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -238,7 +238,7 @@ video {
 
 /* para no mostrar */
 .d-none {
-    display: none
+    display: none 
 }
 
 .padding-1t {
@@ -455,6 +455,10 @@ div {
 
 .button-close{
     cursor: pointer;
+}
+
+.nav-menu .nav-menu-social{
+    display: none ;
 }
 
 /* Titulo Paginas */
@@ -1279,7 +1283,7 @@ div {
         padding-bottom: 2rem;
     }
 
-    .nav-menu-social {
+    .nav-menu .nav-menu-social {
         display: flex;
         justify-content: center;
         border-bottom: none;

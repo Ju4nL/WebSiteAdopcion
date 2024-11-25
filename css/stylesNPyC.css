@@ -119,6 +119,19 @@
 
 /* PREGUNTAS FRECUENTES */
 
+/* Contenedor general de la sección */
+.P-section {
+    padding: 20px;
+    background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    height: auto; /* Deja que el contenedor se ajuste al contenido */
+    width: 100%;
+    display: flex; /* Usa flexbox para un mejor control de los elementos */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+}
+
 /* Contenedor de preguntas: dos columnas */
 .Preguntas {
     display: grid;
@@ -126,7 +139,8 @@
     gap: 20px; /* Espaciado entre las cajas */
     padding: 20px;
     background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); /* Agrega la imagen de fondo */
-    height: 60em;
+    height: 50em;
+    width: 100%;
 }
 
 /* Diseño de cada pregunta */
@@ -134,29 +148,40 @@
     position: relative;
     background: #ffffff;
     border: 1px solid #d1d9e6;
-    border-radius: 12px; /* Bordes redondeados para un diseño más atractivo */
-    padding: 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 6px; /* Reducir el padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-align: center;
     transition: all 0.3s ease;
-}
-
-.Pregunta:hover {
-    transform: scale(1.03); /* Efecto de zoom al pasar el ratón */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 130;
+    height: 110px; /* Reducir la altura de las cajas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em; /* Reducir el tamaño de la fuente general */
 }
 
 /* Título de la pregunta */
 .Pregunta h3 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 1.2em; /* Reducir el tamaño del título */
     color: #333;
 }
+
+/* Estilo de los párrafos de respuesta */
 .Pregunta p {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 0.85em; /* Reducir el tamaño de la fuente de la respuesta */
     color: #333;
+}
+
+
+/* Efecto al pasar el ratón por encima */
+.Pregunta:hover {
+    transform: scale(1.03); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Ícono de suma/resta */
@@ -192,7 +217,7 @@
 
 /* Diseño cuadrado */
 .Pregunta {
-    height: 200px; /* Hacemos las cajas cuadradas */
+    height: 160px; /* Hacemos las cajas más pequeñas */
     display: flex;
     flex-direction: column;
     justify-content: center;

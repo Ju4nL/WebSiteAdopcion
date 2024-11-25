@@ -61,49 +61,55 @@
     z-index: 1; /* Asegura que el elemento esté por encima de otros elementos */
 }
 
+/* Pagina nosotros */
+
 .grupo {
     display: flex; /* Utiliza flexbox para la disposición de los elementos */
     flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
     justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 40px;
+    
 }
 
 .miembros {
     background-color: white; 
     color: #002b55; /* Establece el color del texto */
-    border-radius: 10px; /* Añade bordes redondeados */
-    margin: 10px; /* Añade un margen de 10px alrededor del elemento */
+    border-radius: 15px; /* Añade bordes redondeados */
+    margin: 5px; /* Añade un margen de 10px alrededor del elemento */
     padding: 15px; /* Añade un relleno interno de 15px */
-    width: 200px; /* Establece un ancho fijo de 200px */
+    width: 25em; /* Establece un ancho fijo */
     text-align: center; /* Centra el texto dentro del elemento */
 }
 
 .miembros img {
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    border-radius: 50%; /* Hace que la imagen sea circular */
+    width: 90%; /* Establece el ancho de la imagen al 100% del contenedor */
+    border-radius: 25%; /* Hace que la imagen sea circular */
 }
 
 .miembros h3 {
-    font-size: 1.2em; /* Establece el tamaño de fuente del nombre del miembro */
+    font-size: 3.5em; /* Establece el tamaño de fuente del nombre del miembro */
     margin: 10px 0 5px 0; /* Añade márgenes superior e inferior */
 }
 
 .miembros p {
-    font-size: 0.9em; /* Establece el tamaño de fuente de la descripción del miembro */
+    font-size: 1.3em; /* Establece el tamaño de fuente de la descripción del miembro */
+    text-align: unset;
 }
  
 
-.team-section {
+.seccion-nosotros {
     text-align: center; /* Centra el texto dentro de la sección del equipo */
-    padding: 50px; /* Añade un relleno de 50px alrededor de la sección */
+    padding: 60px; /* Añade un relleno de 50px alrededor de la sección */
     background-color: #e73a2d; /* Establece el color de fondo de la sección del equipo */
     color: white; /* Establece el color del texto en blanco */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.16),  rgba(255, 255, 255,0.5)), url('../assets/images/Nosotros/fondo\ 1.webp');
+    background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); /* Agrega la imagen de fondo */
     width: 100%;
+    height: 58em;
 } 
 
-.team-section h1 {
-    font-size: 2.5em; /* Establece el tamaño de fuente del título */
-    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+.seccion-nosotros h1 {
+    font-size: 6em; /* Establece el tamaño de fuente del título */
+    margin-bottom: 30px; /* Añade un margen inferior de 20px */
 }
 
  

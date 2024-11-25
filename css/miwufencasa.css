@@ -119,4 +119,62 @@ p {
     transform: scale(1.05);
 }
 
+/* Media Queries Responsivas */
+
+/* Para pantallas medianas (tablets y laptops pequeñas) */
+@media screen and (max-width: 1024px) {
+    #cabecera {
+        padding: 5px 0;
+    }
+
+    #banner h1 {
+        font-size: 2.5rem;
+    }
+
+    #banner p {
+        font-size: 1.2rem;
+    }
+
+    .gallery {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        flex: 1 1 45%;
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    #cabecera {
+        padding: 5px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #banner {
+        padding: 40px 20px;
+    }
+
+    #banner h1 {
+        font-size: 2rem;
+    }
+
+    #banner p {
+        font-size: 1rem;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+}
+
+
  

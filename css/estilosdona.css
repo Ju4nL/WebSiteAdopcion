@@ -325,3 +325,50 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #3b2372;
 }
+    /* Media Queries */
+
+/* Pantallas medianas y pequeñas (hasta 992px) */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form, 
+    .contact-info {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: var(--font-size-sm);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas muy pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-info h3 {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+

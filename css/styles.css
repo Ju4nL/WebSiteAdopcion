@@ -1,9 +1,8 @@
+
 /* Enlazar el CSS con la librería de iconos de Font-Awesone 6.6 */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 /* Enlazar el CSS con fuentes externas de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -240,7 +239,7 @@ video {
 
 /* para no mostrar */
 .d-none {
-    display: none
+    display: none 
 }
 
 .padding-1t {
@@ -316,7 +315,14 @@ video {
     flex-basis: 33.33%;
     max-width: 33.33%;
 }
-
+.col-40 {
+    flex-basis: 40%;
+    max-width: 40%; 
+}
+.col-60 {
+    flex-basis: 60%;
+    max-width: 60%;
+}
 .col-50 {
     flex-basis: 50%;
     max-width: 50%;
@@ -452,6 +458,10 @@ div {
     cursor: pointer;
 }
 
+.nav-menu .nav-menu-social{
+    display: none ;
+}
+
 /* Titulo Paginas */
 #titulo-contactanos {
     padding-top: 45px;
@@ -461,8 +471,8 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
-    width: 100%; /* Ancho fijo */
-    height: 10em; /* Alto fijo */
+    width: 86em; /* Ancho fijo */
+    height: 20em; /* Alto fijo */
  font-size: 30px;
 }
 
@@ -639,37 +649,63 @@ div {
 
 .veterinario {
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;   
+    border-radius: 15px; 
+}
+
+.veterinario-imagen {
+    position: relative;
 }
 
 .veterinario-descripcion { 
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 85%; /* Ajusta a la altura del contenedor */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo oscuro semi-transparente */
-    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+    z-index: 5;
     text-align: center;
-    transition: all 1s ease-in-out; /* Suaviza el movimiento */
-    opacity: 1;
-    z-index: 2; 
-    border-radius: 1rem;
+
+}
+.veterinario-descripcion li{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
+.veterinario-descripcion .row{
+    flex-direction: row !important;
+}
+
+.veterinario-descripcion .col{
+    flex-basis: 25%;
+}
+
+.veterinario-descripcion .button-primary{
+    padding: 0.3rem;
+}
 .veterinario:hover .veterinario-descripcion {
     opacity: 1; /* Desliza hacia adentro cuando pasa el cursor */
 }
 
 .veterinario-nombres {
-    position: relative;
-    top: -30px;
-    margin: 0 1rem;
-    z-index: 3;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%; 
+    width: 80%;
+    transform: translateX(-50%); /* Ajusta la posición para centrarlo */
+    z-index: 2;
+    margin: 0; 
+    text-align: center;  
 }
 
 .veterinario-descripcion p {
@@ -682,21 +718,52 @@ div {
     color: var(--secondary-color);
 }
 
+.veterinario-descripcion h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .veterinario-descripcion .button-primary {
     color: var(--background-color);
 }
 
 /* testimonios */
 
-
+#testimonios {
+    background-image: url(../assets/images/bg/counter_bg.jpg);
+}
 
 #testimonios .col {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+    gap: 2rem;
+} 
 
+#testimonios .imgfluid { 
+    width: 50%;
+    border-radius: 1rem;
+} 
+#testimonios span{
+    color: var(--secondary-color2);
+    font-weight: 700;
+    text-align: center;
+}
+#testimonios .card{
+    position: relative;
+}
+#testimonios .testimonio-card-description::after {
+    content: '"';
+    position: absolute;
+    bottom: -3rem;
+    right: 1rem;
+    font-family: "Flaticon";
+    font-size: 8rem;
+    color: #f04336;
+    line-height: 1;
+    z-index: 2;
+}
 /* Noticias */
 #noticias {
     background-color: var(--background-color);
@@ -752,19 +819,13 @@ div {
 
 
 .footer {
-
     background: #f4f1EA;
     color: var(--background-color);
-    padding: 20px 0;
-    /* Relleno vertical */
+    padding: 20px 10px; /* Ajuste de relleno horizontal para pantallas pequeñas */
     padding-top: 5rem;
     font-family: var(--font-family);
-    /* Fuente del pie de página */
     position: relative;
-    /* Importante para el posicionamiento absoluto de los hijos */
     overflow: hidden;
-    /* Oculta cualquier contenido que desborde */
-    
 }
 
 .footer::after {
@@ -772,60 +833,47 @@ div {
     background-image: url('../assets/images/bg/footer_bg_shape01.png');
     position: absolute;
     width: 100%;
-    height: 20px;
+    height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    
-}
-
-.footer-section .llamar {
-    color: var(--primary-color);
-    font-size: 10px;
-    margin-bottom: 10px;
 }
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas pequeñas */
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
-    /* Ancho máximo para el contenido del pie de página */
     margin: 0 auto;
-    /* Centrado horizontal */
     position: relative;
-    /* Para el z-index del contenido sobre la onda */
     z-index: 1;
-    /* Asegura que el contenido esté sobre la onda */
-    font-size: 20px;
 }
 
 .footer-section {
     flex: 1;
-    padding: 0 20px;
-    min-width: 160px;
-    font-size: 20px;
+    padding: 10px;
+    min-width: 200px; /* Asegura que cada sección tenga un tamaño mínimo razonable */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
 .footer-section h3 {
     color: var(--secondary-color);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 18px;
-    font-size:35px;
 }
 
 .footer-section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 50px;
 }
 
 .footer-section ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 2;
     display: block;
 }
@@ -834,32 +882,224 @@ div {
     color: var(--primary-color);
 }
 
+.social-links {
+    display: flex;
+    gap: 10px; /* Espaciado uniforme entre los iconos */
+    flex-wrap: wrap;
+}
+
 .social-links a {
     font-size: 1.5em;
-    margin-right: 12px;
-}
-
-.instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3.5px;
-}
-
-.instagram-grid img {
-    width: 7em;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
-}
-
-/* Cambia el color de los íconos de redes sociales */
-.social-links a {
     color: var(--secondary-color);
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--primary-color);
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+/* Responsividad para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+        justify-content: center; /* Centra las secciones en la fila */
+        gap: 20px; /* Espaciado entre las secciones */
+        padding: 10px; /* Relleno del contenedor */
+    }
+
+    /* Coloca "Nuestras Políticas" y "Nuestros Servicios" en una fila */
+    .footer-policies-services {
+        display: flex;
+        justify-content: space-between; /* Distribuye las secciones horizontalmente */
+        gap: 20px; /* Espaciado entre "Nuestras Políticas" y "Nuestros Servicios" */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .footer-policies-services .footer-section {
+        flex: 1; /* Asegura que ambas secciones tengan el mismo ancho */
+        min-width: 150px; /* Previene que sean demasiado pequeñas */
+        text-align: center; /* Centra el contenido dentro de cada sección */
+    }
+
+    /* Asegura que el resto del diseño no se vea afectado */
+    .footer-section:not(.footer-policies-services .footer-section) {
+        width: 100%; /* Las demás secciones seguirán ocupando todo el ancho */
+    }
+}
+
+
+
+/* Ajustes adicionales para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .footer-section h3 {
+        font-size: 16px; /* Reduce el tamaño del título */
+    }
+
+    .footer-section ul li a {
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+
+    .instagram-grid {
+        grid-template-columns: 3fr; /* Una imagen por fila */
+    }
+}
+
+/* Responsividad para pantallas de 375px de ancho */
+@media (max-width: 375px) {
+    .footer-content {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra el contenido */
+        padding: 10px; /* Reduce el relleno general */
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%; /* Cada sección ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+        padding: 10px 0; /* Reduce el relleno entre secciones */
+    }
+
+    .footer-section h3 {
+        font-size: 14px; /* Reduce el tamaño del encabezado */
+    }
+
+    .footer-section ul li a {
+        font-size: 11px; /* Ajusta el tamaño de los enlaces */
+        line-height: 1.5; /* Mejora la legibilidad */
+    }
+
+    .social-links {
+        justify-content: center; /* Centra los íconos de redes sociales */
+        gap: 8px; /* Reduce el espacio entre íconos */
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 5px; /* Espaciado más pequeño entre imágenes */
+    }
+
+    .instagram-grid img {
+        aspect-ratio: 1; /* Mantiene las imágenes cuadradas */
+        border-radius: 3px; /* Reduce los bordes redondeados */
+    }
+}
+
+/* Responsividad para pantallas de Iphone 14 pro Max */
+@media (max-width: 430px) and (max-height: 932px) {
+    .footer-content {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra las secciones */
+        gap: 15px; /* Espaciado entre las secciones */
+    }
+
+    .footer-section {
+        width: 100%; /* Cada sección ocupa el ancho completo */
+        text-align: center; /* Centra el contenido de texto */
+    }
+
+    /* Ajusta "Nuestras Políticas" y "Nuestros Servicios" en una fila */
+    .footer-policies-services {
+        display: flex;
+        justify-content: space-around; /* Distribuye las secciones horizontalmente */
+        gap: 10px; /* Espaciado entre las secciones */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .footer-policies-services .footer-section {
+        flex: 1; /* Ambas secciones tienen el mismo tamaño */
+        max-width: 45%; /* Ocupan alrededor del 45% cada una */
+        text-align: center; /* Centra el contenido */
+    }
+
+    /* Ajustes para el logo */
+    .nav-logo img {
+        max-width: 200px; /* Limita el tamaño del logo para pantallas pequeñas */
+        height: auto; /* Mantén la proporción del logo */
+    }
+
+    /* Ajustes para las imágenes de Instagram */
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; /* Espaciado entre imágenes */
+    }
+
+    .instagram-grid img {
+        border-radius: 10px; /* Bordes redondeados para las imágenes */
+    }
+
+    /* Ajusta el tamaño de los textos */
+    .footer-section h3 {
+        font-size: 16px; /* Reduce el tamaño de los títulos */
+    }
+
+    .footer-section ul li a {
+        font-size: 13px; /* Reduce el tamaño del texto */
+    }
+
+    .social-links a {
+        font-size: 20px; /* Ajusta el tamaño de los íconos sociales */
+        margin: 0 5px; /* Espaciado entre íconos */
+    }
+}
+
+
+/* Responsividad para pantallas de 414px de ancho */
+@media (max-width: 414px) {
+    .footer-content {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra las secciones */
+        padding: 15px; /* Espaciado cómodo para pantallas grandes */
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%; /* Cada sección ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+        padding: 20px 0; /* Espaciado mayor entre las secciones */
+    }
+
+    .footer-section h3 {
+        font-size: 16px; /* Ajusta el tamaño del encabezado */
+    }
+
+    .footer-section ul li a {
+        font-size: 13px; /* Aumenta ligeramente el tamaño del texto para mejor legibilidad */
+        line-height: 1.8; /* Más espacio entre líneas */
+    }
+
+    .social-links {
+        justify-content: center; /* Centra los íconos de redes sociales */
+        gap: 10px; /* Espaciado mayor entre íconos */
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila */
+        gap: 8px; /* Espaciado más amplio entre imágenes */
+    }
+
+    .instagram-grid img {
+        aspect-ratio: 1; /* Mantiene las imágenes cuadradas */
+        border-radius: 5px; /* Bordes redondeados moderados */
+    }
+
+    .footer-section p {
+        font-size: 14px; /* Ajusta el tamaño del texto de los párrafos */
+        line-height: 1.6; /* Mejora la legibilidad */
+    }
 }
 
 /* Estilos para la sección de columnas y video */
@@ -971,14 +1211,33 @@ div {
 }
 
 @media (max-width: 1024px) {
-    .col {
-        flex-basis: 50%; /* Cada columna ocupa el 50% del ancho */
+    
+     /* title */ 
+     .title{
+        font-size: 2.3rem ;
     }
+    .font-size-xl {
+        font-size: 2.3rem;
+    }
+
+    .font-size-l {
+        font-size: 1.8rem;
+    }
+    .padding-y2{
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .padding-y2{
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    } 
     
     .col-33 {
         flex-basis: 50%; /* Ocupa la mitad del contenedor */
         max-width: 50%;  
     }
+   
 
     .nav-burger {
         display: block;
@@ -1024,8 +1283,8 @@ div {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-
-    .nav-menu-social {
+ 
+    .nav-menu .nav-menu-social {
         display: flex;
         justify-content: center;
         border-bottom: none;
@@ -1040,12 +1299,27 @@ div {
     body.menu-active .nav-menu {
        right: 0rem;
     }
+
+    #adopta .col{
+        display: flex;
+        align-items: center;
+    }
+
+    .veterinario-descripcion h2{
+        font-size: 1.2rem;
+    }
+
+    #testimonios .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    } 
+    
 }
 
 
-<<<<<<< HEAD
- 
-/* Responsivo para móviles (pantallas aún más pequeñas) */
 @media (max-width: 768px) {
     h1,
     h2,
@@ -1064,6 +1338,14 @@ div {
         flex-basis: 100%; /* Ocupa la mitad del contenedor */
         max-width: 100%;  
     }
+    .col-40 {
+        flex-basis: 100%;
+        max-width: 100%; 
+    }
+    .col-60 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
     /* title */ 
     .title{
         font-size: 2rem ;
@@ -1076,71 +1358,75 @@ div {
         font-size: 1.5rem;
     }
 
+    #adopta .adopta-contenido{
+        width: 80%; 
+    }
+
+    #adoptar-mascota .subtitle {
+        width: 90%;
+    }
 
 }
-=======
-/* Responsive para celulare */
 
 /* CONTENEDOR DE CAROUSEL */
 #carrusel {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  /* CAROUSEL */
-  .carousel {
-    height: 55vh; /*alto del carousel*/
-    /* height: 82%; */
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-   /* CONTENEDOR DE IMÁGENES */
-  .carousel-images {
-    height: 100vh;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  /* IMÁGENES */
-  .carousel-images img {
-    width: 100%;
-    flex-shrink: 0;
-    object-fit: cover;
-  }
-  
-  /* BOTONES IZQ Y DER */
-  .carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 1000;
-  }
-  
-  .carousel button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
->>>>>>> cb5d5861806ef7dbe5af9b9536b3b9866aaa61e7
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+/* CAROUSEL */
+.carousel {
+height: 55vh; /*alto del carousel*/
+/* height: 82%; */
+position: relative;
+width: 100%;
+max-width: 100%;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.carousel-images {
+height: 100vh;
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+/* IMÁGENES */
+.carousel-images img {
+width: 100%;
+flex-shrink: 0;
+object-fit: cover;
+}
+
+/* BOTONES IZQ Y DER */
+.carousel button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+border-radius: 50%;
+z-index: 1000;
+}
+
+.carousel button:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}

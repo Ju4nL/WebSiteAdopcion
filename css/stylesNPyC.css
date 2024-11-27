@@ -384,4 +384,93 @@
     margin: 0; 
     font-weight: 500;
 }  
+/* General Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se ajusten en pantallas pequeñas */
+    width: 90%; /* Ajustamos el ancho en lugar de mantener un tamaño fijo */
+    margin: 0 auto;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.contact-info {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2.5rem;
+}
+
+.contact-form {
+    width: 60%;
+    padding: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Apila las secciones */
+    }
+
+    .contact-info, 
+    .contact-form {
+        width: 100%; /* Las secciones ocupan todo el ancho */
+    }
+
+    .contact-info {
+        padding: 2rem; /* Reducimos el padding para pantallas más pequeñas */
+    }
+
+    .contact-info h3 {
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        width: 100%; /* Ajustamos al 100% en pantallas pequeñas */
+        margin: 0;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+        gap: 1rem; /* Reducimos el espacio entre elementos */
+    }
+
+    .contact-info h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact-info p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-form .button-primary {
+        font-size: 14px; /* Botón más pequeño */
+        padding: 8px;
+    }
+
+    .input-container input[type="text"],
+    .input-container input[type="email"],
+    .input-container textarea {
+        font-size: 12px; /* Ajustamos el tamaño de texto */
+    }
+
+    .contact-usuario {
+        flex-direction: column; /* Apilamos los elementos del formulario */
+        gap: 0.5rem;
+    }
+}
+
 

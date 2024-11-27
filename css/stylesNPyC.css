@@ -385,36 +385,3 @@
     font-weight: 500;
 }  
 
-
-/* seccion cjas para redes sociales - contactanos */
-
-.social-media {
-    display: flex; /* Flexbox para colocar los elementos en una fila */
-    gap: 10px; /* Espaciado entre los íconos */
-    width: 100%; /* Asegúrate de que la sección ocupe el 100% del ancho */
-    justify-content: space-around;
-    margin: 0.5rem 0;
-}
-
-.social-media .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1; /* Permite que el icono crezca para ocupar el espacio disponible */
-    height: 100px;
-    background-color:var(--secondary-color); 
-    border-radius: var(--border-radius);
-    
-    font-size: 2em; /* Tamaño del ícono */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
-    transition: all 0.3s ease; /* Transición suave para el efecto hover */
-}
-
-.social-media .icon i{
-    color: var(--background-color);
-}
-
-.icon:hover {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
-    box-shadow: var(--box-shadow);
-}

@@ -464,6 +464,70 @@ div {
     display: none;
 }
 
+/* Carrusel */
+/* CONTENEDOR DE CAROUSEL */
+#carrusel {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* CAROUSEL */
+.carousel {
+    height: 55vh;
+    /*alto del carousel*/
+    /* height: 82%; */
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.carousel-images {
+    height: 100vh;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* IMÁGENES */
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* BOTONES IZQ Y DER */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 /* Titulo Paginas */
 #titulo-contactanos {
     padding-top: 45px;
@@ -930,260 +994,7 @@ div {
     border-radius: var(--border-radius);
 }
 
-/* Responsividad para pantallas de hasta 768px */
-@media (max-width: 768px) {
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-        /* Permite que los elementos se ajusten en filas */
-        justify-content: center;
-        /* Centra las secciones en la fila */
-        gap: 20px;
-        /* Espaciado entre las secciones */
-        padding: 10px;
-        /* Relleno del contenedor */
-    }
 
-    /* Coloca "Nuestras Políticas" y "Nuestros Servicios" en una fila */
-    .footer-policies-services {
-        display: flex;
-        justify-content: space-between;
-        /* Distribuye las secciones horizontalmente */
-        gap: 20px;
-        /* Espaciado entre "Nuestras Políticas" y "Nuestros Servicios" */
-        width: 100%;
-        /* Ocupa todo el ancho disponible */
-    }
-
-    .footer-policies-services .footer-section {
-        flex: 1;
-        /* Asegura que ambas secciones tengan el mismo ancho */
-        min-width: 150px;
-        /* Previene que sean demasiado pequeñas */
-        text-align: center;
-        /* Centra el contenido dentro de cada sección */
-    }
-
-    /* Asegura que el resto del diseño no se vea afectado */
-    .footer-section:not(.footer-policies-services .footer-section) {
-        width: 100%;
-        /* Las demás secciones seguirán ocupando todo el ancho */
-    }
-}
-
-
-
-/* Ajustes adicionales para dispositivos muy pequeños */
-@media (max-width: 480px) {
-    .footer-section h3 {
-        font-size: 16px;
-        /* Reduce el tamaño del título */
-    }
-
-    .footer-section ul li a {
-        font-size: 12px;
-        /* Reduce el tamaño del texto */
-    }
-
-    .instagram-grid {
-        grid-template-columns: 3fr;
-        /* Una imagen por fila */
-    }
-}
-
-/* Responsividad para pantallas de 375px de ancho */
-@media (max-width: 375px) {
-    .footer-content {
-        flex-direction: column;
-        /* Apila las secciones verticalmente */
-        align-items: center;
-        /* Centra el contenido */
-        padding: 10px;
-        /* Reduce el relleno general */
-    }
-
-    .footer-section {
-        flex: none;
-        width: 100%;
-        /* Cada sección ocupa todo el ancho */
-        text-align: center;
-        /* Centra el texto */
-        padding: 10px 0;
-        /* Reduce el relleno entre secciones */
-    }
-
-    .footer-section h3 {
-        font-size: 14px;
-        /* Reduce el tamaño del encabezado */
-    }
-
-    .footer-section ul li a {
-        font-size: 11px;
-        /* Ajusta el tamaño de los enlaces */
-        line-height: 1.5;
-        /* Mejora la legibilidad */
-    }
-
-    .social-links {
-        justify-content: center;
-        /* Centra los íconos de redes sociales */
-        gap: 8px;
-        /* Reduce el espacio entre íconos */
-    }
-
-    .instagram-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
-        /* Espaciado más pequeño entre imágenes */
-    }
-
-    .instagram-grid img {
-        aspect-ratio: 1;
-        /* Mantiene las imágenes cuadradas */
-        border-radius: 3px;
-        /* Reduce los bordes redondeados */
-    }
-}
-
-/* Responsividad para pantallas de Iphone 14 pro Max */
-@media (max-width: 430px) and (max-height: 932px) {
-    .footer-content {
-        flex-direction: column;
-        /* Apila las secciones verticalmente */
-        align-items: center;
-        /* Centra las secciones */
-        gap: 15px;
-        /* Espaciado entre las secciones */
-    }
-
-    .footer-section {
-        width: 100%;
-        /* Cada sección ocupa el ancho completo */
-        text-align: center;
-        /* Centra el contenido de texto */
-    }
-
-    /* Ajusta "Nuestras Políticas" y "Nuestros Servicios" en una fila */
-    .footer-policies-services {
-        display: flex;
-        justify-content: space-around;
-        /* Distribuye las secciones horizontalmente */
-        gap: 10px;
-        /* Espaciado entre las secciones */
-        width: 100%;
-        /* Ocupa todo el ancho disponible */
-    }
-
-    .footer-policies-services .footer-section {
-        flex: 1;
-        /* Ambas secciones tienen el mismo tamaño */
-        max-width: 45%;
-        /* Ocupan alrededor del 45% cada una */
-        text-align: center;
-        /* Centra el contenido */
-    }
-
-    /* Ajustes para el logo */
-    .nav-logo img {
-        max-width: 200px;
-        /* Limita el tamaño del logo para pantallas pequeñas */
-        height: auto;
-        /* Mantén la proporción del logo */
-    }
-
-    /* Ajustes para las imágenes de Instagram */
-    .instagram-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        /* Espaciado entre imágenes */
-    }
-
-    .instagram-grid img {
-        border-radius: 10px;
-        /* Bordes redondeados para las imágenes */
-    }
-
-    /* Ajusta el tamaño de los textos */
-    .footer-section h3 {
-        font-size: 16px;
-        /* Reduce el tamaño de los títulos */
-    }
-
-    .footer-section ul li a {
-        font-size: 13px;
-        /* Reduce el tamaño del texto */
-    }
-
-    .social-links a {
-        font-size: 20px;
-        /* Ajusta el tamaño de los íconos sociales */
-        margin: 0 5px;
-        /* Espaciado entre íconos */
-    }
-}
-
-
-/* Responsividad para pantallas de 414px de ancho */
-@media (max-width: 414px) {
-    .footer-content {
-        flex-direction: column;
-        /* Apila las secciones verticalmente */
-        align-items: center;
-        /* Centra las secciones */
-        padding: 15px;
-        /* Espaciado cómodo para pantallas grandes */
-    }
-
-    .footer-section {
-        flex: none;
-        width: 100%;
-        /* Cada sección ocupa todo el ancho */
-        text-align: center;
-        /* Centra el texto */
-        padding: 20px 0;
-        /* Espaciado mayor entre las secciones */
-    }
-
-    .footer-section h3 {
-        font-size: 16px;
-        /* Ajusta el tamaño del encabezado */
-    }
-
-    .footer-section ul li a {
-        font-size: 13px;
-        /* Aumenta ligeramente el tamaño del texto para mejor legibilidad */
-        line-height: 1.8;
-        /* Más espacio entre líneas */
-    }
-
-    .social-links {
-        justify-content: center;
-        /* Centra los íconos de redes sociales */
-        gap: 10px;
-        /* Espaciado mayor entre íconos */
-    }
-
-    .instagram-grid {
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 imágenes por fila */
-        gap: 8px;
-        /* Espaciado más amplio entre imágenes */
-    }
-
-    .instagram-grid img {
-        aspect-ratio: 1;
-        /* Mantiene las imágenes cuadradas */
-        border-radius: 5px;
-        /* Bordes redondeados moderados */
-    }
-
-    .footer-section p {
-        font-size: 14px;
-        /* Ajusta el tamaño del texto de los párrafos */
-        line-height: 1.6;
-        /* Mejora la legibilidad */
-    }
-}
 
 /* Estilos para la sección de columnas y video */
 #info-section {
@@ -1462,69 +1273,221 @@ div {
     #adoptar-mascota .subtitle {
         width: 90%;
     }
+ 
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos se ajusten en filas */
+        justify-content: center;
+        /* Centra las secciones en la fila */
+        gap: 20px;
+        /* Espaciado entre las secciones */
+        padding: 10px;
+        /* Relleno del contenedor */
+    }
 
+    /* Coloca "Nuestras Políticas" y "Nuestros Servicios" en una fila */
+    .footer-policies-services {
+        display: flex;
+        justify-content: space-between;
+        /* Distribuye las secciones horizontalmente */
+        gap: 20px;
+        /* Espaciado entre "Nuestras Políticas" y "Nuestros Servicios" */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+    }
+
+    .footer-policies-services .footer-section {
+        flex: 1;
+        /* Asegura que ambas secciones tengan el mismo ancho */
+        min-width: 150px;
+        /* Previene que sean demasiado pequeñas */
+        text-align: center;
+        /* Centra el contenido dentro de cada sección */
+    }
+
+    /* Asegura que el resto del diseño no se vea afectado */
+    .footer-section:not(.footer-policies-services .footer-section) {
+        width: 100%;
+        /* Las demás secciones seguirán ocupando todo el ancho */
+    }
 }
 
-/* CONTENEDOR DE CAROUSEL */
-#carrusel {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+ 
+
+/* Responsividad para pantallas de Iphone 14 pro Max */
+@media (max-width: 430px)   {
+    .footer-content {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra las secciones */
+        gap: 15px; /* Espaciado entre las secciones */
+    }
+
+    .footer-section {
+        width: 100%; /* Cada sección ocupa el ancho completo */
+        text-align: center; /* Centra el contenido de texto */
+    }
+
+    /* Ajusta "Nuestras Políticas" y "Nuestros Servicios" en una fila */
+    .footer-policies-services {
+        display: flex;
+        justify-content: space-around; /* Distribuye las secciones horizontalmente */
+        gap: 10px; /* Espaciado entre las secciones */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .footer-policies-services .footer-section {
+        flex: 1; /* Ambas secciones tienen el mismo tamaño */
+        max-width: 45%; /* Ocupan alrededor del 45% cada una */
+        text-align: center; /* Centra el contenido */
+    }
+
+    /* Ajustes para el logo */
+    .nav-logo img {
+        max-width: 200px; /* Limita el tamaño del logo para pantallas pequeñas */
+        height: auto; /* Mantén la proporción del logo */
+    }
+
+    /* Ajustes para las imágenes de Instagram */
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; /* Espaciado entre imágenes */
+    }
+
+    .instagram-grid img {
+        border-radius: 10px; /* Bordes redondeados para las imágenes */
+    }
+
+    /* Ajusta el tamaño de los textos */
+    .footer-section h3 {
+        font-size: 16px; /* Reduce el tamaño de los títulos */
+    }
+
+    .footer-section ul li a {
+        font-size: 13px; /* Reduce el tamaño del texto */
+    }
+
+    .social-links a {
+        font-size: 20px; /* Ajusta el tamaño de los íconos sociales */
+        margin: 0 5px; /* Espaciado entre íconos */
+    }
 }
 
-/* CAROUSEL */
-.carousel {
-    height: 55vh;
-    /*alto del carousel*/
-    /* height: 82%; */
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+/* Responsividad para pantallas de 414px de ancho */
+@media (max-width: 414px) {
+    .footer-content {
+        flex-direction: column;
+        /* Apila las secciones verticalmente */
+        align-items: center;
+        /* Centra las secciones */
+        padding: 15px;
+        /* Espaciado cómodo para pantallas grandes */
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%;
+        /* Cada sección ocupa todo el ancho */
+        text-align: center;
+        /* Centra el texto */
+        padding: 20px 0;
+        /* Espaciado mayor entre las secciones */
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+        /* Ajusta el tamaño del encabezado */
+    }
+
+    .footer-section ul li a {
+        font-size: 13px;
+        /* Aumenta ligeramente el tamaño del texto para mejor legibilidad */
+        line-height: 1.8;
+        /* Más espacio entre líneas */
+    }
+
+    .social-links {
+        justify-content: center;
+        /* Centra los íconos de redes sociales */
+        gap: 10px;
+        /* Espaciado mayor entre íconos */
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 imágenes por fila */
+        gap: 8px;
+        /* Espaciado más amplio entre imágenes */
+    }
+
+    .instagram-grid img {
+        aspect-ratio: 1;
+        /* Mantiene las imágenes cuadradas */
+        border-radius: 5px;
+        /* Bordes redondeados moderados */
+    }
+
+    .footer-section p {
+        font-size: 14px;
+        /* Ajusta el tamaño del texto de los párrafos */
+        line-height: 1.6;
+        /* Mejora la legibilidad */
+    }
 }
 
-/* CONTENEDOR DE IMÁGENES */
-.carousel-images {
-    height: 100vh;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
 
-/* IMÁGENES */
-.carousel-images img {
-    width: 100%;
-    flex-shrink: 0;
-    object-fit: cover;
-}
+/* Responsividad para pantallas de 375px de ancho */
+@media (max-width: 375px) {
+    .footer-content {
+        flex-direction: column;
+        /* Apila las secciones verticalmente */
+        align-items: center;
+        /* Centra el contenido */
+        padding: 10px;
+        /* Reduce el relleno general */
+    }
 
-/* BOTONES IZQ Y DER */
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 1000;
-}
+    .footer-section {
+        flex: none;
+        width: 100%;
+        /* Cada sección ocupa todo el ancho */
+        text-align: center;
+        /* Centra el texto */
+        padding: 10px 0;
+        /* Reduce el relleno entre secciones */
+    }
 
-.carousel button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+    .footer-section h3 {
+        font-size: 14px;
+        /* Reduce el tamaño del encabezado */
+    }
 
-.prev {
-    left: 10px;
-}
+    .footer-section ul li a {
+        font-size: 11px;
+        /* Ajusta el tamaño de los enlaces */
+        line-height: 1.5;
+        /* Mejora la legibilidad */
+    }
 
-.next {
-    right: 10px;
+    .social-links {
+        justify-content: center;
+        /* Centra los íconos de redes sociales */
+        gap: 8px;
+        /* Reduce el espacio entre íconos */
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        /* Espaciado más pequeño entre imágenes */
+    }
+
+    .instagram-grid img {
+        aspect-ratio: 1;
+        /* Mantiene las imágenes cuadradas */
+        border-radius: 3px;
+        /* Reduce los bordes redondeados */
+    }
 }

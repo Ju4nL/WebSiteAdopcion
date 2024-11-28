@@ -38,33 +38,33 @@ function toggleMenu() {
     }
 }
 
+let currentIndex = 0;
+
+function showSlide(index) {
+    const carouselImages = document.querySelector('.carousel-images');
+    const totalSlides = document.querySelectorAll('.carousel-images img').length;
+
+    if (index >= totalSlides) {
+        currentIndex = 0; // Regresar al inicio
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1; // Ir al final
+    } else {
+        currentIndex = index;
+    }
+
+    const offset = -currentIndex * 100;
+    carouselImages.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
 function initCarousel() {
-    let currentIndex = 0;
-
-    const showSlide = (index) => {
-        const carouselImages = document.querySelector('.carousel-images');
-        const totalSlides = document.querySelectorAll('.carousel-images img').length;
-
-        if (index >= totalSlides) {
-            currentIndex = 0; // Regresar al inicio
-        } else if (index < 0) {
-            currentIndex = totalSlides - 1; // Ir al final
-        } else {
-            currentIndex = index;
-        }
-
-        const offset = -currentIndex * 100;
-        carouselImages.style.transform = `translateX(${offset}%)`;
-    };
-
-    const nextSlide = () => {
-        showSlide(currentIndex + 1);
-    };
-
-    const prevSlide = () => {
-        showSlide(currentIndex - 1);
-    };
-
     // Cambiar imagen automáticamente cada 3 segundos
     setInterval(() => {
         nextSlide();
@@ -78,5 +78,6 @@ function app() {
     toggleMenu();
     initCarousel(); // Inicializar el carrusel
 }
+
 
 document.addEventListener('DOMContentLoaded', app);

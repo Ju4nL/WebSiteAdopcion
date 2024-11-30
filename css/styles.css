@@ -900,7 +900,6 @@ div {
     background: #f4f1EA;
     color: var(--background-color);
     padding: 20px 10px;
-    /* Ajuste de relleno horizontal para pantallas pequeñas */
     padding-top: 5rem;
     font-family: var(--font-family);
     position: relative;
@@ -913,7 +912,7 @@ div {
     position: absolute;
     width: 100%;
     height: 24px;
-    background-size: contain;
+    background-size: contain; /* La imagen de fondo se ajusta para que esté completamente visible */
     background-repeat: no-repeat;
     top: 0;
     left: 0;
@@ -923,52 +922,50 @@ div {
     display: flex;
     flex-wrap: wrap;
     /* Permite que los elementos se reorganicen en pantallas pequeñas */
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-between; /* Espacia los elementos de manera uniforme entre ellos */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Asegura que este contenido esté por encima de otros elementos */
 }
 
 .footer-section {
     flex: 1;
     padding: 10px;
     min-width: 200px;
-    /* Asegura que cada sección tenga un tamaño mínimo razonable */
     box-sizing: border-box;
     /* Incluye padding en el ancho total */
 }
 
 .footer-section h3 {
-    color: var(--secondary-color);
+   
     margin-bottom: 10px;
     font-size: 18px;
 }
 
 .footer-section ul {
-    list-style-type: none;
+    list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0;
     margin: 0;
 }
 
 .footer-section ul li a {
     color: var(--text-color);
-    text-decoration: none;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
     font-size: 14px;
     line-height: 2;
-    display: block;
+    display: block; /* Hace que el enlace ocupe todo el espacio del elemento de lista */
 }
 
 .footer-section ul li a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Cambia el color del enlace al pasar el ratón */
 }
 
 .social-links {
-    display: flex;
-    gap: 10px;
-    /* Espaciado uniforme entre los iconos */
-    flex-wrap: wrap;
+    display: flex; /* Utiliza un diseño flexbox para alinear los iconos sociales */
+    gap: 10px; /*esacioado*/
+    flex-wrap: wrap; /* Espaciado uniforme entre los iconos */    
 }
 
 .social-links a {

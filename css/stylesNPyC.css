@@ -61,7 +61,23 @@
     z-index: 1; /* Asegura que el elemento esté por encima de otros elementos */
 }
 
+
+
+
+
 /* Pagina nosotros */
+.seccion-nosotros {
+    text-align: center; /* Centra el texto dentro de la sección del equipo */
+    padding: 50px; /* Añade un relleno de 50px alrededor de la sección */
+    background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); /* Agrega la imagen de fondo */
+    width: 100%;
+    height: auto; /* Ajusta la altura de la sección */
+}
+
+.seccion-nosotros h1 {
+    font-size: 4em; /* Establece el tamaño de fuente del título */
+    margin-bottom: 30px; /* Añade un margen inferior de 30px */
+}
 
 .grupo {
     display: flex; /* Utiliza flexbox para la disposición de los elementos */
@@ -102,20 +118,6 @@
     text-align: center;
 }
 
-.seccion-nosotros {
-    text-align: center; /* Centra el texto dentro de la sección del equipo */
-    padding: 50px; /* Añade un relleno de 50px alrededor de la sección */
-    background-color: #e73a2d; /* Establece el color de fondo de la sección del equipo */
-    color: white; /* Establece el color del texto en blanco */
-    background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); /* Agrega la imagen de fondo */
-    width: 100%;
-    height: auto; /* Ajusta la altura de la sección */
-}
-
-.seccion-nosotros h1 {
-    font-size: 4em; /* Establece el tamaño de fuente del título */
-    margin-bottom: 30px; /* Añade un margen inferior de 20px */
-}
 
 /* PREGUNTAS FRECUENTES */
 
@@ -131,6 +133,9 @@
     flex-direction: column; /* Alinea los elementos en una columna */
     justify-content: flex-start; /* Alinea los elementos al principio */
 }
+
+
+
 
 /* Contenedor de preguntas: dos columnas */
 .Preguntas {

@@ -344,9 +344,6 @@ div {
     unicode-bidi: isolate;
 }
 
-/* ------------------------------------------------------ */
-/* ESTILOS PARA FORMATEAR LA BARRA DE NAVEGACIÓN */
-/* ------------------------------------------------------ */
 
 
 #cabecera {
@@ -356,12 +353,15 @@ div {
     position: sticky;
 }
 
+
+/* ------------------------------------------------------ */
+/* ESTILOS PARA FORMATEAR LA BARRA DE NAVEGACIÓN */
+/* ------------------------------------------------------ */
 .sticky-top {
     position: sticky;
     top: 0;
     z-index: 1020;
 }
-
 
 .header-shape {
     background-image: url("../assets/images/bg/header_shape.png");
@@ -1170,8 +1170,7 @@ div {
         border-bottom: 1px solid var(--background-color-secondary);
     }
 
-    .nav-menu-phone {
-        display: block;
+    .nav-menu-phone { 
         display: flex;
         justify-content: space-between;
         align-items: center;

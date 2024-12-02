@@ -67,16 +67,16 @@
 
 /* Pagina nosotros */
 .seccion-nosotros {
-    text-align: center; /* Centra el texto dentro de la sección del equipo */
-    padding: 50px; /* Añade un relleno de 50px alrededor de la sección */
-    background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); /* Agrega la imagen de fondo */
+    text-align: center; 
+    padding: 50px; 
+    background-image: url('../assets/images/Nosotros/fondo\ 2.jpg'); 
     width: 100%;
-    height: auto; /* Ajusta la altura de la sección */
+    height: auto; 
 }
 
 .seccion-nosotros h1 {
-    font-size: 4em; /* Establece el tamaño de fuente del título */
-    margin-bottom: 30px; /* Añade un margen inferior de 30px */
+    font-size: 4em; 
+    margin-bottom: 30px; 
 }
 
 .grupo {
@@ -89,32 +89,32 @@
 
 .miembros {
     background-color: white;
-    color: #002b55; /* Establece el color del texto */
-    border-radius: 15px; /* Añade bordes redondeados */
-    margin: 5px; /* Añade un margen de 5px alrededor del elemento */
-    padding: 15px; /* Añade un relleno interno de 15px */
+    color: #002b55; 
+    border-radius: 15px; 
+    margin: 5px; 
+    padding: 15px; 
     flex-basis: 18%; /* Establece el tamaño de cada miembro en un 18% del ancho */
     height: auto;
-    text-align: center; /* Centra el texto dentro del elemento */
+    text-align: center; 
 }
 
 .miembros img {
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    border-radius: 25%; /* Hace que la imagen sea circular */
+    width: 100%; 
+    border-radius: 25%; 
 }
 
 .miembros h3 {
-    font-size: 2em; /* Establece el tamaño de fuente del nombre del miembro */
-    margin: 10px 0 5px 0; /* Añade márgenes superior e inferior */
+    font-size: 2em;
+    margin: 10px 0 5px 0; 
 }
 
 .miembros h2 {
-    font-size: 1em; /* Establece el tamaño de fuente del nombre del miembro */
+    font-size: 1em; 
     margin: 5px 0 5px 0; /* Añade márgenes superior e inferior */
 }
 
 .miembros p {
-    font-size: 0.5em; /* Establece el tamaño de fuente de la descripción del miembro */
+    font-size: 0.5em;
     text-align: center;
 }
 
